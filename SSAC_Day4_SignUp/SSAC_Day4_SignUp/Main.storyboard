@@ -24,7 +24,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="snj-My-Paz">
-                                <rect key="frame" x="67" y="288" width="280" height="350"/>
+                                <rect key="frame" x="67" y="276" width="280" height="350"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이메일 주소 또는 전화번호" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nGa-4r-Z8v">
                                         <rect key="frame" x="0.0" y="0.0" width="280" height="39"/>
@@ -79,7 +79,7 @@
                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                 <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -93,6 +93,9 @@
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="회원가입"/>
+                                        <connections>
+                                            <action selector="registerButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="bvk-UL-IRo"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="134" translatesAutoresizingMaskIntoConstraints="NO" id="STJ-ec-9dD">
                                         <rect key="frame" x="0.0" y="311" width="280" height="39"/>
@@ -125,7 +128,7 @@
                         <constraints>
                             <constraint firstItem="Y4i-Xi-CBQ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="75" id="39u-Me-Y9T"/>
                             <constraint firstItem="Y4i-Xi-CBQ" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="DJk-pA-0XB"/>
-                            <constraint firstItem="snj-My-Paz" firstAttribute="top" secondItem="Y4i-Xi-CBQ" secondAttribute="bottom" constant="122" id="gok-R8-eeQ"/>
+                            <constraint firstItem="snj-My-Paz" firstAttribute="top" secondItem="Y4i-Xi-CBQ" secondAttribute="bottom" constant="110" id="gok-R8-eeQ"/>
                             <constraint firstItem="snj-My-Paz" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="rjL-Bv-oOI"/>
                         </constraints>
                         <connections>
@@ -133,12 +136,13 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="ID" destination="nGa-4r-Z8v" id="DzF-ov-nMq"/>
                         <outlet property="additionalSwitch" destination="X3s-mk-XiQ" id="i9a-aU-1kn"/>
                         <outlet property="nickName" destination="gOh-pu-KsG" id="4KB-cB-JGp"/>
+                        <outlet property="password" destination="hKk-FV-m39" id="iCo-WK-4Nm"/>
                         <outlet property="place" destination="nUV-dD-ErN" id="nxI-C8-KSS"/>
                         <outlet property="recommendCode" destination="xRh-6n-fl4" id="0vm-x7-6Ze"/>
                         <outlet property="registerButton" destination="tbc-SZ-qSc" id="iKo-44-SKS"/>
-                        <outlet property="signUpStack" destination="snj-My-Paz" id="TkF-VI-8zz"/>
                         <outlet property="stackViewHeight" destination="fQp-HE-Fzg" id="EfK-wM-jlV"/>
                     </connections>
                 </viewController>
