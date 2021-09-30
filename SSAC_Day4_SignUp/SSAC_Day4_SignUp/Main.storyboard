@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -22,80 +23,131 @@
                                 <color key="textColor" red="1" green="0.38848959630000002" blue="0.33967175799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="snj-My-Paz">
-                                <rect key="frame" x="67" y="253" width="280" height="400"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="snj-My-Paz">
+                                <rect key="frame" x="67" y="288" width="280" height="350"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이메일 주소 또는 전화번호" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nGa-4r-Z8v">
-                                        <rect key="frame" x="0.0" y="0.0" width="280" height="42.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="39"/>
                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hKk-FV-m39">
-                                        <rect key="frame" x="0.0" y="59.5" width="280" height="42.5"/>
+                                        <rect key="frame" x="0.0" y="52" width="280" height="38.5"/>
                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="닉네임" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gOh-pu-KsG">
-                                        <rect key="frame" x="0.0" y="119" width="280" height="42.5"/>
+                                        <rect key="frame" x="0.0" y="103.5" width="280" height="39"/>
                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="위치" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nUV-dD-ErN">
-                                        <rect key="frame" x="0.0" y="178.5" width="280" height="43"/>
+                                        <rect key="frame" x="0.0" y="155.5" width="280" height="39"/>
                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="추천 코드 입력" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xRh-6n-fl4">
-                                        <rect key="frame" x="0.0" y="238.5" width="280" height="42.5"/>
+                                        <rect key="frame" x="0.0" y="207.5" width="280" height="39"/>
                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbc-SZ-qSc">
-                                        <rect key="frame" x="0.0" y="298" width="280" height="42.5"/>
+                                        <rect key="frame" x="0.0" y="259.5" width="280" height="38.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="회원가입"/>
                                     </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="125" translatesAutoresizingMaskIntoConstraints="NO" id="STJ-ec-9dD">
-                                        <rect key="frame" x="0.0" y="357.5" width="280" height="42.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="134" translatesAutoresizingMaskIntoConstraints="NO" id="STJ-ec-9dD">
+                                        <rect key="frame" x="0.0" y="311" width="280" height="39"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="추가 정보 입력" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heg-nh-f2F">
-                                                <rect key="frame" x="0.0" y="0.0" width="104" height="42.5"/>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                <rect key="frame" x="0.0" y="10" width="93" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X3s-mk-XiQ">
-                                                <rect key="frame" x="229" y="0.0" width="53" height="42.5"/>
+                                                <rect key="frame" x="227" y="4" width="55" height="31"/>
                                                 <color key="onTintColor" red="1" green="0.38823529410000002" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <connections>
+                                                    <action selector="switchTapped:" destination="Y6W-OH-hqX" eventType="valueChanged" id="Uch-eR-Ft9"/>
+                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="280" id="EaT-sN-U4D"/>
-                                    <constraint firstAttribute="height" constant="400" id="fQp-HE-Fzg"/>
+                                    <constraint firstAttribute="height" constant="350" id="fQp-HE-Fzg"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="Y4i-Xi-CBQ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="75" id="39u-Me-Y9T"/>
                             <constraint firstItem="Y4i-Xi-CBQ" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="DJk-pA-0XB"/>
-                            <constraint firstItem="snj-My-Paz" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="H87-RF-B7y"/>
+                            <constraint firstItem="snj-My-Paz" firstAttribute="top" secondItem="Y4i-Xi-CBQ" secondAttribute="bottom" constant="122" id="gok-R8-eeQ"/>
                             <constraint firstItem="snj-My-Paz" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="rjL-Bv-oOI"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="UcE-IP-ajd" appends="YES" id="1Ou-dP-6Os"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="additionalSwitch" destination="X3s-mk-XiQ" id="i9a-aU-1kn"/>
+                        <outlet property="nickName" destination="gOh-pu-KsG" id="4KB-cB-JGp"/>
+                        <outlet property="place" destination="nUV-dD-ErN" id="nxI-C8-KSS"/>
+                        <outlet property="recommendCode" destination="xRh-6n-fl4" id="0vm-x7-6Ze"/>
+                        <outlet property="registerButton" destination="tbc-SZ-qSc" id="iKo-44-SKS"/>
+                        <outlet property="signUpStack" destination="snj-My-Paz" id="TkF-VI-8zz"/>
+                        <outlet property="stackViewHeight" destination="fQp-HE-Fzg" id="EfK-wM-jlV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="UcE-IP-ajd">
+                    <connections>
+                        <action selector="BGTapped:" destination="Y6W-OH-hqX" id="ylp-Lw-83w"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
         </scene>

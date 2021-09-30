@@ -12,7 +12,7 @@
 		CBCF311C27057BEC007CFDB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBCF311B27057BEC007CFDB3 /* Assets.xcassets */; };
 		CBCF311F27057BEC007CFDB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBCF311D27057BEC007CFDB3 /* LaunchScreen.storyboard */; };
 		CBCF312927057C62007CFDB3 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF312827057C62007CFDB3 /* SignUpViewController.swift */; };
-		CBCF312B27057C6F007CFDB3 /* SignUpView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBCF312A27057C6F007CFDB3 /* SignUpView.storyboard */; };
+		CBCF312B27057C6F007CFDB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBCF312A27057C6F007CFDB3 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		CBCF311E27057BEC007CFDB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBCF312027057BEC007CFDB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBCF312827057C62007CFDB3 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		CBCF312A27057C6F007CFDB3 /* SignUpView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpView.storyboard; sourceTree = "<group>"; };
+		CBCF312A27057C6F007CFDB3 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,7 @@
 				CBCF311D27057BEC007CFDB3 /* LaunchScreen.storyboard */,
 				CBCF312027057BEC007CFDB3 /* Info.plist */,
 				CBCF312827057C62007CFDB3 /* SignUpViewController.swift */,
-				CBCF312A27057C6F007CFDB3 /* SignUpView.storyboard */,
+				CBCF312A27057C6F007CFDB3 /* Main.storyboard */,
 			);
 			path = SSAC_Day4_SignUp;
 			sourceTree = "<group>";
@@ -127,7 +127,7 @@
 			files = (
 				CBCF311F27057BEC007CFDB3 /* LaunchScreen.storyboard in Resources */,
 				CBCF311C27057BEC007CFDB3 /* Assets.xcassets in Resources */,
-				CBCF312B27057C6F007CFDB3 /* SignUpView.storyboard in Resources */,
+				CBCF312B27057C6F007CFDB3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +289,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,6 +318,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
