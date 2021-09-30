@@ -18,4 +18,12 @@ Switch가 On/Off 됨에 따라 switch의 isOn값을 받아와서 닉네임, 위�
 추후 스위치가 On/Off 됨에 따라 높이를 적절하게 조절해주어서 Stack View 안의 컴포넌트들이 일정한 사이즈를 유지할 수 있도록 함  
 <br>
 <img src = "https://user-images.githubusercontent.com/22907483/135413960-985858af-9400-4d6e-829a-ff3614e368f9.gif" width="30%">
-
+#### 1-3. ID, Password, Code 조건 체크
+- ID, Password는 반드시 입력되어야함
+- Password는 최소 6글자 작성해야함
+- Code에는 숫자만 입력해야함  
+이때 placeholder text 및 색상 변경은 아래의 코드를 사용했다.
+```swift
+ID.attributedPlaceholder = NSAttributedString(string: "ID를 입력해주세요", attributes: [.foregroundColor: UIColor.red])
+```
+<img src = "https://user-images.githubusercontent.com/22907483/135418793-c637a5ba-f2bf-401f-b851-078059f73d1d.PNG" width="30%"> <img src = "https://user-images.githubusercontent.com/22907483/135418769-5b463a52-4900-4e77-8095-a9dfbd4ec262.PNG" width="30%"> <img src = "https://user-images.githubusercontent.com/22907483/135418786-484412e7-da08-4612-818c-67970455a7b4.PNG" width="30%">
