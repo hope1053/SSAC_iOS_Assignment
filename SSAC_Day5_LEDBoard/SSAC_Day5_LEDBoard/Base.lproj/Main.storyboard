@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
@@ -14,29 +14,95 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SSAC_Day5_LEDBoard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8Y-TV-gzK">
-                                <rect key="frame" x="186" y="303" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eOL-iK-r2I">
+                                <rect key="frame" x="74" y="30" width="748" height="50"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="텍스트를 입력해주세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="voF-bo-scN">
+                                        <rect key="frame" x="0.0" y="0.0" width="748" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8WV-xZ-ooP">
+                                        <rect key="frame" x="620.5" y="10" width="58" height="30"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" strokeWidth="2">
+                                                <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="보내기">
+                                                    <attributes>
+                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <font key="NSFont" size="13" name="AppleSDGothicNeo-SemiBold"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzy-eR-ZCJ">
+                                        <rect key="frame" x="688.5" y="11" width="39.5" height="28"/>
+                                        <color key="tintColor" red="1" green="0.38848959630000002" blue="0.33967175799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" strokeWidth="2">
+                                                <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Aa">
+                                                    <attributes>
+                                                        <font key="NSFont" size="12" name="Helvetica-Bold"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="hzy-eR-ZCJ" firstAttribute="centerY" secondItem="voF-bo-scN" secondAttribute="centerY" id="3JD-E7-T5e"/>
+                                    <constraint firstItem="8WV-xZ-ooP" firstAttribute="centerY" secondItem="hzy-eR-ZCJ" secondAttribute="centerY" id="4lp-7z-kth"/>
+                                    <constraint firstItem="voF-bo-scN" firstAttribute="leading" secondItem="eOL-iK-r2I" secondAttribute="leading" id="Aps-8p-EmS"/>
+                                    <constraint firstItem="hzy-eR-ZCJ" firstAttribute="trailing" secondItem="voF-bo-scN" secondAttribute="trailing" constant="-20" id="Boo-Nu-Pic"/>
+                                    <constraint firstAttribute="bottom" secondItem="voF-bo-scN" secondAttribute="bottom" id="L0G-7J-lu3"/>
+                                    <constraint firstItem="hzy-eR-ZCJ" firstAttribute="leading" secondItem="8WV-xZ-ooP" secondAttribute="trailing" constant="10" id="NSZ-3o-vwR"/>
+                                    <constraint firstItem="hzy-eR-ZCJ" firstAttribute="height" secondItem="voF-bo-scN" secondAttribute="height" multiplier="0.56" id="OqT-JA-rpl"/>
+                                    <constraint firstAttribute="height" constant="50" id="WVZ-EJ-Tkk"/>
+                                    <constraint firstItem="8WV-xZ-ooP" firstAttribute="height" secondItem="voF-bo-scN" secondAttribute="height" multiplier="0.6" id="ePU-8g-snB"/>
+                                    <constraint firstItem="voF-bo-scN" firstAttribute="top" secondItem="eOL-iK-r2I" secondAttribute="top" id="koi-IQ-XAY"/>
+                                    <constraint firstAttribute="trailing" secondItem="voF-bo-scN" secondAttribute="trailing" id="oc9-8S-fU2"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="안녕하세요" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVa-6C-h9R">
+                                <rect key="frame" x="74" y="90" width="748" height="303"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="120"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemFillColor"/>
+                        <constraints>
+                            <constraint firstItem="UVa-6C-h9R" firstAttribute="trailing" secondItem="eOL-iK-r2I" secondAttribute="trailing" id="DOS-9A-u90"/>
+                            <constraint firstItem="UVa-6C-h9R" firstAttribute="leading" secondItem="eOL-iK-r2I" secondAttribute="leading" id="Ew2-i0-AJ4"/>
+                            <constraint firstItem="eOL-iK-r2I" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="G7H-m4-gkL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UVa-6C-h9R" secondAttribute="bottom" id="VUo-QV-cYq"/>
+                            <constraint firstItem="eOL-iK-r2I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="eyu-at-4CQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eOL-iK-r2I" secondAttribute="trailing" constant="30" id="iJE-Va-Dc6"/>
+                            <constraint firstItem="UVa-6C-h9R" firstAttribute="top" secondItem="eOL-iK-r2I" secondAttribute="bottom" constant="10" id="qen-my-qqb"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="118"/>
+            <point key="canvasLocation" x="138.61607142857142" y="117.39130434782609"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemFillColor">
+            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
