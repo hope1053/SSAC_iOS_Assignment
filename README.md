@@ -4,7 +4,7 @@
 No. | 날짜 | 과제 | 주제 | TIL | 폴더 바로가기
 ------------ | ------------- | ------------- | ------------- | -------------  | -------------
 1 | 2021.09.30 | Netflix Project Sign Up | Stack View, 논리연산 | | [바로가기](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day4_SignUp)
-2 | 2021.10.01 - 10.03 |  | | [Day5 TIL](https://velog.io/@hope1053/SSACiOSDay-5-TIL)
+2 | 2021.10.01 - 10.03 | LED Board | Auto Layout, Tap Recognizer, Function | [Day5 TIL](https://velog.io/@hope1053/SSACiOSDay-5-TIL) | [LED Board](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day5_LEDBoard)
 
 <br>
 
