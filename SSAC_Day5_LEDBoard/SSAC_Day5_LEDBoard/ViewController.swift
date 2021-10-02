@@ -27,5 +27,18 @@ class ViewController: UIViewController {
         resultLabel.textColor = randomColorArray.randomElement()
     }
     
+    @IBAction func BGTapped(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+        
+        if boardView.isHidden {
+            boardView.isHidden = false
+        } else {
+            boardView.isHidden = true
+        }
+    }
+    
+    @IBAction func returnKeyTapped(_ sender: UITextField) {
+        view.endEditing(true)
+    }
 }
 
