@@ -42,6 +42,9 @@
                                                 </fragment>
                                             </attributedString>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="sendTextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mIl-Ud-gso"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzy-eR-ZCJ">
                                         <rect key="frame" x="688.5" y="11" width="39.5" height="28"/>
@@ -59,6 +62,9 @@
                                                 </fragment>
                                             </attributedString>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="changeColorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nwh-if-Vw6"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -75,7 +81,7 @@
                                     <constraint firstAttribute="trailing" secondItem="voF-bo-scN" secondAttribute="trailing" id="oc9-8S-fU2"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="안녕하세요" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVa-6C-h9R">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVa-6C-h9R">
                                 <rect key="frame" x="74" y="90" width="748" height="303"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="120"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -94,6 +100,11 @@
                             <constraint firstItem="UVa-6C-h9R" firstAttribute="top" secondItem="eOL-iK-r2I" secondAttribute="bottom" constant="10" id="qen-my-qqb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="boardView" destination="eOL-iK-r2I" id="7a3-2n-3rB"/>
+                        <outlet property="resultLabel" destination="UVa-6C-h9R" id="Ed3-py-WHV"/>
+                        <outlet property="writtenText" destination="voF-bo-scN" id="bqz-FS-lhk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
