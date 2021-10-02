@@ -10,13 +10,11 @@ import UIKit
 class SignUpViewController: UIViewController {
 
     @IBOutlet var stackViewHeight: NSLayoutConstraint!
-    
     @IBOutlet var recommendCode: UITextField!
     @IBOutlet var place: UITextField!
     @IBOutlet var nickName: UITextField!
     @IBOutlet var ID: UITextField!
     @IBOutlet var password: UITextField!
-    
     @IBOutlet var additionalSwitch: UISwitch!
     @IBOutlet var registerButton: UIButton!
     
