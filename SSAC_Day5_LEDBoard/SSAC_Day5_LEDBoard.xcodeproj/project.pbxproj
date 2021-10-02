@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CBCF311327057BE8007CFDB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF311227057BE8007CFDB3 /* AppDelegate.swift */; };
-		CBCF311527057BE8007CFDB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF311427057BE8007CFDB3 /* SceneDelegate.swift */; };
-		CBCF311C27057BEC007CFDB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBCF311B27057BEC007CFDB3 /* Assets.xcassets */; };
-		CBCF311F27057BEC007CFDB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBCF311D27057BEC007CFDB3 /* LaunchScreen.storyboard */; };
-		CBCF312927057C62007CFDB3 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF312827057C62007CFDB3 /* SignUpViewController.swift */; };
-		CBCF312B27057C6F007CFDB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBCF312A27057C6F007CFDB3 /* Main.storyboard */; };
+		CBBA8ACD270817850007864E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBA8ACC270817850007864E /* AppDelegate.swift */; };
+		CBBA8ACF270817850007864E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBA8ACE270817850007864E /* SceneDelegate.swift */; };
+		CBBA8AD1270817850007864E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBA8AD0270817850007864E /* ViewController.swift */; };
+		CBBA8AD4270817850007864E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBBA8AD2270817850007864E /* Main.storyboard */; };
+		CBBA8AD6270817870007864E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBBA8AD5270817870007864E /* Assets.xcassets */; };
+		CBBA8AD9270817870007864E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBBA8AD7270817870007864E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CBCF310F27057BE8007CFDB3 /* SSAC_Day4_SignUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSAC_Day4_SignUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBCF311227057BE8007CFDB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CBCF311427057BE8007CFDB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CBCF311B27057BEC007CFDB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CBCF311E27057BEC007CFDB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CBCF312027057BEC007CFDB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CBCF312827057C62007CFDB3 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		CBCF312A27057C6F007CFDB3 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CBBA8AC9270817850007864E /* SSAC_Day5_LEDBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSAC_Day5_LEDBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBBA8ACC270817850007864E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CBBA8ACE270817850007864E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CBBA8AD0270817850007864E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CBBA8AD3270817850007864E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CBBA8AD5270817870007864E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBBA8AD8270817870007864E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CBBA8ADA270817870007864E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CBCF310C27057BE8007CFDB3 /* Frameworks */ = {
+		CBBA8AC6270817850007864E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,72 +37,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CBCF310627057BE8007CFDB3 = {
+		CBBA8AC0270817850007864E = {
 			isa = PBXGroup;
 			children = (
-				CBCF311127057BE8007CFDB3 /* SSAC_Day4_SignUp */,
-				CBCF311027057BE8007CFDB3 /* Products */,
+				CBBA8ACB270817850007864E /* SSAC_Day5_LEDBoard */,
+				CBBA8ACA270817850007864E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CBCF311027057BE8007CFDB3 /* Products */ = {
+		CBBA8ACA270817850007864E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CBCF310F27057BE8007CFDB3 /* SSAC_Day4_SignUp.app */,
+				CBBA8AC9270817850007864E /* SSAC_Day5_LEDBoard.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CBCF311127057BE8007CFDB3 /* SSAC_Day4_SignUp */ = {
+		CBBA8ACB270817850007864E /* SSAC_Day5_LEDBoard */ = {
 			isa = PBXGroup;
 			children = (
-				CBCF311227057BE8007CFDB3 /* AppDelegate.swift */,
-				CBCF311427057BE8007CFDB3 /* SceneDelegate.swift */,
-				CBCF311B27057BEC007CFDB3 /* Assets.xcassets */,
-				CBCF311D27057BEC007CFDB3 /* LaunchScreen.storyboard */,
-				CBCF312027057BEC007CFDB3 /* Info.plist */,
-				CBCF312827057C62007CFDB3 /* SignUpViewController.swift */,
-				CBCF312A27057C6F007CFDB3 /* Main.storyboard */,
+				CBBA8ACC270817850007864E /* AppDelegate.swift */,
+				CBBA8ACE270817850007864E /* SceneDelegate.swift */,
+				CBBA8AD0270817850007864E /* ViewController.swift */,
+				CBBA8AD2270817850007864E /* Main.storyboard */,
+				CBBA8AD5270817870007864E /* Assets.xcassets */,
+				CBBA8AD7270817870007864E /* LaunchScreen.storyboard */,
+				CBBA8ADA270817870007864E /* Info.plist */,
 			);
-			path = SSAC_Day4_SignUp;
+			path = SSAC_Day5_LEDBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CBCF310E27057BE8007CFDB3 /* SSAC_Day4_SignUp */ = {
+		CBBA8AC8270817850007864E /* SSAC_Day5_LEDBoard */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CBCF312327057BEC007CFDB3 /* Build configuration list for PBXNativeTarget "SSAC_Day4_SignUp" */;
+			buildConfigurationList = CBBA8ADD270817870007864E /* Build configuration list for PBXNativeTarget "SSAC_Day5_LEDBoard" */;
 			buildPhases = (
-				CBCF310B27057BE8007CFDB3 /* Sources */,
-				CBCF310C27057BE8007CFDB3 /* Frameworks */,
-				CBCF310D27057BE8007CFDB3 /* Resources */,
+				CBBA8AC5270817850007864E /* Sources */,
+				CBBA8AC6270817850007864E /* Frameworks */,
+				CBBA8AC7270817850007864E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SSAC_Day4_SignUp;
-			productName = SSAC_Day4_SignUp;
-			productReference = CBCF310F27057BE8007CFDB3 /* SSAC_Day4_SignUp.app */;
+			name = SSAC_Day5_LEDBoard;
+			productName = SSAC_Day5_LEDBoard;
+			productReference = CBBA8AC9270817850007864E /* SSAC_Day5_LEDBoard.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CBCF310727057BE8007CFDB3 /* Project object */ = {
+		CBBA8AC1270817850007864E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
-					CBCF310E27057BE8007CFDB3 = {
+					CBBA8AC8270817850007864E = {
 						CreatedOnToolsVersion = 13.0;
 					};
 				};
 			};
-			buildConfigurationList = CBCF310A27057BE8007CFDB3 /* Build configuration list for PBXProject "SSAC_Day4_SignUp" */;
+			buildConfigurationList = CBBA8AC4270817850007864E /* Build configuration list for PBXProject "SSAC_Day5_LEDBoard" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,47 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = CBCF310627057BE8007CFDB3;
-			productRefGroup = CBCF311027057BE8007CFDB3 /* Products */;
+			mainGroup = CBBA8AC0270817850007864E;
+			productRefGroup = CBBA8ACA270817850007864E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CBCF310E27057BE8007CFDB3 /* SSAC_Day4_SignUp */,
+				CBBA8AC8270817850007864E /* SSAC_Day5_LEDBoard */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CBCF310D27057BE8007CFDB3 /* Resources */ = {
+		CBBA8AC7270817850007864E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBCF311F27057BEC007CFDB3 /* LaunchScreen.storyboard in Resources */,
-				CBCF311C27057BEC007CFDB3 /* Assets.xcassets in Resources */,
-				CBCF312B27057C6F007CFDB3 /* Main.storyboard in Resources */,
+				CBBA8AD9270817870007864E /* LaunchScreen.storyboard in Resources */,
+				CBBA8AD6270817870007864E /* Assets.xcassets in Resources */,
+				CBBA8AD4270817850007864E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CBCF310B27057BE8007CFDB3 /* Sources */ = {
+		CBBA8AC5270817850007864E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBCF312927057C62007CFDB3 /* SignUpViewController.swift in Sources */,
-				CBCF311327057BE8007CFDB3 /* AppDelegate.swift in Sources */,
-				CBCF311527057BE8007CFDB3 /* SceneDelegate.swift in Sources */,
+				CBBA8AD1270817850007864E /* ViewController.swift in Sources */,
+				CBBA8ACD270817850007864E /* AppDelegate.swift in Sources */,
+				CBBA8ACF270817850007864E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CBCF311D27057BEC007CFDB3 /* LaunchScreen.storyboard */ = {
+		CBBA8AD2270817850007864E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CBCF311E27057BEC007CFDB3 /* Base */,
+				CBBA8AD3270817850007864E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CBBA8AD7270817870007864E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBBA8AD8270817870007864E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -158,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		CBCF312127057BEC007CFDB3 /* Debug */ = {
+		CBBA8ADB270817870007864E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -219,7 +227,7 @@
 			};
 			name = Debug;
 		};
-		CBCF312227057BEC007CFDB3 /* Release */ = {
+		CBBA8ADC270817870007864E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -274,7 +282,7 @@
 			};
 			name = Release;
 		};
-		CBCF312427057BEC007CFDB3 /* Debug */ = {
+		CBBA8ADE270817870007864E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -283,19 +291,20 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MYR6MP3VKX;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SSAC_Day4_SignUp/Info.plist;
+				INFOPLIST_FILE = SSAC_Day5_LEDBoard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationLandscapeRight;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.linda.SSAC-Day4-SignUp";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.linda.SSAC-Day5-LEDBoard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -303,7 +312,7 @@
 			};
 			name = Debug;
 		};
-		CBCF312527057BEC007CFDB3 /* Release */ = {
+		CBBA8ADF270817870007864E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -312,19 +321,20 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MYR6MP3VKX;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SSAC_Day4_SignUp/Info.plist;
+				INFOPLIST_FILE = SSAC_Day5_LEDBoard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationLandscapeRight;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.linda.SSAC-Day4-SignUp";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.linda.SSAC-Day5-LEDBoard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -335,25 +345,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CBCF310A27057BE8007CFDB3 /* Build configuration list for PBXProject "SSAC_Day4_SignUp" */ = {
+		CBBA8AC4270817850007864E /* Build configuration list for PBXProject "SSAC_Day5_LEDBoard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CBCF312127057BEC007CFDB3 /* Debug */,
-				CBCF312227057BEC007CFDB3 /* Release */,
+				CBBA8ADB270817870007864E /* Debug */,
+				CBBA8ADC270817870007864E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CBCF312327057BEC007CFDB3 /* Build configuration list for PBXNativeTarget "SSAC_Day4_SignUp" */ = {
+		CBBA8ADD270817870007864E /* Build configuration list for PBXNativeTarget "SSAC_Day5_LEDBoard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CBCF312427057BEC007CFDB3 /* Debug */,
-				CBCF312527057BEC007CFDB3 /* Release */,
+				CBBA8ADE270817870007864E /* Debug */,
+				CBBA8ADF270817870007864E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CBCF310727057BE8007CFDB3 /* Project object */;
+	rootObject = CBBA8AC1270817850007864E /* Project object */;
 }
