@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet var boardView: UIView!
+    
     @IBOutlet var writtenText: UITextField!
     @IBOutlet var resultLabel: UILabel!
     
