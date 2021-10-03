@@ -16,3 +16,7 @@ No. | 날짜 | 과제 | 주제 | TIL | 폴더 바로가기
 ### [2. LED Board](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day5_LEDBoard)
 #### Device Orientation, Auto Layout, Tap Recognizer, Function
 <img src = "https://user-images.githubusercontent.com/22907483/135706148-05e5693f-9837-4ef2-9251-ac26aa6249f8.gif" width="70%">
+
+### [3. Newly Coined Word](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day5_newlyCoinedWord)
+#### Stack View, randomElement, MVVM, Alert
+<img src = "https://user-images.githubusercontent.com/22907483/135759612-800e2abd-2775-4704-8d48-5739b4f10c51.gif" width="30%">
