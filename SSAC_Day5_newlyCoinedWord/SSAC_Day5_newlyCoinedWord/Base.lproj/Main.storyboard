@@ -46,21 +46,24 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system"/>
+                                        <connections>
+                                            <action selector="searchButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jox-f8-lwm"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6da-4j-ufW">
-                                <rect key="frame" x="20" y="124" width="67" height="31"/>
+                                <rect key="frame" x="20" y="124" width="66.5" height="31"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                <buttonConfiguration key="configuration" style="plain" title="button">
                                     <backgroundConfiguration key="background" cornerRadius="13" strokeWidth="1">
                                         <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDe-Bg-JI2">
-                                <rect key="frame" x="92" y="124" width="67" height="31"/>
+                                <rect key="frame" x="91.5" y="124" width="67" height="31"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button">
@@ -70,7 +73,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoV-WR-bxk">
-                                <rect key="frame" x="164" y="124" width="67" height="31"/>
+                                <rect key="frame" x="163.5" y="124" width="67" height="31"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button">
@@ -80,7 +83,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u8X-96-L9U">
-                                <rect key="frame" x="236" y="124" width="67" height="31"/>
+                                <rect key="frame" x="235.5" y="124" width="67" height="31"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button">
@@ -101,6 +104,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="6da-4j-ufW" firstAttribute="leading" secondItem="YS2-bF-xcP" secondAttribute="leading" id="26b-b0-VRY"/>
                             <constraint firstItem="jDe-Bg-JI2" firstAttribute="leading" secondItem="6da-4j-ufW" secondAttribute="trailing" constant="5" id="3yq-RN-EU0"/>
@@ -123,9 +127,25 @@
                             <constraint firstItem="eoV-WR-bxk" firstAttribute="leading" secondItem="jDe-Bg-JI2" secondAttribute="trailing" constant="5" id="wcK-rx-Blw"/>
                             <constraint firstItem="Bbo-Vu-2uL" firstAttribute="trailing" secondItem="at9-9h-8Zt" secondAttribute="trailing" constant="-20" id="yAf-jx-iIF"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="nk0-Kj-DAC" appends="YES" id="I1M-ef-vhl"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="firstTagButton" destination="6da-4j-ufW" id="OvI-nb-mlx"/>
+                        <outlet property="fourthTagButton" destination="u8X-96-L9U" id="1Sr-69-Fzr"/>
+                        <outlet property="searchField" destination="KaC-la-2JO" id="D0h-Eh-WBI"/>
+                        <outlet property="searchResult" destination="Bbo-Vu-2uL" id="Ku4-5j-WhS"/>
+                        <outlet property="secondTagButton" destination="jDe-Bg-JI2" id="PvS-eb-1JI"/>
+                        <outlet property="thirdTagButton" destination="eoV-WR-bxk" id="WLz-XG-mbO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="nk0-Kj-DAC">
+                    <connections>
+                        <action selector="BGTapped:" destination="BYZ-38-t0r" id="g8n-CC-D2h"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="103.79464285714285"/>
         </scene>

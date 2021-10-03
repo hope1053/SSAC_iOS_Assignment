@@ -13,6 +13,7 @@
 		CB7842212708341300FB108E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB78421F2708341300FB108E /* Main.storyboard */; };
 		CB7842232708341600FB108E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB7842222708341600FB108E /* Assets.xcassets */; };
 		CB7842262708341600FB108E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB7842242708341600FB108E /* LaunchScreen.storyboard */; };
+		CB78422E27094C9200FB108E /* coinedWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB78422D27094C9200FB108E /* coinedWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CB7842222708341600FB108E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB7842252708341600FB108E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB7842272708341600FB108E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB78422D27094C9200FB108E /* coinedWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coinedWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				CB7842222708341600FB108E /* Assets.xcassets */,
 				CB7842242708341600FB108E /* LaunchScreen.storyboard */,
 				CB7842272708341600FB108E /* Info.plist */,
+				CB78422D27094C9200FB108E /* coinedWord.swift */,
 			);
 			path = SSAC_Day5_newlyCoinedWord;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB78421E2708341300FB108E /* ViewController.swift in Sources */,
+				CB78422E27094C9200FB108E /* coinedWord.swift in Sources */,
 				CB78421A2708341300FB108E /* AppDelegate.swift in Sources */,
 				CB78421C2708341300FB108E /* SceneDelegate.swift in Sources */,
 			);
