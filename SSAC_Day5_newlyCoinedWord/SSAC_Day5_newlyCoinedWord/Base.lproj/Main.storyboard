@@ -20,23 +20,21 @@
                                 <rect key="frame" x="20" y="64" width="374" height="50"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V6B-ub-cmJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="324" height="50"/>
-                                        <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KaC-la-2JO">
-                                                <rect key="frame" x="2" y="2" width="322" height="46"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="20" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="KaC-la-2JO" secondAttribute="trailing" id="2Zn-e7-m7B"/>
-                                            <constraint firstItem="KaC-la-2JO" firstAttribute="leading" secondItem="V6B-ub-cmJ" secondAttribute="leading" constant="2" id="me4-EO-goX"/>
-                                            <constraint firstAttribute="bottom" secondItem="KaC-la-2JO" secondAttribute="bottom" constant="2" id="xUv-bE-7KJ"/>
-                                            <constraint firstItem="KaC-la-2JO" firstAttribute="top" secondItem="V6B-ub-cmJ" secondAttribute="top" constant="2" id="yos-fc-LBe"/>
+                                            <constraint firstAttribute="width" constant="20" id="Of6-vZ-iid"/>
                                         </constraints>
                                     </view>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="신조어를 입력해주세요!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KaC-la-2JO">
+                                        <rect key="frame" x="20" y="0.0" width="304" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="returnKeyTapped:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="8iL-b5-Bnd"/>
+                                        </connections>
+                                    </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NmP-Fd-1xK">
                                         <rect key="frame" x="324" y="0.0" width="50" height="50"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -61,6 +59,9 @@
                                         <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="tagButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pjt-cJ-PBS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDe-Bg-JI2">
                                 <rect key="frame" x="91.5" y="124" width="67" height="31"/>
@@ -71,6 +72,9 @@
                                         <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="tagButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YpK-gg-UEE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoV-WR-bxk">
                                 <rect key="frame" x="163.5" y="124" width="67" height="31"/>
@@ -81,6 +85,9 @@
                                         <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="tagButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tiY-7g-vj2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u8X-96-L9U">
                                 <rect key="frame" x="235.5" y="124" width="67" height="31"/>
@@ -91,11 +98,14 @@
                                         <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="tagButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bdT-dH-1cE"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="at9-9h-8Zt">
                                 <rect key="frame" x="20" y="345" width="374" height="216"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="신조어 검색기" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bbo-Vu-2uL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="신조어 검색기^_^" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bbo-Vu-2uL">
                                 <rect key="frame" x="40" y="439.5" width="334" height="27.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
@@ -134,8 +144,10 @@
                     <connections>
                         <outlet property="firstTagButton" destination="6da-4j-ufW" id="OvI-nb-mlx"/>
                         <outlet property="fourthTagButton" destination="u8X-96-L9U" id="1Sr-69-Fzr"/>
+                        <outlet property="searchButton" destination="NmP-Fd-1xK" id="asT-50-l5t"/>
                         <outlet property="searchField" destination="KaC-la-2JO" id="D0h-Eh-WBI"/>
                         <outlet property="searchResult" destination="Bbo-Vu-2uL" id="Ku4-5j-WhS"/>
+                        <outlet property="searchStackView" destination="YS2-bF-xcP" id="P4t-Ln-BU1"/>
                         <outlet property="secondTagButton" destination="jDe-Bg-JI2" id="PvS-eb-1JI"/>
                         <outlet property="thirdTagButton" destination="eoV-WR-bxk" id="WLz-XG-mbO"/>
                     </connections>

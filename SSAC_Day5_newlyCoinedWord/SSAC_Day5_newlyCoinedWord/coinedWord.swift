@@ -19,6 +19,14 @@ class WordManager {
             return "no result"
         }
     }
+    
+    func randomWord() -> [String] {
+        var chosenWord: Set<String> = Set()
+        while chosenWord.count < 4 {
+            chosenWord.insert(wordList.keys.randomElement()!)
+        }
+        return Array(chosenWord)
+    }
 }
 
 class wordViewModel {
@@ -26,5 +34,9 @@ class wordViewModel {
     
     func searchWord(word: String) -> String {
         return manager.searchWord(word: word)
+    }
+    
+    func getRandomWord() -> [String]{
+        return manager.randomWord()
     }
 }

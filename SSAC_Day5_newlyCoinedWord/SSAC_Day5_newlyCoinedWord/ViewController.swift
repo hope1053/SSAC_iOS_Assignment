@@ -11,7 +11,9 @@ class ViewController: UIViewController {
     
     let viewModel = wordViewModel()
     
+    @IBOutlet var searchStackView: UIStackView!
     @IBOutlet var searchField: UITextField!
+    @IBOutlet var searchButton: UIButton!
     
     @IBOutlet var searchResult: UILabel!
     
@@ -22,11 +24,15 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        updateButtonText()
+        
+        searchStackView.layer.borderWidth = 2
+        searchStackView.layer.borderColor = UIColor.black.cgColor
     }
 
-    @IBAction func searchButtonTapped(_ sender: Any) {
-        keyboardGoDown()
+    @IBAction func searchButtonTapped(_ sender: UIButton) {
+        view.endEditing(true)
+        updateButtonText()
         let input = searchField.text
         // 텍스트가 없는 경우
         if input == "" {
@@ -39,13 +45,8 @@ class ViewController: UIViewController {
         } else {
             // 텍스트가 있지만 리스트에 없는 경우
             if viewModel.searchWord(word: input!) == "no result" {
-                let alert = UIAlertController(title: "죄송해요", message: "결과를 찾을 수 없습니다.", preferredStyle: .alert)
-                
-                let OKAction = UIAlertAction(title: "네ㅜㅜ", style: .default, handler: nil)
-                
-                alert.addAction(OKAction)
                 searchField.text = ""
-                present(alert, animated: true, completion: nil)
+                searchResult.text = "신조어를 찾을 수 없습니다 ㅜㅜ"
             } else {
                 // 텍스트가 있고 답도 있는 경우
                 searchResult.text = viewModel.searchWord(word: input!)
@@ -54,11 +55,26 @@ class ViewController: UIViewController {
     }
     
     @IBAction func BGTapped(_ sender: UITapGestureRecognizer) {
-        keyboardGoDown()
+        view.endEditing(true)
     }
     
-    func keyboardGoDown() {
-        view.endEditing(true)
+    @IBAction func returnKeyTapped(_ sender: UITextField) {
+        searchButtonTapped(searchButton)
+    }
+    
+    func updateButtonText() {
+        let randomList = viewModel.getRandomWord()
+        
+        firstTagButton.setTitle(randomList[0], for: .normal)
+        secondTagButton.setTitle(randomList[1], for: .normal)
+        thirdTagButton.setTitle(randomList[2], for: .normal)
+        fourthTagButton.setTitle(randomList[3], for: .normal)
+    }
+    
+    @IBAction func tagButtonTapped(_ sender: UIButton) {
+        searchField.text = sender.currentTitle
+        searchResult.text = viewModel.searchWord(word: sender.currentTitle!)
+        updateButtonText()
     }
     
 }
