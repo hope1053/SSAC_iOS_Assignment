@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB87ABB3270C449700873FFE /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB87ABB2270C449700873FFE /* OneViewController.swift */; };
 		CBF1DC32270C1FEB00C408B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1DC31270C1FEB00C408B9 /* AppDelegate.swift */; };
 		CBF1DC34270C1FEB00C408B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1DC33270C1FEB00C408B9 /* SceneDelegate.swift */; };
 		CBF1DC36270C1FEB00C408B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1DC35270C1FEB00C408B9 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB87ABB2270C449700873FFE /* OneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
 		CBF1DC2E270C1FEB00C408B9 /* SSAC_Day6_Baemin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSAC_Day6_Baemin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF1DC31270C1FEB00C408B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBF1DC33270C1FEB00C408B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				CBF1DC3A270C1FEE00C408B9 /* Assets.xcassets */,
 				CBF1DC3C270C1FEE00C408B9 /* LaunchScreen.storyboard */,
 				CBF1DC3F270C1FEE00C408B9 /* Info.plist */,
+				CB87ABB2270C449700873FFE /* OneViewController.swift */,
 			);
 			path = SSAC_Day6_Baemin;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				CBF1DC36270C1FEB00C408B9 /* ViewController.swift in Sources */,
 				CBF1DC32270C1FEB00C408B9 /* AppDelegate.swift in Sources */,
 				CBF1DC34270C1FEB00C408B9 /* SceneDelegate.swift in Sources */,
+				CB87ABB3270C449700873FFE /* OneViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

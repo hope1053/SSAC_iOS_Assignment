@@ -11,7 +11,7 @@
         <!--홈-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SSAC_Day6_Baemin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="OneViewController" customModule="SSAC_Day6_Baemin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,7 +27,7 @@
         <!--찜한가게-->
         <scene sceneID="0Ju-CO-ogP">
             <objects>
-                <viewController id="sdY-7R-4Q7" sceneMemberID="viewController">
+                <viewController id="sdY-7R-4Q7" customClass="TwoViewController" customModule="SSAC_Day6_Baemin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DYa-0I-CR8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -80,10 +80,10 @@
             </objects>
             <point key="canvasLocation" x="1955.072463768116" y="789.50892857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Three View Controller-->
         <scene sceneID="xhD-t2-ZKR">
             <objects>
-                <viewController id="4v1-FT-3hx" sceneMemberID="viewController">
+                <viewController id="4v1-FT-3hx" customClass="ThreeViewController" customModule="SSAC_Day6_Baemin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S5n-j2-B0l">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -99,7 +99,7 @@
         <!--my배민-->
         <scene sceneID="Ggi-q6-BJ1">
             <objects>
-                <viewController id="XUz-VV-Otp" sceneMemberID="viewController">
+                <viewController id="XUz-VV-Otp" customClass="SixViewController" customModule="SSAC_Day6_Baemin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d65-5Y-UEZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,7 +115,7 @@
         <!--주문내역-->
         <scene sceneID="1ZO-Oj-lNI">
             <objects>
-                <viewController id="bSe-OP-B5D" sceneMemberID="viewController">
+                <viewController id="bSe-OP-B5D" customClass="FourViewController" customModule="SSAC_Day6_Baemin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x2A-Kp-eI2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -128,7 +128,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="배달 배민오더"/>
                                         <connections>
-                                            <segue destination="GOc-s4-cPb" kind="show" id="OdR-CY-5Fc"/>
+                                            <segue destination="GOc-s4-cPb" kind="presentation" id="cWj-HI-3QQ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DsV-dD-Bhh">
@@ -157,12 +157,12 @@
             </objects>
             <point key="canvasLocation" x="1947.826086956522" y="1481.9196428571429"/>
         </scene>
-        <!--View Controller-->
+        <!--Five View Controller-->
         <scene sceneID="5Xc-u9-fUR">
             <objects>
-                <viewController id="GOc-s4-cPb" sceneMemberID="viewController">
+                <viewController id="GOc-s4-cPb" customClass="FiveViewController" customModule="SSAC_Day6_Baemin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jEH-Ez-Nyv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="mtM-k2-s3B"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -203,7 +203,17 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="i8n-Oj-h8z">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <navigationBarAppearance key="standardAppearance"/>
+                        <navigationBarAppearance key="standardAppearance">
+                            <textAttributes key="titleTextAttributes">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                            </textAttributes>
+                        </navigationBarAppearance>
+                        <navigationBarAppearance key="compactAppearance">
+                            <textAttributes key="titleTextAttributes">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
+                                <color key="textColor" red="0.35294117650000001" green="0.7843137255" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </textAttributes>
+                        </navigationBarAppearance>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -223,6 +233,17 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gVn-Np-gRu">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <navigationBarAppearance key="standardAppearance">
+                            <textAttributes key="titleTextAttributes">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                            </textAttributes>
+                        </navigationBarAppearance>
+                        <navigationBarAppearance key="compactAppearance">
+                            <textAttributes key="titleTextAttributes">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
+                                <color key="textColor" red="0.35294117650000001" green="0.7843137255" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </textAttributes>
+                        </navigationBarAppearance>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -242,6 +263,20 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="sXb-Cp-svv">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                        </textAttributes>
+                        <navigationBarAppearance key="standardAppearance">
+                            <textAttributes key="titleTextAttributes">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                            </textAttributes>
+                        </navigationBarAppearance>
+                        <navigationBarAppearance key="compactAppearance">
+                            <textAttributes key="titleTextAttributes">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
+                                <color key="textColor" red="0.35294117650000001" green="0.7843137255" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </textAttributes>
+                        </navigationBarAppearance>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -261,6 +296,20 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dw5-tj-LqU">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                        </textAttributes>
+                        <navigationBarAppearance key="standardAppearance">
+                            <textAttributes key="titleTextAttributes">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                            </textAttributes>
+                        </navigationBarAppearance>
+                        <navigationBarAppearance key="compactAppearance">
+                            <textAttributes key="titleTextAttributes">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
+                                <color key="textColor" red="0.35294117650000001" green="0.7843137255" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </textAttributes>
+                        </navigationBarAppearance>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -273,7 +322,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="OdR-CY-5Fc"/>
+        <segue reference="cWj-HI-3QQ"/>
         <segue reference="jmY-Gi-SDD"/>
     </inferredMetricsTieBreakers>
     <resources>
