@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nrp-ee-4aq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
@@ -22,7 +22,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1957.9710144927537" y="118.52678571428571"/>
+            <point key="canvasLocation" x="5598.5507246376819" y="118.52678571428571"/>
         </scene>
         <!--찜한가게-->
         <scene sceneID="0Ju-CO-ogP">
@@ -78,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1sc-Bi-t0b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1955.072463768116" y="789.50892857142856"/>
+            <point key="canvasLocation" x="5595.652173913044" y="789.50892857142856"/>
         </scene>
         <!--Three View Controller-->
         <scene sceneID="xhD-t2-ZKR">
@@ -94,7 +94,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R4b-mC-vAo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2903" y="807"/>
+            <point key="canvasLocation" x="6543.4782608695659" y="806.91964285714278"/>
         </scene>
         <!--my배민-->
         <scene sceneID="Ggi-q6-BJ1">
@@ -192,7 +192,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="drY-Oh-9cX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
+            <point key="canvasLocation" x="3778.2608695652175" y="118.52678571428571"/>
         </scene>
         <!--홈-->
         <scene sceneID="Z3r-uN-zhQ">
@@ -222,7 +222,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4dz-y8-IyY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="118.52678571428571"/>
+            <point key="canvasLocation" x="4688.4057971014499" y="118.52678571428571"/>
         </scene>
         <!--찜한가게-->
         <scene sceneID="qz6-dU-1br">
@@ -252,7 +252,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MDu-rN-7IY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1044.9275362318842" y="789.50892857142856"/>
+            <point key="canvasLocation" x="4685.507246376812" y="789.50892857142856"/>
         </scene>
         <!--주문내역-->
         <scene sceneID="Ls4-Tm-6OS">
