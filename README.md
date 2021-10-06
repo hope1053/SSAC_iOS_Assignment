@@ -6,7 +6,7 @@ No. | 날짜 | 과제 | 주제 | TIL | 폴더 바로가기
 1 | 2021.09.30 | Netflix Project Sign Up | Stack View, 논리연산 | | [Netflix SignUp](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day4_SignUp)
 2 | 2021.10.01 - 10.03 | LED Board, newlyCoinedWord | Auto Layout, Tap Recognizer, Function | [Day5 TIL](https://velog.io/@hope1053/SSACiOSDay-4-TIL) | [LED Board](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day5_LEDBoard), [newlyCoinedWord](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day5_newlyCoinedWord)
 3 | 2021.10.05 | Baemin Project | Navigation Controller, Tab Bar Controller | [Day6 TIL](https://velog.io/@hope1053/SSACiOSDay-6-TIL) | [Baemin Project](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day6_Baemin)
-4 | 2021.10.06 | Emtion Diary | UserDefaults, Stack View, Tag | [Day7 TIL](https://velog.io/@hope1053/SSACiOSDay-7-TIL) | [Emtion Diary](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day7_EmtionDiary)
+4 | 2021.10.06 | Emtion Diary | UserDefaults, Stack View, Tag, Library, Notification Center | [Day7 TIL](https://velog.io/@hope1053/SSACiOSDay-7-TIL) | [Emtion Diary](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day7_EmtionDiary)
 
 <br>
 
@@ -22,3 +22,7 @@ No. | 날짜 | 과제 | 주제 | TIL | 폴더 바로가기
 ### [3. Newly Coined Word](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day5_newlyCoinedWord)
 #### Stack View, randomElement, MVVM, Alert
 <img src = "https://user-images.githubusercontent.com/22907483/135759612-800e2abd-2775-4704-8d48-5739b4f10c51.gif" width="30%">
+
+### [5. Emotion Diary](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day7_EmtionDiary)
+#### UserDefaults, Stack View, Tag, Library, Notification Center
+<img src = "https://user-images.githubusercontent.com/22907483/136170538-b12770b0-9381-4e80-9d5b-f7fc1c43a45e.gif" width="30%">
