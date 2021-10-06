@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB2532AC270D963E0042815F /* resetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2532AB270D963E0042815F /* resetViewController.swift */; };
+		CB9EC3EF270D8E1C005A8981 /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = CB9EC3EE270D8E1C005A8981 /* SideMenu */; };
 		CBA51293270D717D000A8494 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA51292270D717D000A8494 /* AppDelegate.swift */; };
 		CBA51295270D717D000A8494 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA51294270D717D000A8494 /* SceneDelegate.swift */; };
 		CBA51297270D717D000A8494 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA51296270D717D000A8494 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB2532AA270D94C70042815F /* SideMenu */ = {isa = PBXFileReference; lastKnownFileType = text; path = SideMenu; sourceTree = SOURCE_ROOT; };
+		CB2532AB270D963E0042815F /* resetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resetViewController.swift; sourceTree = "<group>"; };
 		CBA5128F270D717D000A8494 /* SSAC_Day7_EmtionDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSAC_Day7_EmtionDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBA51292270D717D000A8494 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBA51294270D717D000A8494 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB9EC3EF270D8E1C005A8981 /* SideMenu in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +61,7 @@
 		CBA51291270D717D000A8494 /* SSAC_Day7_EmtionDiary */ = {
 			isa = PBXGroup;
 			children = (
+				CB2532AA270D94C70042815F /* SideMenu */,
 				CBA51292270D717D000A8494 /* AppDelegate.swift */,
 				CBA51294270D717D000A8494 /* SceneDelegate.swift */,
 				CBA51296270D717D000A8494 /* ViewController.swift */,
@@ -63,6 +69,7 @@
 				CBA5129B270D717F000A8494 /* Assets.xcassets */,
 				CBA5129D270D717F000A8494 /* LaunchScreen.storyboard */,
 				CBA512A0270D717F000A8494 /* Info.plist */,
+				CB2532AB270D963E0042815F /* resetViewController.swift */,
 			);
 			path = SSAC_Day7_EmtionDiary;
 			sourceTree = "<group>";
@@ -83,6 +90,9 @@
 			dependencies = (
 			);
 			name = SSAC_Day7_EmtionDiary;
+			packageProductDependencies = (
+				CB9EC3EE270D8E1C005A8981 /* SideMenu */,
+			);
 			productName = SSAC_Day7_EmtionDiary;
 			productReference = CBA5128F270D717D000A8494 /* SSAC_Day7_EmtionDiary.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +121,9 @@
 				Base,
 			);
 			mainGroup = CBA51286270D717D000A8494;
+			packageReferences = (
+				CB9EC3ED270D8E1C005A8981 /* XCRemoteSwiftPackageReference "SideMenu" */,
+			);
 			productRefGroup = CBA51290270D717D000A8494 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,6 +153,7 @@
 			files = (
 				CBA51297270D717D000A8494 /* ViewController.swift in Sources */,
 				CBA51293270D717D000A8494 /* AppDelegate.swift in Sources */,
+				CB2532AC270D963E0042815F /* resetViewController.swift in Sources */,
 				CBA51295270D717D000A8494 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +374,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CB9EC3ED270D8E1C005A8981 /* XCRemoteSwiftPackageReference "SideMenu" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jonkykong/SideMenu";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CB9EC3EE270D8E1C005A8981 /* SideMenu */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB9EC3ED270D8E1C005A8981 /* XCRemoteSwiftPackageReference "SideMenu" */;
+			productName = SideMenu;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CBA51287270D717D000A8494 /* Project object */;
 }

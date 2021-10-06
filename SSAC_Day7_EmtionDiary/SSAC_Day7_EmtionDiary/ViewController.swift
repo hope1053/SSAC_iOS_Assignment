@@ -25,7 +25,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
+        NotificationCenter.default.addObserver(self, selector: #selector(resetUserDefaults), name: NSNotification.Name(rawValue: "DidDismissResetViewController"), object: nil)
     }
+    
     
     @IBAction func buttonTapped(_ sender: UIButton) {
         let labelName = "label" + String(sender.tag)
@@ -43,5 +45,13 @@ class ViewController: UIViewController {
                 myProperty.text = "\(UserDefaults.standard.integer(forKey: labelName) )"
             }
         }
+    }
+    
+    @objc func resetUserDefaults(_ noti: Notification) {
+        for index in 1...9 {
+            let labelName = "label" + String(index)
+            UserDefaults.standard.set(0, forKey: labelName)
+        }
+        updateUI()
     }
 }
