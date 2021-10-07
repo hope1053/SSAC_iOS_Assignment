@@ -19,9 +19,6 @@ class ViewController: UIViewController {
     @IBOutlet var label2: UILabel!
     @IBOutlet var label1: UILabel!
     
-    @IBOutlet var button1: UIButton!
-    @IBOutlet var button2: UIButton!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()

@@ -18,8 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CB2532AA270D94C70042815F /* SideMenu */ = {isa = PBXFileReference; lastKnownFileType = text; path = SideMenu; sourceTree = SOURCE_ROOT; };
 		CB2532AB270D963E0042815F /* resetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resetViewController.swift; sourceTree = "<group>"; };
+		CB2532AD270D99550042815F /* SideMenu */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SideMenu; sourceTree = "<group>"; };
 		CBA5128F270D717D000A8494 /* SSAC_Day7_EmtionDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSAC_Day7_EmtionDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBA51292270D717D000A8494 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBA51294270D717D000A8494 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 		CBA51291270D717D000A8494 /* SSAC_Day7_EmtionDiary */ = {
 			isa = PBXGroup;
 			children = (
-				CB2532AA270D94C70042815F /* SideMenu */,
+				CB2532AD270D99550042815F /* SideMenu */,
 				CBA51292270D717D000A8494 /* AppDelegate.swift */,
 				CBA51294270D717D000A8494 /* SceneDelegate.swift */,
 				CBA51296270D717D000A8494 /* ViewController.swift */,
