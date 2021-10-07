@@ -18,6 +18,9 @@
                         <subviews>
                             <datePicker contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="z5P-N0-qvE">
                                 <rect key="frame" x="30" y="69" width="354" height="337.5"/>
+                                <connections>
+                                    <action selector="datePickerTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="vWX-9B-ErH"/>
+                                </connections>
                             </datePicker>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="TW7-Ar-tbY">
                                 <rect key="frame" x="30" y="441.5" width="354" height="354"/>
@@ -31,49 +34,47 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D+100" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJL-97-FNw">
                                                         <rect key="frame" x="15" y="15" width="63" height="24"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020년 00월 00일" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XoG-fJ-Jbk">
-                                                        <rect key="frame" x="30" y="63" width="107" height="41"/>
+                                                        <rect key="frame" x="30" y="67" width="107" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                 <constraints>
                                                     <constraint firstItem="XoG-fJ-Jbk" firstAttribute="leading" secondItem="0oX-Sq-fs3" secondAttribute="leading" constant="30" id="IdZ-oq-Q9Q"/>
                                                     <constraint firstAttribute="trailing" secondItem="XoG-fJ-Jbk" secondAttribute="trailing" constant="30" id="Qdh-Fe-Kfc"/>
                                                     <constraint firstItem="KJL-97-FNw" firstAttribute="top" secondItem="0oX-Sq-fs3" secondAttribute="top" constant="15" id="aV9-Z4-6p7"/>
                                                     <constraint firstItem="KJL-97-FNw" firstAttribute="leading" secondItem="0oX-Sq-fs3" secondAttribute="leading" constant="15" id="bKi-vx-6CR"/>
                                                     <constraint firstAttribute="width" secondItem="0oX-Sq-fs3" secondAttribute="height" multiplier="1:1" id="cvE-zq-F86"/>
-                                                    <constraint firstItem="XoG-fJ-Jbk" firstAttribute="centerY" secondItem="0oX-Sq-fs3" secondAttribute="centerY" id="sQy-GU-Enz"/>
+                                                    <constraint firstItem="XoG-fJ-Jbk" firstAttribute="centerY" secondItem="0oX-Sq-fs3" secondAttribute="centerY" multiplier="1.05" id="sQy-GU-Enz"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GTR-3T-2sr" customClass="roundCornerView" customModule="SSAC_Day8_anniversaryCalculator" customModuleProvider="target">
                                                 <rect key="frame" x="187" y="0.0" width="167" height="167"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020년 00월 00일" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fu-hO-rxB">
-                                                        <rect key="frame" x="30" y="63" width="107" height="41"/>
+                                                        <rect key="frame" x="30" y="67" width="107" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D+200" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bsr-AM-ytH">
                                                         <rect key="frame" x="15" y="15" width="66" height="24"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                 <constraints>
                                                     <constraint firstItem="Bsr-AM-ytH" firstAttribute="top" secondItem="GTR-3T-2sr" secondAttribute="top" constant="15" id="0HA-dN-d3u"/>
                                                     <constraint firstItem="6fu-hO-rxB" firstAttribute="leading" secondItem="GTR-3T-2sr" secondAttribute="leading" constant="30" id="1zx-2T-i9A"/>
                                                     <constraint firstItem="Bsr-AM-ytH" firstAttribute="leading" secondItem="GTR-3T-2sr" secondAttribute="leading" constant="15" id="HaB-7i-apx"/>
                                                     <constraint firstAttribute="trailing" secondItem="6fu-hO-rxB" secondAttribute="trailing" constant="30" id="Obq-8N-7mD"/>
-                                                    <constraint firstItem="6fu-hO-rxB" firstAttribute="centerY" secondItem="GTR-3T-2sr" secondAttribute="centerY" id="Xby-97-zZX"/>
+                                                    <constraint firstItem="6fu-hO-rxB" firstAttribute="centerY" secondItem="GTR-3T-2sr" secondAttribute="centerY" multiplier="1.05" id="Xby-97-zZX"/>
                                                     <constraint firstAttribute="width" secondItem="GTR-3T-2sr" secondAttribute="height" multiplier="1:1" id="sSw-Zk-Dqi"/>
                                                 </constraints>
                                             </view>
@@ -88,21 +89,20 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D+300" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJC-qO-UPu">
                                                         <rect key="frame" x="15" y="15" width="66.5" height="24"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020년 00월 00일" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQK-n4-621">
-                                                        <rect key="frame" x="30" y="63" width="107" height="41"/>
+                                                        <rect key="frame" x="30" y="67" width="107" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                 <constraints>
                                                     <constraint firstItem="oQK-n4-621" firstAttribute="leading" secondItem="hND-jh-2li" secondAttribute="leading" constant="30" id="0gt-Fc-I4S"/>
                                                     <constraint firstItem="hJC-qO-UPu" firstAttribute="top" secondItem="hND-jh-2li" secondAttribute="top" constant="15" id="3ME-m8-LX2"/>
-                                                    <constraint firstItem="oQK-n4-621" firstAttribute="centerY" secondItem="hND-jh-2li" secondAttribute="centerY" id="Day-5W-RIg"/>
+                                                    <constraint firstItem="oQK-n4-621" firstAttribute="centerY" secondItem="hND-jh-2li" secondAttribute="centerY" multiplier="1.05" id="Day-5W-RIg"/>
                                                     <constraint firstItem="hJC-qO-UPu" firstAttribute="leading" secondItem="hND-jh-2li" secondAttribute="leading" constant="15" id="m5f-80-jy1"/>
                                                     <constraint firstAttribute="trailing" secondItem="oQK-n4-621" secondAttribute="trailing" constant="30" id="sih-qx-WQL"/>
                                                 </constraints>
@@ -113,22 +113,21 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D+400" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P29-2C-tap">
                                                         <rect key="frame" x="15" y="15" width="66.5" height="24"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020년 00월 00일" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cvi-1Z-fpP">
-                                                        <rect key="frame" x="30" y="63" width="107" height="41"/>
+                                                        <rect key="frame" x="30" y="67" width="107" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                 <constraints>
                                                     <constraint firstItem="P29-2C-tap" firstAttribute="leading" secondItem="bes-PP-qOc" secondAttribute="leading" constant="15" id="6LK-4D-Ecy"/>
                                                     <constraint firstItem="P29-2C-tap" firstAttribute="top" secondItem="bes-PP-qOc" secondAttribute="top" constant="15" id="CD4-d8-zm2"/>
                                                     <constraint firstItem="Cvi-1Z-fpP" firstAttribute="leading" secondItem="bes-PP-qOc" secondAttribute="leading" constant="30" id="RgK-VK-3ZB"/>
-                                                    <constraint firstItem="Cvi-1Z-fpP" firstAttribute="centerY" secondItem="bes-PP-qOc" secondAttribute="centerY" id="c4f-2K-3CG"/>
+                                                    <constraint firstItem="Cvi-1Z-fpP" firstAttribute="centerY" secondItem="bes-PP-qOc" secondAttribute="centerY" multiplier="1.05" id="c4f-2K-3CG"/>
                                                     <constraint firstAttribute="trailing" secondItem="Cvi-1Z-fpP" secondAttribute="trailing" constant="30" id="rNb-gU-Oy8"/>
                                                 </constraints>
                                             </view>
@@ -159,10 +158,10 @@
                     </view>
                     <connections>
                         <outlet property="datePicker" destination="z5P-N0-qvE" id="RDH-fL-gME"/>
-                        <outlet property="firstView" destination="0oX-Sq-fs3" id="nz4-hy-M8u"/>
-                        <outlet property="fourthView" destination="bes-PP-qOc" id="v35-f3-vjK"/>
-                        <outlet property="secondView" destination="GTR-3T-2sr" id="6wk-v2-Aen"/>
-                        <outlet property="thirdView" destination="hND-jh-2li" id="Cej-UX-8vJ"/>
+                        <outlet property="fourHundredLabel" destination="Cvi-1Z-fpP" id="c6A-io-TtG"/>
+                        <outlet property="hundredLabel" destination="XoG-fJ-Jbk" id="VlP-Xv-M4Q"/>
+                        <outlet property="threeHundredLabel" destination="oQK-n4-621" id="LgZ-8d-l6j"/>
+                        <outlet property="twoHundredLabel" destination="6fu-hO-rxB" id="bKV-yv-LYR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -173,9 +172,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

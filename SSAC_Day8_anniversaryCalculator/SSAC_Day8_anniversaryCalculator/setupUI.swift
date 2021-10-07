@@ -13,7 +13,7 @@ class roundCornerView: UIView {
         super.init(coder: coder)
         self.layer.masksToBounds = true
         self.layer.cornerRadius = self.bounds.width/8
-        self.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-        self.layer.borderWidth = 4.0
+        self.layer.borderColor = UIColor.black.cgColor
+        self.layer.borderWidth = 3.0
     }
 }
