@@ -10,11 +10,15 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet var datePicker: UIDatePicker!
+    
+    @IBOutlet var firstView: UIView!
+    @IBOutlet var secondView: UIView!
+    @IBOutlet var thirdView: UIView!
+    @IBOutlet var fourthView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
 
 }
 
