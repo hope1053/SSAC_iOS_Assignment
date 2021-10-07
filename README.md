@@ -1,12 +1,12 @@
 # SSAC iOS 앱 개발자 데뷔 과정 Assignment 
 ✨ SSAC iOS 앱 개발자 데뷔과정 과제 및 미션 아카이빙
 
-No. | 날짜 | 과제 | 주제 | TIL | 폴더 바로가기
------------- | ------------- | ------------- | ------------- | -------------  | -------------
-1 | 2021.09.30 | Netflix Project Sign Up | Stack View, 논리연산 | | [Netflix SignUp](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day4_SignUp)
-2 | 2021.10.01 - 10.03 | LED Board, newlyCoinedWord | Auto Layout, Tap Recognizer, Function | [Day5 TIL](https://velog.io/@hope1053/SSACiOSDay-4-TIL) | [LED Board](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day5_LEDBoard), [newlyCoinedWord](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day5_newlyCoinedWord)
-3 | 2021.10.05 | Baemin Project | Navigation Controller, Tab Bar Controller | [Day6 TIL](https://velog.io/@hope1053/SSACiOSDay-6-TIL) | [Baemin Project](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day6_Baemin)
-4 | 2021.10.06 | Emtion Diary | UserDefaults, Stack View, Tag, Library, Notification Center | [Day7 TIL](https://velog.io/@hope1053/SSACiOSDay-7-TIL) | [Emtion Diary](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day7_EmtionDiary)
+No. | 날짜 | 과제 | 주제 | TIL
+------------ | ------------- | ------------- | ------------- | ------------- 
+1 | 2021.09.30 | [Netflix SignUp](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day4_SignUp) | Stack View, 논리연산 | 
+2 | 2021.10.01 - 10.03 | [LED Board](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day5_LEDBoard), [newlyCoinedWord](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day5_newlyCoinedWord) | Auto Layout, Tap Recognizer, Function | [Day5 TIL](https://velog.io/@hope1053/SSACiOSDay-4-TIL) 
+3 | 2021.10.05 | [Baemin Project](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day6_Baemin) | Navigation Controller, Tab Bar Controller | [Day6 TIL](https://velog.io/@hope1053/SSACiOSDay-6-TIL) 
+4 | 2021.10.06 | [Emtion Diary](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day7_EmtionDiary) | UserDefaults, Stack View, Tag, Library, Notification Center | [Day7 TIL](https://velog.io/@hope1053/SSACiOSDay-7-TIL)
 
 <br>
 
