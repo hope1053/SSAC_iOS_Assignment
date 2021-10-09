@@ -13,7 +13,10 @@
 		CBA3CDD82710609E00ED782B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBA3CDD72710609E00ED782B /* Assets.xcassets */; };
 		CBA3CDDB2710609E00ED782B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBA3CDD92710609E00ED782B /* LaunchScreen.storyboard */; };
 		CBA3CDE32710617A00ED782B /* drinkWaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA3CDE22710617A00ED782B /* drinkWaterViewController.swift */; };
-		CBA3CDE62710649B00ED782B /* TextFieldEffects in Frameworks */ = {isa = PBXBuildFile; productRef = CBA3CDE52710649B00ED782B /* TextFieldEffects */; };
+		CBA3CDE82710817100ED782B /* personalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA3CDE72710817100ED782B /* personalInfoViewController.swift */; };
+		CBA3CDEA2710864600ED782B /* personalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA3CDE92710864600ED782B /* personalData.swift */; };
+		CBA3CDF0271088E700ED782B /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CBA3CDEF271088E700ED782B /* IQKeyboardManagerSwift */; };
+		CBA3CDF3271088F800ED782B /* TextFieldEffects in Frameworks */ = {isa = PBXBuildFile; productRef = CBA3CDF2271088F800ED782B /* TextFieldEffects */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,8 @@
 		CBA3CDDA2710609E00ED782B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBA3CDDC2710609E00ED782B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBA3CDE22710617A00ED782B /* drinkWaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drinkWaterViewController.swift; sourceTree = "<group>"; };
+		CBA3CDE72710817100ED782B /* personalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personalInfoViewController.swift; sourceTree = "<group>"; };
+		CBA3CDE92710864600ED782B /* personalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personalData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,7 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBA3CDE62710649B00ED782B /* TextFieldEffects in Frameworks */,
+				CBA3CDF0271088E700ED782B /* IQKeyboardManagerSwift in Frameworks */,
+				CBA3CDF3271088F800ED782B /* TextFieldEffects in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +71,8 @@
 				CBA3CDDC2710609E00ED782B /* Info.plist */,
 				CBA3CDD42710609B00ED782B /* DrinkWater.storyboard */,
 				CBA3CDE22710617A00ED782B /* drinkWaterViewController.swift */,
+				CBA3CDE72710817100ED782B /* personalInfoViewController.swift */,
+				CBA3CDE92710864600ED782B /* personalData.swift */,
 			);
 			path = SSAC_Day9_DrinkWater;
 			sourceTree = "<group>";
@@ -86,7 +94,8 @@
 			);
 			name = SSAC_Day9_DrinkWater;
 			packageProductDependencies = (
-				CBA3CDE52710649B00ED782B /* TextFieldEffects */,
+				CBA3CDEF271088E700ED782B /* IQKeyboardManagerSwift */,
+				CBA3CDF2271088F800ED782B /* TextFieldEffects */,
 			);
 			productName = SSAC_Day9_DrinkWater;
 			productReference = CBA3CDCB2710609B00ED782B /* SSAC_Day9_DrinkWater.app */;
@@ -117,7 +126,8 @@
 			);
 			mainGroup = CBA3CDC22710609A00ED782B;
 			packageReferences = (
-				CBA3CDE42710649B00ED782B /* XCRemoteSwiftPackageReference "TextFieldEffects" */,
+				CBA3CDEE271088E700ED782B /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				CBA3CDF1271088F800ED782B /* XCRemoteSwiftPackageReference "TextFieldEffects" */,
 			);
 			productRefGroup = CBA3CDCC2710609B00ED782B /* Products */;
 			projectDirPath = "";
@@ -146,9 +156,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBA3CDE82710817100ED782B /* personalInfoViewController.swift in Sources */,
 				CBA3CDCF2710609B00ED782B /* AppDelegate.swift in Sources */,
 				CBA3CDD12710609B00ED782B /* SceneDelegate.swift in Sources */,
 				CBA3CDE32710617A00ED782B /* drinkWaterViewController.swift in Sources */,
+				CBA3CDEA2710864600ED782B /* personalData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,20 +384,33 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CBA3CDE42710649B00ED782B /* XCRemoteSwiftPackageReference "TextFieldEffects" */ = {
+		CBA3CDEE271088E700ED782B /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		CBA3CDF1271088F800ED782B /* XCRemoteSwiftPackageReference "TextFieldEffects" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/raulriera/TextFieldEffects.git";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CBA3CDE52710649B00ED782B /* TextFieldEffects */ = {
+		CBA3CDEF271088E700ED782B /* IQKeyboardManagerSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CBA3CDE42710649B00ED782B /* XCRemoteSwiftPackageReference "TextFieldEffects" */;
+			package = CBA3CDEE271088E700ED782B /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		CBA3CDF2271088F800ED782B /* TextFieldEffects */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CBA3CDF1271088F800ED782B /* XCRemoteSwiftPackageReference "TextFieldEffects" */;
 			productName = TextFieldEffects;
 		};
 /* End XCSwiftPackageProductDependency section */
