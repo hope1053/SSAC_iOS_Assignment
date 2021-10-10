@@ -9,21 +9,24 @@
 /* Begin PBXBuildFile section */
 		CB82063E27132ACD00D41AF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82063D27132ACD00D41AF1 /* AppDelegate.swift */; };
 		CB82064027132ACD00D41AF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82063F27132ACD00D41AF1 /* SceneDelegate.swift */; };
-		CB82064227132ACD00D41AF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82064127132ACD00D41AF1 /* ViewController.swift */; };
-		CB82064527132ACD00D41AF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB82064327132ACD00D41AF1 /* Main.storyboard */; };
+		CB82064227132ACD00D41AF1 /* drinkWaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82064127132ACD00D41AF1 /* drinkWaterViewController.swift */; };
+		CB82064527132ACD00D41AF1 /* drinkWater.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB82064327132ACD00D41AF1 /* drinkWater.storyboard */; };
 		CB82064727132ACF00D41AF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB82064627132ACF00D41AF1 /* Assets.xcassets */; };
 		CB82064A27132ACF00D41AF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB82064827132ACF00D41AF1 /* LaunchScreen.storyboard */; };
+		CBA1D2872713426000E2DCB8 /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA1D2862713426000E2DCB8 /* detailViewController.swift */; };
+		CBA1D28D2713441000E2DCB8 /* TextFieldEffects in Frameworks */ = {isa = PBXBuildFile; productRef = CBA1D28C2713441000E2DCB8 /* TextFieldEffects */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CB82063A27132ACD00D41AF1 /* SSAC_Day9_DrinkWater(UserDefaults).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SSAC_Day9_DrinkWater(UserDefaults).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB82063D27132ACD00D41AF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB82063F27132ACD00D41AF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CB82064127132ACD00D41AF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CB82064427132ACD00D41AF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB82064127132ACD00D41AF1 /* drinkWaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drinkWaterViewController.swift; sourceTree = "<group>"; };
+		CB82064427132ACD00D41AF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/drinkWater.storyboard; sourceTree = "<group>"; };
 		CB82064627132ACF00D41AF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB82064927132ACF00D41AF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB82064B27132ACF00D41AF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBA1D2862713426000E2DCB8 /* detailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBA1D28D2713441000E2DCB8 /* TextFieldEffects in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,11 +62,12 @@
 			children = (
 				CB82063D27132ACD00D41AF1 /* AppDelegate.swift */,
 				CB82063F27132ACD00D41AF1 /* SceneDelegate.swift */,
-				CB82064127132ACD00D41AF1 /* ViewController.swift */,
-				CB82064327132ACD00D41AF1 /* Main.storyboard */,
+				CB82064127132ACD00D41AF1 /* drinkWaterViewController.swift */,
+				CB82064327132ACD00D41AF1 /* drinkWater.storyboard */,
 				CB82064627132ACF00D41AF1 /* Assets.xcassets */,
 				CB82064827132ACF00D41AF1 /* LaunchScreen.storyboard */,
 				CB82064B27132ACF00D41AF1 /* Info.plist */,
+				CBA1D2862713426000E2DCB8 /* detailViewController.swift */,
 			);
 			path = "SSAC_Day9_DrinkWater(UserDefaults)";
 			sourceTree = "<group>";
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = "SSAC_Day9_DrinkWater(UserDefaults)";
+			packageProductDependencies = (
+				CBA1D28C2713441000E2DCB8 /* TextFieldEffects */,
+			);
 			productName = "SSAC_Day9_DrinkWater(UserDefaults)";
 			productReference = CB82063A27132ACD00D41AF1 /* SSAC_Day9_DrinkWater(UserDefaults).app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = CB82063127132ACD00D41AF1;
+			packageReferences = (
+				CBA1D28B2713441000E2DCB8 /* XCRemoteSwiftPackageReference "TextFieldEffects" */,
+			);
 			productRefGroup = CB82063B27132ACD00D41AF1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +138,7 @@
 			files = (
 				CB82064A27132ACF00D41AF1 /* LaunchScreen.storyboard in Resources */,
 				CB82064727132ACF00D41AF1 /* Assets.xcassets in Resources */,
-				CB82064527132ACD00D41AF1 /* Main.storyboard in Resources */,
+				CB82064527132ACD00D41AF1 /* drinkWater.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,21 +149,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB82064227132ACD00D41AF1 /* ViewController.swift in Sources */,
+				CB82064227132ACD00D41AF1 /* drinkWaterViewController.swift in Sources */,
 				CB82063E27132ACD00D41AF1 /* AppDelegate.swift in Sources */,
 				CB82064027132ACD00D41AF1 /* SceneDelegate.swift in Sources */,
+				CBA1D2872713426000E2DCB8 /* detailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CB82064327132ACD00D41AF1 /* Main.storyboard */ = {
+		CB82064327132ACD00D41AF1 /* drinkWater.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				CB82064427132ACD00D41AF1 /* Base */,
 			);
-			name = Main.storyboard;
+			name = drinkWater.storyboard;
 			sourceTree = "<group>";
 		};
 		CB82064827132ACF00D41AF1 /* LaunchScreen.storyboard */ = {
@@ -294,7 +306,7 @@
 				INFOPLIST_FILE = "SSAC_Day9_DrinkWater(UserDefaults)/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = drinkWater;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,7 +334,7 @@
 				INFOPLIST_FILE = "SSAC_Day9_DrinkWater(UserDefaults)/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = drinkWater;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -360,6 +372,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CBA1D28B2713441000E2DCB8 /* XCRemoteSwiftPackageReference "TextFieldEffects" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/raulriera/TextFieldEffects.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CBA1D28C2713441000E2DCB8 /* TextFieldEffects */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CBA1D28B2713441000E2DCB8 /* XCRemoteSwiftPackageReference "TextFieldEffects" */;
+			productName = TextFieldEffects;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CB82063227132ACD00D41AF1 /* Project object */;
 }
