@@ -20,8 +20,6 @@ class detailViewController: UIViewController {
         setUIColor()
         setLabelText()
         setExtra()
-//        NotificationCenter.default.addObserver(self, selector: #selector(adjustForKeyboard), name: UIResponder.keyboardWillShowNotification, object: nil)
-//        NotificationCenter.default.addObserver(self, selector: #selector(adjustForKeyboard), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     func setUIColor() {
