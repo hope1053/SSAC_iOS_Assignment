@@ -155,18 +155,3 @@ class detailViewController: UIViewController {
         view.endEditing(true)
     }
 }
-
-//extension drinkWaterViewController {
-//    @objc private func adjustForKeyboard(noti: Notification) {
-//        guard let userInfo = noti.userInfo else { return }
-//        guard let keyboardFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else { return }
-//
-//        if noti.name == UIResponder.keyboardWillShowNotification {
-//            let adjustmentHeight = keyboardFrame.height - view.safeAreaInsets.bottom
-//            topConstant.constant = -adjustmentHeight
-//        } else {
-//            topConstant.constant = 0
-//        }
-//    }
-//}
-

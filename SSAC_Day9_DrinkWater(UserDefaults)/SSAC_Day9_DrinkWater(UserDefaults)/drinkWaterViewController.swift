@@ -31,6 +31,12 @@ class drinkWaterViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setLabelText()
+        prepareForAnimation()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        showAnimation()
     }
     
     func setData() {
@@ -142,6 +148,7 @@ class drinkWaterViewController: UIViewController {
             UserDefaults.standard.set(0, forKey: "drankWater")
             self.setLabelText()
             self.setExtra()
+            self.setUIColor()
         })
         let cancel = UIAlertAction(title: "아니오", style: .cancel)
         
@@ -180,4 +187,50 @@ class drinkWaterViewController: UIViewController {
         setLabelText()
         setExtra()
     }
+    
+    func prepareForAnimation() {
+        defaultText.alpha = 0
+        drankWaterLabel.alpha = 0
+        successPercentageLabel.alpha = 0
+        currentLevelImage.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
+    }
+    
+    func showAnimation() {
+        UIView.animate(
+            withDuration: 0.8,
+                   delay: 0,
+                   options: .allowUserInteraction,
+                   animations: {
+                       self.defaultText.alpha = 1
+               },
+                   completion: nil)
+        
+        UIView.animate(
+            withDuration: 0.5,
+                   delay: 0.8,
+                   options: .allowUserInteraction,
+                   animations: {
+                       self.drankWaterLabel.alpha = 1
+               },
+                   completion: nil)
+        
+        UIView.animate(
+            withDuration: 0.5,
+            delay: 1.3,
+                   options: .allowUserInteraction,
+                   animations: {
+                       self.successPercentageLabel.alpha = 1
+               },
+                   completion: nil)
+        
+        UIView.animate(
+            withDuration: 1,
+            delay: 0,
+            options: [.repeat, .allowUserInteraction, .autoreverse],
+                   animations: {
+                       self.currentLevelImage.transform = CGAffineTransform.identity
+               },
+                   completion: nil)
+    }
 }
+
