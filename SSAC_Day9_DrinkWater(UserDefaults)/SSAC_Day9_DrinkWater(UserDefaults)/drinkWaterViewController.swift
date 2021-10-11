@@ -22,8 +22,6 @@ class drinkWaterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        NotificationCenter.default.addObserver(self, selector: #selector(adjustForKeyboard), name: UIResponder.keyboardWillShowNotification, object: nil)
-//        NotificationCenter.default.addObserver(self, selector: #selector(adjustForKeyboard), name: UIResponder.keyboardWillHideNotification, object: nil)
         setData()
         setUIColor()
         setLabelText()
@@ -32,8 +30,6 @@ class drinkWaterViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print(UserDefaults.standard.double(forKey: "weight"))
-        print(UserDefaults.standard.double(forKey: "height"))
         setLabelText()
     }
     
@@ -62,6 +58,10 @@ class drinkWaterViewController: UIViewController {
         
         addWaterButton.tintColor = .black
         addWaterButton.backgroundColor = .white
+        
+        if UserDefaults.standard.double(forKey: "drankWater") >= UserDefaults.standard.double(forKey: "totalWater") {
+            drankWaterLabel.textColor = UIColor(red: 0/255, green: 255/255, blue: 0/255, alpha: 1)
+        }
     }
     
     func setLabelText() {
@@ -69,7 +69,6 @@ class drinkWaterViewController: UIViewController {
         
         let drankWater = UserDefaults.standard.double(forKey: "drankWater")
         let totalWater = UserDefaults.standard.double(forKey: "totalWater")
-        print(totalWater)
         let name = UserDefaults.standard.string(forKey: "name")
         
         ml.text = "ml"
@@ -177,22 +176,8 @@ class drinkWaterViewController: UIViewController {
         
         UserDefaults.standard.set(currentWater + addedDoubleWater, forKey: "drankWater")
         drankWaterTextField.text = ""
+        setUIColor()
         setLabelText()
         setExtra()
     }
 }
-
-//extension drinkWaterViewController {
-//    @objc private func adjustForKeyboard(noti: Notification) {
-//        guard let userInfo = noti.userInfo else { return }
-//        guard let keyboardFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else { return }
-//
-//        if noti.name == UIResponder.keyboardWillShowNotification {
-//            let adjustmentHeight = keyboardFrame.height - view.safeAreaInsets.bottom
-//            topConstant.constant = -adjustmentHeight
-//        } else {
-//            topConstant.constant = 0
-//        }
-//    }
-//}
-

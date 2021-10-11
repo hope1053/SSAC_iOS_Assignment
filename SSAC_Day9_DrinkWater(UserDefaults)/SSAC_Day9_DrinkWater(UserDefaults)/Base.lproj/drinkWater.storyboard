@@ -35,13 +35,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4tC-e7-AxP">
-                                <rect key="frame" x="87" y="355" width="240" height="240"/>
+                                <rect key="frame" x="87" y="259.5" width="240" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="4tC-e7-AxP" secondAttribute="height" multiplier="1:1" id="vnR-S0-0Fu"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7h2-l6-Vcx">
-                                <rect key="frame" x="155.5" y="617" width="103.5" height="34"/>
+                                <rect key="frame" x="155.5" y="521.5" width="103.5" height="34"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="feF-JE-72n">
                                         <rect key="frame" x="0.0" y="0.0" width="62" height="34"/>
@@ -85,7 +85,6 @@
                             <constraint firstItem="Taj-2Z-WkG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9wo-TU-Deh"/>
                             <constraint firstItem="4tC-e7-AxP" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.57971" id="AaA-Yd-qHr"/>
                             <constraint firstItem="FNv-EZ-VAJ" firstAttribute="leading" secondItem="0DS-ph-70v" secondAttribute="leading" id="B84-kT-LDI"/>
-                            <constraint firstItem="4tC-e7-AxP" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="EoZ-he-nTi"/>
                             <constraint firstItem="3xO-pn-aFx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Hug-zr-wMx"/>
                             <constraint firstItem="2Hy-jT-HDP" firstAttribute="top" secondItem="Taj-2Z-WkG" secondAttribute="bottom" constant="5" id="P5Z-7i-oV9"/>
                             <constraint firstItem="7h2-l6-Vcx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="PYV-fp-MRy"/>
@@ -97,6 +96,7 @@
                             <constraint firstItem="2Hy-jT-HDP" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0926339" id="jfc-1m-sKC"/>
                             <constraint firstItem="7h2-l6-Vcx" firstAttribute="top" secondItem="4tC-e7-AxP" secondAttribute="bottom" constant="22" id="q00-uV-nTt"/>
                             <constraint firstItem="3xO-pn-aFx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="qPa-Bh-pCv"/>
+                            <constraint firstItem="4tC-e7-AxP" firstAttribute="top" secondItem="FNv-EZ-VAJ" secondAttribute="bottom" constant="80" id="teQ-t8-q2s"/>
                             <constraint firstItem="4tC-e7-AxP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="uVZ-gL-xOr"/>
                             <constraint firstItem="0DS-ph-70v" firstAttribute="top" secondItem="3xO-pn-aFx" secondAttribute="bottom" id="vHH-sC-x2a"/>
                         </constraints>

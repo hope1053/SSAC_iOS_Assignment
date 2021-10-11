@@ -15,6 +15,7 @@
 		CB82064A27132ACF00D41AF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB82064827132ACF00D41AF1 /* LaunchScreen.storyboard */; };
 		CBA1D2872713426000E2DCB8 /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA1D2862713426000E2DCB8 /* detailViewController.swift */; };
 		CBA1D28D2713441000E2DCB8 /* TextFieldEffects in Frameworks */ = {isa = PBXBuildFile; productRef = CBA1D28C2713441000E2DCB8 /* TextFieldEffects */; };
+		CBA1D2932713D1C800E2DCB8 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CBA1D2922713D1C800E2DCB8 /* IQKeyboardManagerSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBA1D28D2713441000E2DCB8 /* TextFieldEffects in Frameworks */,
+				CBA1D2932713D1C800E2DCB8 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +92,7 @@
 			name = "SSAC_Day9_DrinkWater(UserDefaults)";
 			packageProductDependencies = (
 				CBA1D28C2713441000E2DCB8 /* TextFieldEffects */,
+				CBA1D2922713D1C800E2DCB8 /* IQKeyboardManagerSwift */,
 			);
 			productName = "SSAC_Day9_DrinkWater(UserDefaults)";
 			productReference = CB82063A27132ACD00D41AF1 /* SSAC_Day9_DrinkWater(UserDefaults).app */;
@@ -121,6 +124,7 @@
 			mainGroup = CB82063127132ACD00D41AF1;
 			packageReferences = (
 				CBA1D28B2713441000E2DCB8 /* XCRemoteSwiftPackageReference "TextFieldEffects" */,
+				CBA1D2912713D1C800E2DCB8 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = CB82063B27132ACD00D41AF1 /* Products */;
 			projectDirPath = "";
@@ -382,6 +386,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		CBA1D2912713D1C800E2DCB8 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -389,6 +401,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CBA1D28B2713441000E2DCB8 /* XCRemoteSwiftPackageReference "TextFieldEffects" */;
 			productName = TextFieldEffects;
+		};
+		CBA1D2922713D1C800E2DCB8 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CBA1D2912713D1C800E2DCB8 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

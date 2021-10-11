@@ -20,7 +20,8 @@ class detailViewController: UIViewController {
         setUIColor()
         setLabelText()
         setExtra()
-        // Do any additional setup after loading the view.
+//        NotificationCenter.default.addObserver(self, selector: #selector(adjustForKeyboard), name: UIResponder.keyboardWillShowNotification, object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(adjustForKeyboard), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     func setUIColor() {
@@ -48,8 +49,8 @@ class detailViewController: UIViewController {
         self.navigationItem.rightBarButtonItem?.title = "저장"
         
         nickNameField.placeholder = "닉네임을 설정해주세요."
-        heightField.placeholder = "키를 설정해주세요."
-        weightField.placeholder = "몸무게를 설정해주세요."
+        heightField.placeholder = "키(cm)를 설정해주세요."
+        weightField.placeholder = "몸무게(kg)를 설정해주세요."
         
         nickNameField.text = UserDefaults.standard.string(forKey: "name")
         heightField.text = "\(Int(UserDefaults.standard.double(forKey: "height")))"
@@ -86,12 +87,16 @@ class detailViewController: UIViewController {
         }
         
         nickNameField.borderStyle = .none
-        weightField.borderStyle = .none
         heightField.borderStyle = .none
+        weightField.borderStyle = .none
+        
+        nickNameField.font = .systemFont(ofSize: 15, weight: .light)
+        heightField.font = .systemFont(ofSize: 15, weight: .light)
+        weightField.font = .systemFont(ofSize: 15, weight: .light)
     }
 
     @IBAction func saveButtonTapped(_ sender: UIBarButtonItem) {
-        guard let changedName = nickNameField.text else {
+        if nickNameField.text == "" {
             let alert = UIAlertController(title: "내용을 입력해주세요!", message: nil, preferredStyle: .alert)
             let ok = UIAlertAction(title: "넵!", style: .default, handler: nil)
             alert.addAction(ok)
@@ -99,7 +104,7 @@ class detailViewController: UIViewController {
             return
         }
         
-        guard let changedHeight = heightField.text else {
+        if heightField.text == "" {
             let alert = UIAlertController(title: "내용을 입력해주세요!", message: nil, preferredStyle: .alert)
             let ok = UIAlertAction(title: "넵!", style: .default, handler: nil)
             alert.addAction(ok)
@@ -107,7 +112,7 @@ class detailViewController: UIViewController {
             return
         }
         
-        guard let changedDoubleHeight = Double(changedHeight) else {
+        guard let changedDoubleHeight = Double(heightField.text!) else {
             let alert = UIAlertController(title: "키와 몸무게 칸에는 숫자만  입력해주세요!", message: nil, preferredStyle: .alert)
             let ok = UIAlertAction(title: "넵!", style: .default, handler: { _ in
                 self.heightField.text = ""
@@ -117,7 +122,7 @@ class detailViewController: UIViewController {
             return
         }
         
-        guard let changedWeight = weightField.text else {
+        if weightField.text == "" {
             let alert = UIAlertController(title: "내용을 입력해주세요!", message: nil, preferredStyle: .alert)
             let ok = UIAlertAction(title: "넵!", style: .default, handler: nil)
             alert.addAction(ok)
@@ -125,7 +130,7 @@ class detailViewController: UIViewController {
             return
         }
         
-        guard let changedDoubleWeight = Double(changedWeight) else {
+        guard let changedDoubleWeight = Double(weightField.text!) else {
             let alert = UIAlertController(title: "키와 몸무게 칸에는 숫자만  입력해주세요!", message: nil, preferredStyle: .alert)
             let ok = UIAlertAction(title: "넵!", style: .default, handler: { _ in
                 self.heightField.text = ""
@@ -140,7 +145,7 @@ class detailViewController: UIViewController {
         alert.addAction(ok)
         present(alert, animated: true, completion: nil)
         
-        UserDefaults.standard.set(changedName, forKey: "name")
+        UserDefaults.standard.set(nickNameField.text, forKey: "name")
         UserDefaults.standard.set(changedDoubleHeight, forKey: "height")
         UserDefaults.standard.set(changedDoubleWeight, forKey: "weight")
         UserDefaults.standard.set((changedDoubleWeight + changedDoubleHeight) * 10, forKey: "totalWater")
@@ -150,3 +155,18 @@ class detailViewController: UIViewController {
         view.endEditing(true)
     }
 }
+
+//extension drinkWaterViewController {
+//    @objc private func adjustForKeyboard(noti: Notification) {
+//        guard let userInfo = noti.userInfo else { return }
+//        guard let keyboardFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else { return }
+//
+//        if noti.name == UIResponder.keyboardWillShowNotification {
+//            let adjustmentHeight = keyboardFrame.height - view.safeAreaInsets.bottom
+//            topConstant.constant = -adjustmentHeight
+//        } else {
+//            topConstant.constant = 0
+//        }
+//    }
+//}
+
