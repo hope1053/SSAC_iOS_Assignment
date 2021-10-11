@@ -11,12 +11,6 @@
         <!--Drink Water View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="q4Z-OK-g7S">
-                    <connections>
-                        <action selector="BGTapped:" destination="BYZ-38-t0r" id="s93-tg-D86"/>
-                    </connections>
-                </tapGestureRecognizer>
                 <viewController id="BYZ-38-t0r" customClass="drinkWaterViewController" customModule="SSAC_Day9_DrinkWater_UserDefaults_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -133,6 +127,12 @@
                         <outlet property="successPercentageLabel" destination="FNv-EZ-VAJ" id="d2c-32-zXT"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="q4Z-OK-g7S">
+                    <connections>
+                        <action selector="BGTapped:" destination="BYZ-38-t0r" id="s93-tg-D86"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="103.79464285714285"/>
         </scene>
@@ -238,6 +238,17 @@
             <point key="canvasLocation" x="137.68115942028987" y="103.79464285714285"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="egi-V7-cx5">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+        <designable name="pSl-1G-Nao">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+        <designable name="spi-yD-81D">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+    </designables>
     <resources>
         <image name="arrow.clockwise" catalog="system" width="115" height="128"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
