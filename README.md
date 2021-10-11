@@ -8,7 +8,7 @@ No. | 날짜 | 과제 | 주제 | TIL
 3 | 2021.10.05 | [Baemin Project](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day6_Baemin) | Navigation Controller, Tab Bar Controller | [Day6 TIL](https://velog.io/@hope1053/SSACiOSDay-6-TIL) 
 4 | 2021.10.06 | [Emtion Diary](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day7_EmtionDiary) | UserDefaults, Stack View, Tag, Library, Notification Center | [Day7 TIL](https://velog.io/@hope1053/SSACiOSDay-7-TIL)
 5 | 2021.10.07 | [Anniversary Calculator](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day8_anniversaryCalculator ) | Date Picker | [Day8 TIL](https://velog.io/@hope1053/SSACiOSDay-8-TIL)
-6 | 2021.10.08 | [Drink Water](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day9_DrinkWater(UserDefaults)) | | [Day9 TIL](https://velog.io/@hope1053/SSACiOSDay-9-TIL)
+6 | 2021.10.08 - 10.11 | [Drink Water](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day9_DrinkWater(UserDefaults)) | | [Day9 TIL](https://velog.io/@hope1053/SSACiOSDay-9-TIL)
 
 <br>
 
