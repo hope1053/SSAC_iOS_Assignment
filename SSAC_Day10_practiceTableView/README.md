@@ -1,4 +1,5 @@
 ## Practice Table View Controller
+<img src="https://user-images.githubusercontent.com/22907483/136952807-d1392b97-a746-4031-aee9-a595cf773f40.PNG" width=30%>  <img src="https://user-images.githubusercontent.com/22907483/136952828-6725ea9e-8277-4dbc-8d6e-af44f1e41cde.PNG" width=30%>  
 ### Static Cells
 스토리보드 인스펙터 창을 활용하여 섹션을 추가하고 각 섹션별 row의 갯수도 설정해주었다.  
 각 row의 타입도 Basic, Right Detail, Subtitle 등등 다양하게 설정하여 원하는대로 디자인할 수 있었다.  
