@@ -10,6 +10,7 @@ No. | 날짜 | 과제 | 주제 | TIL
 5 | 2021.10.07 | [Anniversary Calculator](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day8_anniversaryCalculator ) | Date Picker | [Day8 TIL](https://velog.io/@hope1053/SSACiOSDay-8-TIL)
 6 | 2021.10.08 - 10.11 | [Drink Water](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day9_DrinkWater(UserDefaults)) | UserDefaults, Animation | [Day9 TIL](https://velog.io/@hope1053/SSACiOSDay-9-TIL)
 7 | 2021.10.12 | [Practice Table View Controller](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day10_practiceTableView) | TableViewController | [Day10 TIL](https://velog.io/@hope1053/SSACiOSDay-10-TIL)
+8 | 2021.10.13 | | | [Day11 TIL](https://velog.io/@hope1053/SSACiOSDay-11-TIL)
 
 <br>
 
