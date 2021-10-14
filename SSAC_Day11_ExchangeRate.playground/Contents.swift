@@ -1,7 +1,5 @@
 import UIKit
 
-var greeting = "Hello, playground"
-
 struct ExchangeRate {
     var currencyRate: Double {
         willSet {
