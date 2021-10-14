@@ -11,6 +11,7 @@ No. | 날짜 | 과제 | 주제 | TIL
 6 | 2021.10.08 - 10.11 | [Drink Water](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day9_DrinkWater(UserDefaults)) | UserDefaults, Animation | [Day9 TIL](https://velog.io/@hope1053/SSACiOSDay-9-TIL)
 7 | 2021.10.12 | [Practice Table View Controller](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day10_practiceTableView) | TableViewController | [Day10 TIL](https://velog.io/@hope1053/SSACiOSDay-10-TIL)
 8 | 2021.10.13 | [Shopping List](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day11_ShoppingList) | UserDefaults, CustomTableViewCell | [Day11 TIL](https://velog.io/@hope1053/SSACiOSDay-11-TIL)
+9 | 2021.10.14 | | | [Day12 TIL](https://velog.io/@hope1053/SSACiOSDay-12-TIL)
 
 <br>
 
