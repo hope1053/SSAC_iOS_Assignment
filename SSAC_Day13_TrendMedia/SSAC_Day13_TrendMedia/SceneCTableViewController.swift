@@ -33,7 +33,12 @@ class SceneCTableViewController: UITableViewController {
         
         cell.nameLabel.text = starringList[indexPath.row]
         cell.castImageView.image = UIImage(named: tvShowName!)
+        cell.castImageView.layer.cornerRadius = 10
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UIScreen.main.bounds.height / 10
     }
 }
