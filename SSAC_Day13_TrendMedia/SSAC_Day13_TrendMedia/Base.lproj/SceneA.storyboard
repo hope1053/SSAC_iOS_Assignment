@@ -256,7 +256,11 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="TREND MEDIA" id="iAg-Ao-TCq">
                         <barButtonItem key="leftBarButtonItem" image="list.bullet" catalog="system" id="qZf-hn-1ag"/>
-                        <barButtonItem key="rightBarButtonItem" image="magnifyingglass" catalog="system" id="vNz-71-8NL"/>
+                        <barButtonItem key="rightBarButtonItem" image="magnifyingglass" catalog="system" id="vNz-71-8NL">
+                            <connections>
+                                <action selector="searchButtonTapped:" destination="ncT-Uf-UD9" id="koU-MH-FPo"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableHeaderView" destination="OJb-pT-isX" id="Ac2-eW-13g"/>

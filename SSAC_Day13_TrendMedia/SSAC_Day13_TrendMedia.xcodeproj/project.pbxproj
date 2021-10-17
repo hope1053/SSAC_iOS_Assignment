@@ -11,6 +11,8 @@
 		CB0D9468271BF8F7004D3FDF /* SceneC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB0D9467271BF8F7004D3FDF /* SceneC.storyboard */; };
 		CB0D946A271BF93D004D3FDF /* SceneCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0D9469271BF93D004D3FDF /* SceneCTableViewCell.swift */; };
 		CB0D946C271BF94F004D3FDF /* SceneCTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0D946B271BF94F004D3FDF /* SceneCTableViewController.swift */; };
+		CB0D946E271C1485004D3FDF /* SceneB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB0D946D271C1485004D3FDF /* SceneB.storyboard */; };
+		CB0D9470271C149E004D3FDF /* SceneBTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0D946F271C149E004D3FDF /* SceneBTableViewController.swift */; };
 		CB986074271B205300F6580C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB986073271B205300F6580C /* AppDelegate.swift */; };
 		CB986076271B205300F6580C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB986075271B205300F6580C /* SceneDelegate.swift */; };
 		CB98607B271B205300F6580C /* SceneA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB986079271B205300F6580C /* SceneA.storyboard */; };
@@ -27,6 +29,8 @@
 		CB0D9467271BF8F7004D3FDF /* SceneC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SceneC.storyboard; sourceTree = "<group>"; };
 		CB0D9469271BF93D004D3FDF /* SceneCTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCTableViewCell.swift; sourceTree = "<group>"; };
 		CB0D946B271BF94F004D3FDF /* SceneCTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCTableViewController.swift; sourceTree = "<group>"; };
+		CB0D946D271C1485004D3FDF /* SceneB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SceneB.storyboard; sourceTree = "<group>"; };
+		CB0D946F271C149E004D3FDF /* SceneBTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneBTableViewController.swift; sourceTree = "<group>"; };
 		CB986070271B205300F6580C /* SSAC_Day13_TrendMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSAC_Day13_TrendMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB986073271B205300F6580C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB986075271B205300F6580C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 				CB986079271B205300F6580C /* SceneA.storyboard */,
 				CB98608B271BE3C000F6580C /* SceneATableViewController.swift */,
 				CB98608D271BE43200F6580C /* SceneATableViewCell.swift */,
+				CB0D946D271C1485004D3FDF /* SceneB.storyboard */,
+				CB0D946F271C149E004D3FDF /* SceneBTableViewController.swift */,
 				CB0D9467271BF8F7004D3FDF /* SceneC.storyboard */,
 				CB0D946B271BF94F004D3FDF /* SceneCTableViewController.swift */,
 				CB0D9469271BF93D004D3FDF /* SceneCTableViewCell.swift */,
@@ -147,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB986080271B205600F6580C /* LaunchScreen.storyboard in Resources */,
+				CB0D946E271C1485004D3FDF /* SceneB.storyboard in Resources */,
 				CB0D9468271BF8F7004D3FDF /* SceneC.storyboard in Resources */,
 				CB98607D271B205600F6580C /* Assets.xcassets in Resources */,
 				CB98607B271B205300F6580C /* SceneA.storyboard in Resources */,
@@ -164,6 +171,7 @@
 				CB98608C271BE3C000F6580C /* SceneATableViewController.swift in Sources */,
 				CB0D9466271BF465004D3FDF /* UIView+Extension.swift in Sources */,
 				CB986074271B205300F6580C /* AppDelegate.swift in Sources */,
+				CB0D9470271C149E004D3FDF /* SceneBTableViewController.swift in Sources */,
 				CB98608E271BE43200F6580C /* SceneATableViewCell.swift in Sources */,
 				CB0D946C271BF94F004D3FDF /* SceneCTableViewController.swift in Sources */,
 				CB98608A271B21DD00F6580C /* TvShow.swift in Sources */,

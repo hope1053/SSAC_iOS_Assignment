@@ -13,10 +13,6 @@ class SceneCTableViewController: UITableViewController {
         super.viewDidLoad()
     }
     
-    @IBAction func backButtonTapped(_ sender: UIBarButtonItem) {
-        self.navigationController?.popViewController(animated: true)
-    }
-    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2jw-3V-ddf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9R3-7Q-94v">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--출연/제작-->
+        <!--SceneC Table View Controller-->
         <scene sceneID="ZPb-hZ-3x3">
             <objects>
                 <tableViewController storyboardIdentifier="SceneCTableViewController" id="9R3-7Q-94v" customClass="SceneCTableViewController" customModule="SSAC_Day13_TrendMedia" customModuleProvider="target" sceneMemberID="viewController">
@@ -29,38 +29,10 @@
                             <outlet property="delegate" destination="9R3-7Q-94v" id="HQv-LH-pWm"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="출연/제작" id="tpN-ll-zrw">
-                        <barButtonItem key="leftBarButtonItem" title="뒤로" image="chevron.left" catalog="system" id="gbJ-ZL-Lqk">
-                            <connections>
-                                <action selector="backButtonTapped:" destination="9R3-7Q-94v" id="Lz1-og-PTB"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n40-VL-7FS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2071.0144927536235" y="-49.553571428571423"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="PvI-jO-Wqb">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2jw-3V-ddf" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fJv-8Y-kZb">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="9R3-7Q-94v" kind="relationship" relationship="rootViewController" id="hlc-Wp-mzA"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RD2-xP-owM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1160.8695652173915" y="-49.553571428571423"/>
-        </scene>
     </scenes>
-    <resources>
-        <image name="chevron.left" catalog="system" width="96" height="128"/>
-    </resources>
 </document>

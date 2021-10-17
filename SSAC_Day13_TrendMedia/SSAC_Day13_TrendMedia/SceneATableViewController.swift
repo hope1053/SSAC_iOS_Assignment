@@ -50,4 +50,13 @@ class SceneATableViewController: UITableViewController {
         
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
+    @IBAction func searchButtonTapped(_ sender: UIBarButtonItem) {
+        let storyboard = UIStoryboard(name: "SceneB", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "SceneBTableViewController") as! SceneBTableViewController
+        let nav = UINavigationController(rootViewController: vc)
+        nav.modalPresentationStyle = .fullScreen
+        self.present(nav, animated: true, completion: nil)
+    }
 }
+
