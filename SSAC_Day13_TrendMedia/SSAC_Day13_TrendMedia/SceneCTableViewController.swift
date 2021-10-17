@@ -9,21 +9,31 @@ import UIKit
 
 class SceneCTableViewController: UITableViewController {
 
+    var starring: String = ""
+    var starringList: [String] = []
+    var tvShowName: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "출연/제작"
+        starringList = starring.components(separatedBy: ", ")
     }
     
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return starringList.count
     }
     
-
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "SceneCCell", for: indexPath) as? SceneCTableViewCell else {
+            return UITableViewCell()
+        }
+        
+        cell.nameLabel.text = starringList[indexPath.row]
+        cell.castImageView.image = UIImage(named: tvShowName!)
+        
+        return cell
+    }
 }

@@ -1,5 +1,5 @@
 //
-//  SceneCTableViewCell.swift
+//  SceneBTableViewCell.swift
 //  SSAC_Day13_TrendMedia
 //
 //  Created by 최혜린 on 2021/10/17.
@@ -7,11 +7,11 @@
 
 import UIKit
 
-class SceneCTableViewCell: UITableViewCell {
-
-    @IBOutlet var castImageView: UIImageView!
-    @IBOutlet var nameLabel: UILabel!
-    @IBOutlet var roleLabel: UILabel!
+class SceneBTableViewCell: UITableViewCell {
+    @IBOutlet var posterImageView: UIImageView!
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var releaseDate: UILabel!
+    @IBOutlet var overview: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

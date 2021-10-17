@@ -43,7 +43,7 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OJb-pT-isX">
-                                    <rect key="frame" x="20" y="88.5" width="374" height="116"/>
+                                    <rect key="frame" x="20" y="98.5" width="374" height="116"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="TkL-nq-oCc">
                                             <rect key="frame" x="20" y="20" width="334" height="76"/>
@@ -95,7 +95,7 @@
                                 <constraint firstItem="OJb-pT-isX" firstAttribute="height" secondItem="8e8-mJ-BRJ" secondAttribute="height" multiplier="0.537815" id="hUX-fP-a98"/>
                                 <constraint firstItem="cZV-oN-RwF" firstAttribute="centerX" secondItem="8e8-mJ-BRJ" secondAttribute="centerX" id="ith-gj-epY"/>
                                 <constraint firstItem="oTB-iZ-Ze5" firstAttribute="height" secondItem="8e8-mJ-BRJ" secondAttribute="height" multiplier="0.571429" id="msc-yd-DlT"/>
-                                <constraint firstItem="OJb-pT-isX" firstAttribute="top" secondItem="oTB-iZ-Ze5" secondAttribute="bottom" constant="-35" id="wvG-iI-fm6"/>
+                                <constraint firstItem="OJb-pT-isX" firstAttribute="top" secondItem="oTB-iZ-Ze5" secondAttribute="bottom" constant="-25" id="wvG-iI-fm6"/>
                             </constraints>
                         </view>
                         <prototypes>
@@ -107,7 +107,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09/17/2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1n-q7-KpU">
-                                            <rect key="frame" x="20" y="10" width="61" height="14.5"/>
+                                            <rect key="frame" x="20" y="15" width="61" height="14.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="14.5" id="ut0-4Z-Ue5"/>
                                             </constraints>
@@ -116,13 +116,13 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#Mystery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWX-T2-yl3">
-                                            <rect key="frame" x="20" y="26.5" width="103" height="27.5"/>
+                                            <rect key="frame" x="20" y="31.5" width="103" height="27.5"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qB9-Ou-DJ1">
-                                            <rect key="frame" x="20" y="64" width="374" height="335"/>
+                                            <rect key="frame" x="20" y="69" width="374" height="335"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="squid_game" translatesAutoresizingMaskIntoConstraints="NO" id="JOM-zP-gye">
                                                     <rect key="frame" x="0.0" y="0.0" width="374" height="221"/>
@@ -233,19 +233,19 @@
                                         <constraint firstItem="EWX-T2-yl3" firstAttribute="leading" secondItem="W1n-q7-KpU" secondAttribute="leading" id="ZDD-7E-ydJ"/>
                                         <constraint firstItem="W1n-q7-KpU" firstAttribute="leading" secondItem="a85-FV-GHB" secondAttribute="leading" constant="20" id="jth-JX-pgZ"/>
                                         <constraint firstItem="qB9-Ou-DJ1" firstAttribute="height" secondItem="a85-FV-GHB" secondAttribute="height" multiplier="0.819071" id="oHJ-3h-aPx"/>
-                                        <constraint firstItem="W1n-q7-KpU" firstAttribute="top" secondItem="a85-FV-GHB" secondAttribute="top" constant="10" id="qmv-bJ-Whs"/>
+                                        <constraint firstItem="W1n-q7-KpU" firstAttribute="top" secondItem="a85-FV-GHB" secondAttribute="top" constant="15" id="qmv-bJ-Whs"/>
                                         <constraint firstAttribute="trailing" secondItem="qB9-Ou-DJ1" secondAttribute="trailing" constant="20" id="vvk-fk-fhe"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <connections>
-                                    <outlet property="genre" destination="EWX-T2-yl3" id="JeF-eh-lom"/>
+                                    <outlet property="genreLabel" destination="EWX-T2-yl3" id="JeF-eh-lom"/>
                                     <outlet property="mediaView" destination="qB9-Ou-DJ1" id="0il-Hz-Bjs"/>
-                                    <outlet property="posterImage" destination="JOM-zP-gye" id="nNK-Iv-kRa"/>
-                                    <outlet property="rate" destination="83g-LN-OgJ" id="ZMh-xZ-RJV"/>
+                                    <outlet property="posterImageView" destination="JOM-zP-gye" id="nNK-Iv-kRa"/>
+                                    <outlet property="rateLabel" destination="83g-LN-OgJ" id="ZMh-xZ-RJV"/>
                                     <outlet property="releaseDate" destination="W1n-q7-KpU" id="L2g-cL-jCe"/>
                                     <outlet property="starring" destination="iG1-G0-zcf" id="cOf-6X-qsU"/>
-                                    <outlet property="title" destination="H9R-VK-SrB" id="DgC-0E-fAM"/>
+                                    <outlet property="titleLabel" destination="H9R-VK-SrB" id="DgC-0E-fAM"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

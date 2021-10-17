@@ -9,6 +9,8 @@ import UIKit
 
 class SceneBTableViewController: UITableViewController {
 
+    let tvShowInformation = TvShowInformation()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,11 +26,20 @@ class SceneBTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 10
+        return tvShowInformation.tvShow.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SceneBCell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "SceneBCell", for: indexPath) as? SceneBTableViewCell else {
+            return UITableViewCell()
+        }
+        
+        let data = tvShowInformation.tvShow[indexPath.row]
+        cell.posterImageView.image = UIImage(named: data.title)
+        cell.titleLabel.text = data.title
+        cell.releaseDate.text = "\(data.releaseDate)"
+        cell.overview.text = data.overview
+        
         return cell
     }
 }

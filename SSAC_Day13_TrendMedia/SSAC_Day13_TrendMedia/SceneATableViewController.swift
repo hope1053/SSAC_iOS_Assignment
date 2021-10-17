@@ -31,10 +31,10 @@ class SceneATableViewController: UITableViewController {
         let tvShowInfo = tvShowInformation.tvShow[indexPath.row]
         
         cell.releaseDate.text = tvShowInfo.releaseDate
-        cell.genre.text = "#\(tvShowInfo.genre)"
-        cell.posterImage.image = UIImage(named: tvShowInfo.title)
-        cell.rate.text = "\(tvShowInfo.rate)"
-        cell.title.text = tvShowInfo.title
+        cell.genreLabel.text = "#\(tvShowInfo.genre)"
+        cell.posterImageView.image = UIImage(named: tvShowInfo.title)
+        cell.rateLabel.text = "\(tvShowInfo.rate)"
+        cell.titleLabel.text = tvShowInfo.title
         cell.starring.text = tvShowInfo.starring
         
         return cell
@@ -47,7 +47,8 @@ class SceneATableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "SceneC", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "SceneCTableViewController") as! SceneCTableViewController
-        
+        vc.starring = tvShowInformation.tvShow[indexPath.row].starring
+        vc.tvShowName = tvShowInformation.tvShow[indexPath.row].title
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
