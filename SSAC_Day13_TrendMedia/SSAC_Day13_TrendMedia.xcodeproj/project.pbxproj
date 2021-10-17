@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		CB0D9466271BF465004D3FDF /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0D9465271BF465004D3FDF /* UIView+Extension.swift */; };
+		CB0D9468271BF8F7004D3FDF /* SceneC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB0D9467271BF8F7004D3FDF /* SceneC.storyboard */; };
+		CB0D946A271BF93D004D3FDF /* SceneCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0D9469271BF93D004D3FDF /* SceneCTableViewCell.swift */; };
+		CB0D946C271BF94F004D3FDF /* SceneCTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0D946B271BF94F004D3FDF /* SceneCTableViewController.swift */; };
 		CB986074271B205300F6580C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB986073271B205300F6580C /* AppDelegate.swift */; };
 		CB986076271B205300F6580C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB986075271B205300F6580C /* SceneDelegate.swift */; };
-		CB986078271B205300F6580C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB986077271B205300F6580C /* ViewController.swift */; };
 		CB98607B271B205300F6580C /* SceneA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB986079271B205300F6580C /* SceneA.storyboard */; };
 		CB98607D271B205600F6580C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB98607C271B205600F6580C /* Assets.xcassets */; };
 		CB986080271B205600F6580C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB98607E271B205600F6580C /* LaunchScreen.storyboard */; };
@@ -22,10 +24,12 @@
 
 /* Begin PBXFileReference section */
 		CB0D9465271BF465004D3FDF /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		CB0D9467271BF8F7004D3FDF /* SceneC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SceneC.storyboard; sourceTree = "<group>"; };
+		CB0D9469271BF93D004D3FDF /* SceneCTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCTableViewCell.swift; sourceTree = "<group>"; };
+		CB0D946B271BF94F004D3FDF /* SceneCTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCTableViewController.swift; sourceTree = "<group>"; };
 		CB986070271B205300F6580C /* SSAC_Day13_TrendMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSAC_Day13_TrendMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB986073271B205300F6580C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB986075271B205300F6580C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CB986077271B205300F6580C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CB98607A271B205300F6580C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SceneA.storyboard; sourceTree = "<group>"; };
 		CB98607C271B205600F6580C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB98607F271B205600F6580C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -68,15 +72,17 @@
 			children = (
 				CB986073271B205300F6580C /* AppDelegate.swift */,
 				CB986075271B205300F6580C /* SceneDelegate.swift */,
-				CB986077271B205300F6580C /* ViewController.swift */,
 				CB986079271B205300F6580C /* SceneA.storyboard */,
+				CB98608B271BE3C000F6580C /* SceneATableViewController.swift */,
+				CB98608D271BE43200F6580C /* SceneATableViewCell.swift */,
+				CB0D9467271BF8F7004D3FDF /* SceneC.storyboard */,
+				CB0D946B271BF94F004D3FDF /* SceneCTableViewController.swift */,
+				CB0D9469271BF93D004D3FDF /* SceneCTableViewCell.swift */,
 				CB98607C271B205600F6580C /* Assets.xcassets */,
 				CB98607E271B205600F6580C /* LaunchScreen.storyboard */,
 				CB986081271B205600F6580C /* Info.plist */,
 				CB986087271B21C100F6580C /* TvShowInformation.swift */,
 				CB986089271B21DD00F6580C /* TvShow.swift */,
-				CB98608B271BE3C000F6580C /* SceneATableViewController.swift */,
-				CB98608D271BE43200F6580C /* SceneATableViewCell.swift */,
 				CB0D9465271BF465004D3FDF /* UIView+Extension.swift */,
 			);
 			path = SSAC_Day13_TrendMedia;
@@ -141,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB986080271B205600F6580C /* LaunchScreen.storyboard in Resources */,
+				CB0D9468271BF8F7004D3FDF /* SceneC.storyboard in Resources */,
 				CB98607D271B205600F6580C /* Assets.xcassets in Resources */,
 				CB98607B271B205300F6580C /* SceneA.storyboard in Resources */,
 			);
@@ -153,11 +160,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB0D946A271BF93D004D3FDF /* SceneCTableViewCell.swift in Sources */,
 				CB98608C271BE3C000F6580C /* SceneATableViewController.swift in Sources */,
-				CB986078271B205300F6580C /* ViewController.swift in Sources */,
 				CB0D9466271BF465004D3FDF /* UIView+Extension.swift in Sources */,
 				CB986074271B205300F6580C /* AppDelegate.swift in Sources */,
 				CB98608E271BE43200F6580C /* SceneATableViewCell.swift in Sources */,
+				CB0D946C271BF94F004D3FDF /* SceneCTableViewController.swift in Sources */,
 				CB98608A271B21DD00F6580C /* TvShow.swift in Sources */,
 				CB986076271B205300F6580C /* SceneDelegate.swift in Sources */,
 				CB986088271B21C100F6580C /* TvShowInformation.swift in Sources */,
