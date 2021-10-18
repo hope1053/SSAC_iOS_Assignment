@@ -16,6 +16,8 @@ class SceneATableViewCell: UITableViewCell {
     @IBOutlet weak var rateLabel: UILabel!
     @IBOutlet var mediaView: UIView!
     
+    var linkButtonTapHandler: (() -> Void)?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         posterImageView.updateImageUI()
@@ -26,4 +28,7 @@ class SceneATableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
 
+    @IBAction func linkButtonTapped(_ sender: UIButton) {
+        linkButtonTapHandler?()
+    }
 }

@@ -11,7 +11,7 @@
         <!--TREND MEDIA-->
         <scene sceneID="bb2-9b-EDT">
             <objects>
-                <tableViewController id="ncT-Uf-UD9" customClass="SceneATableViewController" customModule="SSAC_Day13_TrendMedia" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="ncT-Uf-UD9" customClass="SceneATableViewController" customModule="SSAC_Day14_TrendMedia" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="zvr-OB-8uU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -99,7 +99,7 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tvShowCell" rowHeight="409" id="o3h-Xt-zRn" customClass="SceneATableViewCell" customModule="SSAC_Day13_TrendMedia" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tvShowCell" rowHeight="409" id="o3h-Xt-zRn" customClass="SceneATableViewCell" customModule="SSAC_Day14_TrendMedia" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="260.5" width="414" height="409"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="o3h-Xt-zRn" id="a85-FV-GHB">
@@ -191,6 +191,20 @@
                                                         <constraint firstItem="8m4-MP-sGx" firstAttribute="centerX" secondItem="HOr-ie-RCO" secondAttribute="centerX" id="qek-Tk-vOH"/>
                                                     </constraints>
                                                 </view>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ivh-RI-HVt">
+                                                    <rect key="frame" x="321" y="15" width="38" height="38"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Ivh-RI-HVt" secondAttribute="height" multiplier="1:1" id="qE4-Tb-uzU"/>
+                                                    </constraints>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" image="link.circle.fill" catalog="system">
+                                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="linkButtonTapped:" destination="o3h-Xt-zRn" eventType="touchUpInside" id="ZkB-fT-lBc"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
@@ -200,11 +214,13 @@
                                                 <constraint firstItem="HOr-ie-RCO" firstAttribute="bottom" secondItem="Na7-Ee-eAl" secondAttribute="bottom" id="45o-5q-kVi"/>
                                                 <constraint firstItem="JOM-zP-gye" firstAttribute="leading" secondItem="qB9-Ou-DJ1" secondAttribute="leading" id="4IZ-wT-Gaz"/>
                                                 <constraint firstItem="Na7-Ee-eAl" firstAttribute="leading" secondItem="JOM-zP-gye" secondAttribute="leading" constant="20" id="4ei-uJ-rCI"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ivh-RI-HVt" secondAttribute="trailing" constant="15" id="64P-ip-11v"/>
                                                 <constraint firstAttribute="trailing" secondItem="JOM-zP-gye" secondAttribute="trailing" id="Fmt-Dr-9Xy"/>
                                                 <constraint firstItem="S9S-DP-qXK" firstAttribute="top" secondItem="c5S-vp-UTm" secondAttribute="bottom" id="Ibz-O8-M2J"/>
                                                 <constraint firstItem="mRP-e7-fxc" firstAttribute="centerY" secondItem="S9S-DP-qXK" secondAttribute="centerY" id="KHi-OC-f03"/>
                                                 <constraint firstItem="Na7-Ee-eAl" firstAttribute="height" secondItem="qB9-Ou-DJ1" secondAttribute="height" multiplier="0.0776119" id="MID-Pu-X1F"/>
                                                 <constraint firstItem="mRP-e7-fxc" firstAttribute="trailing" secondItem="S9S-DP-qXK" secondAttribute="trailing" id="SkL-H7-FR7"/>
+                                                <constraint firstItem="Ivh-RI-HVt" firstAttribute="width" secondItem="qB9-Ou-DJ1" secondAttribute="width" multiplier="0.101604" id="TnO-sa-6Dj"/>
                                                 <constraint firstItem="JOM-zP-gye" firstAttribute="height" secondItem="qB9-Ou-DJ1" secondAttribute="height" multiplier="0.659401" id="Uu3-Xn-jeT"/>
                                                 <constraint firstItem="c5S-vp-UTm" firstAttribute="top" secondItem="iG1-G0-zcf" secondAttribute="bottom" constant="20" id="VZD-y4-zU2"/>
                                                 <constraint firstItem="amV-Hd-BhE" firstAttribute="centerY" secondItem="S9S-DP-qXK" secondAttribute="centerY" id="Yjc-qU-gun"/>
@@ -223,6 +239,7 @@
                                                 <constraint firstItem="iG1-G0-zcf" firstAttribute="leading" secondItem="H9R-VK-SrB" secondAttribute="leading" id="oTw-ws-DHb"/>
                                                 <constraint firstItem="amV-Hd-BhE" firstAttribute="leading" secondItem="S9S-DP-qXK" secondAttribute="leading" id="snE-j3-yfO"/>
                                                 <constraint firstItem="Na7-Ee-eAl" firstAttribute="bottom" secondItem="JOM-zP-gye" secondAttribute="bottom" constant="-20" id="t9D-fK-AUf"/>
+                                                <constraint firstItem="Ivh-RI-HVt" firstAttribute="top" secondItem="qB9-Ou-DJ1" secondAttribute="top" constant="15" id="xrz-A3-9Rd"/>
                                             </constraints>
                                         </view>
                                     </subviews>
@@ -293,6 +310,7 @@
         <image name="book.closed" catalog="system" width="115" height="128"/>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
         <image name="film" catalog="system" width="128" height="93"/>
+        <image name="link.circle.fill" catalog="system" width="128" height="121"/>
         <image name="list.bullet" catalog="system" width="128" height="88"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="squid_game" width="350" height="515"/>

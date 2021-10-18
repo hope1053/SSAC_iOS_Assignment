@@ -15,6 +15,8 @@
 		CB0D9470271C149E004D3FDF /* SceneBTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0D946F271C149E004D3FDF /* SceneBTableViewController.swift */; };
 		CB0D9474271C240D004D3FDF /* SceneBTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0D9473271C240D004D3FDF /* SceneBTableViewCell.swift */; };
 		CB16D6F4271D434E00041A0A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CB16D6F3271D434E00041A0A /* Kingfisher */; };
+		CB16D6F6271D4CF600041A0A /* Web.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB16D6F5271D4CF600041A0A /* Web.storyboard */; };
+		CB16D6F8271D4D0B00041A0A /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB16D6F7271D4D0B00041A0A /* WebViewController.swift */; };
 		CB986074271B205300F6580C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB986073271B205300F6580C /* AppDelegate.swift */; };
 		CB986076271B205300F6580C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB986075271B205300F6580C /* SceneDelegate.swift */; };
 		CB98607B271B205300F6580C /* SceneA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB986079271B205300F6580C /* SceneA.storyboard */; };
@@ -34,6 +36,8 @@
 		CB0D946D271C1485004D3FDF /* SceneB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SceneB.storyboard; sourceTree = "<group>"; };
 		CB0D946F271C149E004D3FDF /* SceneBTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneBTableViewController.swift; sourceTree = "<group>"; };
 		CB0D9473271C240D004D3FDF /* SceneBTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneBTableViewCell.swift; sourceTree = "<group>"; };
+		CB16D6F5271D4CF600041A0A /* Web.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Web.storyboard; sourceTree = "<group>"; };
+		CB16D6F7271D4D0B00041A0A /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		CB986070271B205300F6580C /* SSAC_Day14_TrendMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSAC_Day14_TrendMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB986073271B205300F6580C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB986075271B205300F6580C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +93,8 @@
 				CB0D9467271BF8F7004D3FDF /* SceneC.storyboard */,
 				CB0D946B271BF94F004D3FDF /* SceneCTableViewController.swift */,
 				CB0D9469271BF93D004D3FDF /* SceneCTableViewCell.swift */,
+				CB16D6F5271D4CF600041A0A /* Web.storyboard */,
+				CB16D6F7271D4D0B00041A0A /* WebViewController.swift */,
 				CB98607C271B205600F6580C /* Assets.xcassets */,
 				CB98607E271B205600F6580C /* LaunchScreen.storyboard */,
 				CB986081271B205600F6580C /* Info.plist */,
@@ -167,6 +173,7 @@
 				CB0D946E271C1485004D3FDF /* SceneB.storyboard in Resources */,
 				CB0D9468271BF8F7004D3FDF /* SceneC.storyboard in Resources */,
 				CB98607D271B205600F6580C /* Assets.xcassets in Resources */,
+				CB16D6F6271D4CF600041A0A /* Web.storyboard in Resources */,
 				CB98607B271B205300F6580C /* SceneA.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,6 +192,7 @@
 				CB0D9470271C149E004D3FDF /* SceneBTableViewController.swift in Sources */,
 				CB98608E271BE43200F6580C /* SceneATableViewCell.swift in Sources */,
 				CB0D946C271BF94F004D3FDF /* SceneCTableViewController.swift in Sources */,
+				CB16D6F8271D4D0B00041A0A /* WebViewController.swift in Sources */,
 				CB98608A271B21DD00F6580C /* TvShow.swift in Sources */,
 				CB986076271B205300F6580C /* SceneDelegate.swift in Sources */,
 				CB0D9474271C240D004D3FDF /* SceneBTableViewCell.swift in Sources */,

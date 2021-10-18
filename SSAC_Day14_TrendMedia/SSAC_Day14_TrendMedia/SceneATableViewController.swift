@@ -37,6 +37,14 @@ class SceneATableViewController: UITableViewController {
         cell.titleLabel.text = tvShowInfo.title
         cell.starring.text = tvShowInfo.starring
         
+        cell.linkButtonTapHandler = {
+            let storyboard = UIStoryboard(name: "Web", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "WebViewController") as! WebViewController
+            vc.currentTitle = tvShowInfo.title
+            let nav = UINavigationController(rootViewController: vc)
+            self.present(nav, animated: true, completion: nil)
+        }
+        
         return cell
     }
     
