@@ -13,6 +13,7 @@ No. | 날짜 | 과제 | 주제 | TIL
 8 | 2021.10.13 | [Shopping List](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day11_ShoppingList)</br>[Exchange Rate](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day11_ExchangeRate.playground) | UserDefaults, CustomTableViewCell</br>Computed Property, Property Observer | [Day11 TIL](https://velog.io/@hope1053/SSACiOSDay-11-TIL)
 9 | 2021.10.14 | [Shopping List(Struct ver.)](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day12_ShoppingList) | Struct, UserDefaults | [Day12 TIL](https://velog.io/@hope1053/SSACiOSDay-12-TIL)
 10 | 2021.10.15 | [Trend Media](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day13_TrendMedia)| TableView, Struct, View Transition | [Day13 TIL](https://velog.io/@hope1053/SSACiOSDay-13-TIL)
+11 | 2021.10.18 | | | [Day14 TIL](https://velog.io/@hope1053/SSACiOSDay-14-TIL)
 
 <br>
 
