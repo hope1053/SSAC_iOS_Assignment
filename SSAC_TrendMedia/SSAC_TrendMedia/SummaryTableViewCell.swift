@@ -11,7 +11,7 @@ class SummaryTableViewCell: UITableViewCell {
 
     static let identifier = "SummaryTableViewCell"
     
-    @IBOutlet var summaryTextView: UITextView!
+    @IBOutlet var summaryLabel: UILabel!
     @IBOutlet var upDownButton: UIButton!
     
     override func awakeFromNib() {

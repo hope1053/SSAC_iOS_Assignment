@@ -15,6 +15,8 @@ class SceneCTableViewController: UITableViewController {
     var starringList: [String] = []
     var tvShowName: String?
     
+    var isButtonClicked = false
+    
     @IBOutlet var detailTableView: UITableView!
     @IBOutlet var headerImageView: UIImageView!
     @IBOutlet var headerPosterImageView: UIImageView!
@@ -40,8 +42,8 @@ class SceneCTableViewController: UITableViewController {
     }
     
     @objc func upDownButtonTapped(selectedButton: UIButton) {
-        selectedButton.isSelected = !selectedButton.isSelected
-        detailTableView.rowHeight = UITableView.automaticDimension
+        isButtonClicked = !isButtonClicked
+        detailTableView.reloadRows(at: [IndexPath(item: 0, section: 0)], with: .automatic)
     }
     
     // MARK: - Table view data source
@@ -59,8 +61,13 @@ class SceneCTableViewController: UITableViewController {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: SummaryTableViewCell.identifier, for: indexPath) as? SummaryTableViewCell else {
                 return UITableViewCell()
             }
-            cell.summaryTextView.text = currentTvShow?.overview
+            
+            let image = isButtonClicked == true ? UIImage(systemName: "chevron.up") : UIImage(systemName: "chevron.down")
+            
+            cell.upDownButton.setImage(image, for: .normal)
+            cell.summaryLabel.text = currentTvShow?.overview
             cell.upDownButton.addTarget(self, action: #selector(upDownButtonTapped(selectedButton:)), for: .touchUpInside)
+            print(cell.bounds.height)
             return cell
         } else {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "SceneCCell", for: indexPath) as? SceneCTableViewCell else {
@@ -76,6 +83,12 @@ class SceneCTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UIScreen.main.bounds.height / 10
+        if indexPath.section == 1 {
+            return UIScreen.main.bounds.height / 10
+        } else if indexPath.section == 0 && isButtonClicked {
+            return UIScreen.main.bounds.height / 10
+        } else {
+            return UITableView.automaticDimension
+        }
     }
 }
