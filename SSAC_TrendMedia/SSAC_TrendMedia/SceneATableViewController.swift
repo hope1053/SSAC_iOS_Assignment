@@ -66,5 +66,11 @@ class SceneATableViewController: UITableViewController {
         nav.modalPresentationStyle = .fullScreen
         self.present(nav, animated: true, completion: nil)
     }
+    
+    @IBAction func bookButtonClicked(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "BookCollectionView", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "BookCollectionViewController") as! BookCollectionViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
 

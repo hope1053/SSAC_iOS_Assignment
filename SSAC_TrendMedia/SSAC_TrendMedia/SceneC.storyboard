@@ -10,26 +10,26 @@
         <!--SceneC Table View Controller-->
         <scene sceneID="ZPb-hZ-3x3">
             <objects>
-                <tableViewController storyboardIdentifier="SceneCTableViewController" id="9R3-7Q-94v" customClass="SceneCTableViewController" customModule="SSAC_Day14_TrendMedia" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="SceneCTableViewController" id="9R3-7Q-94v" customClass="SceneCTableViewController" customModule="SSAC_TrendMedia" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleAspectFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="dOd-s4-83X">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="3NV-Qa-pp7">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="255"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="257"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uvo-SM-ZZG">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="255"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="257"/>
                                 </imageView>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vS2-IS-nbW">
-                                    <rect key="frame" x="15" y="57.5" width="137" height="182.5"/>
+                                    <rect key="frame" x="15" y="59.5" width="137" height="182.5"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="vS2-IS-nbW" secondAttribute="height" multiplier="3:4" id="Nma-2c-I5B"/>
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6m3-P4-tCj">
-                                    <rect key="frame" x="162" y="211" width="242" height="24"/>
+                                    <rect key="frame" x="162" y="213" width="242" height="24"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
@@ -38,20 +38,20 @@
                             <color key="backgroundColor" systemColor="systemFillColor"/>
                             <constraints>
                                 <constraint firstItem="Uvo-SM-ZZG" firstAttribute="top" secondItem="3NV-Qa-pp7" secondAttribute="top" id="9Ln-dk-c5Q"/>
+                                <constraint firstAttribute="bottom" secondItem="Uvo-SM-ZZG" secondAttribute="bottom" id="Dn7-JT-GaK"/>
                                 <constraint firstItem="vS2-IS-nbW" firstAttribute="width" secondItem="3NV-Qa-pp7" secondAttribute="width" multiplier="0.330918" id="GeG-IY-Y87"/>
                                 <constraint firstItem="6m3-P4-tCj" firstAttribute="leading" secondItem="vS2-IS-nbW" secondAttribute="trailing" constant="10" id="KSe-ha-E5f"/>
-                                <constraint firstAttribute="bottom" secondItem="Uvo-SM-ZZG" secondAttribute="bottom" id="XnZ-aS-eUG"/>
+                                <constraint firstItem="vS2-IS-nbW" firstAttribute="bottom" secondItem="Uvo-SM-ZZG" secondAttribute="bottom" constant="-15" id="Pxv-sm-OFE"/>
                                 <constraint firstAttribute="trailing" secondItem="Uvo-SM-ZZG" secondAttribute="trailing" id="dWv-yA-6rs"/>
                                 <constraint firstItem="vS2-IS-nbW" firstAttribute="leading" secondItem="3NV-Qa-pp7" secondAttribute="leading" constant="15" id="dcb-P1-vHV"/>
                                 <constraint firstItem="Uvo-SM-ZZG" firstAttribute="leading" secondItem="3NV-Qa-pp7" secondAttribute="leading" id="f0Z-Rl-Agp"/>
-                                <constraint firstAttribute="bottom" secondItem="vS2-IS-nbW" secondAttribute="bottom" constant="15" id="i5C-CN-31K"/>
                                 <constraint firstItem="6m3-P4-tCj" firstAttribute="bottom" secondItem="vS2-IS-nbW" secondAttribute="bottom" constant="-5" id="jZD-83-kqb"/>
                                 <constraint firstAttribute="trailing" secondItem="6m3-P4-tCj" secondAttribute="trailing" constant="10" id="mt1-HU-qJH"/>
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SceneCCell" rowHeight="110" id="alS-b4-wzt" customClass="SceneCTableViewCell" customModule="SSAC_Day14_TrendMedia" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="299.5" width="414" height="110"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SceneCCell" rowHeight="110" id="alS-b4-wzt" customClass="SceneCTableViewCell" customModule="SSAC_TrendMedia" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="301.5" width="414" height="110"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="alS-b4-wzt" id="CTY-Yq-H9J">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
@@ -104,6 +104,7 @@
                         </connections>
                     </tableView>
                     <connections>
+                        <outlet property="detailTableView" destination="dOd-s4-83X" id="Lot-II-qTg"/>
                         <outlet property="headerImageView" destination="Uvo-SM-ZZG" id="0W9-FG-yc6"/>
                         <outlet property="headerPosterImageView" destination="vS2-IS-nbW" id="5l5-Q0-YPF"/>
                         <outlet property="headerTitleLabel" destination="6m3-P4-tCj" id="qsH-KZ-kaB"/>

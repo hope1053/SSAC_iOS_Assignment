@@ -11,7 +11,7 @@
         <!--TREND MEDIA-->
         <scene sceneID="bb2-9b-EDT">
             <objects>
-                <tableViewController id="ncT-Uf-UD9" customClass="SceneATableViewController" customModule="SSAC_Day14_TrendMedia" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="ncT-Uf-UD9" customClass="SceneATableViewController" customModule="SSAC_TrendMedia" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="zvr-OB-8uU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,6 +72,9 @@
                                                     <buttonConfiguration key="configuration" style="plain" image="book.closed" catalog="system">
                                                         <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30"/>
                                                     </buttonConfiguration>
+                                                    <connections>
+                                                        <action selector="bookButtonClicked:" destination="ncT-Uf-UD9" eventType="touchUpInside" id="J4i-oa-Qcr"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </stackView>
@@ -99,7 +102,7 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tvShowCell" rowHeight="409" id="o3h-Xt-zRn" customClass="SceneATableViewCell" customModule="SSAC_Day14_TrendMedia" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tvShowCell" rowHeight="409" id="o3h-Xt-zRn" customClass="SceneATableViewCell" customModule="SSAC_TrendMedia" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="260.5" width="414" height="409"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="o3h-Xt-zRn" id="a85-FV-GHB">
