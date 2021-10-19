@@ -14,7 +14,7 @@ No. | 날짜 | 과제 | 주제 | TIL
 9 | 2021.10.14 | [Shopping List](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_ShoppingList) | Struct, UserDefaults | [Day12 TIL](https://velog.io/@hope1053/SSACiOSDay-12-TIL)
 10 | 2021.10.15 | [Trend Media](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_TrendMedia)| TableView, Struct, View Transition | [Day13 TIL](https://velog.io/@hope1053/SSACiOSDay-13-TIL)
 11 | 2021.10.18 | [Trend Media](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_TrendMedia) | Passing Data between ViewControllers, KingFisher | [Day14 TIL](https://velog.io/@hope1053/SSACiOSDay-14-TIL)
-12 | 2021.10.19 | | | [Day15 TIL](https://velog.io/@hope1053/SeSACiOSDay-15-TIL)
+12 | 2021.10.19 | [Trend Media](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_TrendMedia) | CollectionView, AutomaticDimension | [Day15 TIL](https://velog.io/@hope1053/SeSACiOSDay-15-TIL)
 
 <br>
 
