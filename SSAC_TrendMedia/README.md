@@ -1,4 +1,5 @@
-## Trend Media (Developed)
+# Trend Media
+## 21.10.18 Mon
 ### KingFisher(Image Library) & Passing data between viewControllers
 `Scene A` 컨트롤러에서 table view cell을 클릭했을 때 `Scene C`컨트롤러로 데이터를 전달해주는 기능
 1. 먼저 데이터를 받을 SceneCviewController에 데이터를 받을 변수를 정의해주었다.
