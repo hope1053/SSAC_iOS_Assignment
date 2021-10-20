@@ -28,6 +28,8 @@
 		CB98608E271BE43200F6580C /* SceneATableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB98608D271BE43200F6580C /* SceneATableViewCell.swift */; };
 		CB9B100127202B3B00A145BB /* mapView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9B100027202B3B00A145BB /* mapView.storyboard */; };
 		CB9B100327202B4F00A145BB /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9B100227202B4F00A145BB /* mapViewController.swift */; };
+		CB9B10052720357B00A145BB /* coordinateInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9B10042720357B00A145BB /* coordinateInformation.swift */; };
+		CB9B10072720359A00A145BB /* theaterLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9B10062720359A00A145BB /* theaterLocation.swift */; };
 		CBA0C384271EA7DF00062E28 /* SummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA0C382271EA7DF00062E28 /* SummaryTableViewCell.swift */; };
 		CBA0C385271EA7DF00062E28 /* SummaryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBA0C383271EA7DF00062E28 /* SummaryTableViewCell.xib */; };
 		CBA0C387271EB55800062E28 /* BookCollectionView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBA0C386271EB55800062E28 /* BookCollectionView.storyboard */; };
@@ -59,6 +61,8 @@
 		CB98608D271BE43200F6580C /* SceneATableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneATableViewCell.swift; sourceTree = "<group>"; };
 		CB9B100027202B3B00A145BB /* mapView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = mapView.storyboard; sourceTree = "<group>"; };
 		CB9B100227202B4F00A145BB /* mapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
+		CB9B10042720357B00A145BB /* coordinateInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coordinateInformation.swift; sourceTree = "<group>"; };
+		CB9B10062720359A00A145BB /* theaterLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = theaterLocation.swift; sourceTree = "<group>"; };
 		CBA0C382271EA7DF00062E28 /* SummaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryTableViewCell.swift; sourceTree = "<group>"; };
 		CBA0C383271EA7DF00062E28 /* SummaryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SummaryTableViewCell.xib; sourceTree = "<group>"; };
 		CBA0C386271EB55800062E28 /* BookCollectionView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BookCollectionView.storyboard; sourceTree = "<group>"; };
@@ -131,6 +135,8 @@
 			children = (
 				CB986087271B21C100F6580C /* TvShowInformation.swift */,
 				CB986089271B21DD00F6580C /* TvShow.swift */,
+				CB9B10042720357B00A145BB /* coordinateInformation.swift */,
+				CB9B10062720359A00A145BB /* theaterLocation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -240,6 +246,7 @@
 				CB0D946A271BF93D004D3FDF /* SceneCTableViewCell.swift in Sources */,
 				CB98608C271BE3C000F6580C /* SceneATableViewController.swift in Sources */,
 				CB0D9466271BF465004D3FDF /* UIView+Extension.swift in Sources */,
+				CB9B10052720357B00A145BB /* coordinateInformation.swift in Sources */,
 				CBA0C38E271EB5CE00062E28 /* BookCollectionViewCell.swift in Sources */,
 				CBA0C389271EB57B00062E28 /* BookCollectionViewController.swift in Sources */,
 				CB986074271B205300F6580C /* AppDelegate.swift in Sources */,
@@ -250,6 +257,7 @@
 				CB98608A271B21DD00F6580C /* TvShow.swift in Sources */,
 				CB986076271B205300F6580C /* SceneDelegate.swift in Sources */,
 				CBA0C384271EA7DF00062E28 /* SummaryTableViewCell.swift in Sources */,
+				CB9B10072720359A00A145BB /* theaterLocation.swift in Sources */,
 				CB0D9474271C240D004D3FDF /* SceneBTableViewCell.swift in Sources */,
 				CB986088271B21C100F6580C /* TvShowInformation.swift in Sources */,
 				CB9B100327202B4F00A145BB /* mapViewController.swift in Sources */,

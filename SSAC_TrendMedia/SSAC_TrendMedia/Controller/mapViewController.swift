@@ -13,10 +13,27 @@ class mapViewController: UIViewController {
     @IBOutlet var mapView: MKMapView!
     
     let locationManager = CLLocationManager()
+    let theaterCoordinates = coordinateInformation()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         locationManager.delegate = self
+    }
+    
+    @IBAction func filterButtonTapped(_ sender: UIBarButtonItem) {
+        let actionSheetController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        for theater in TheaterType.allCases {
+            actionSheetController.addAction(UIAlertAction(title: theater.description, style: .default, handler: { _ in
+                self.setTheaterAnnotations(theater.description)
+            }))
+        }
+        let totalTheater = UIAlertAction(title: "전체보기", style: .default) { _ in
+            self.addAllAnnotations()
+        }
+        let cancel = UIAlertAction(title: "취소", style: .cancel)
+        actionSheetController.addAction(totalTheater)
+        actionSheetController.addAction(cancel)
+        present(actionSheetController, animated: true, completion: nil)
     }
 }
 
@@ -73,16 +90,14 @@ extension mapViewController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let coordinate = locations.last?.coordinate {
-            let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
+            let span = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
             let region = MKCoordinateRegion(center: coordinate, span: span)
             mapView.setRegion(region, animated: true)
+            UserDefaults.standard.set([coordinate.latitude, coordinate.longitude], forKey: "coordinate")
             
-            let annotation = MKPointAnnotation()
-            annotation.title = "현재 위치"
-            annotation.coordinate = coordinate
-            mapView.addAnnotation(annotation)
             locationManager.startUpdatingLocation()
             updateNavigationTitle(coordinate)
+            addAllAnnotations()
         } else {
             showFakeRegion()
             let alertController = UIAlertController(title: "위치를 찾을 수 없습니다.", message: nil, preferredStyle: .alert)
@@ -112,7 +127,7 @@ extension mapViewController: CLLocationManagerDelegate {
     
     func showFakeRegion() {
         let coordinate = CLLocationCoordinate2D(latitude: 37.5638155, longitude: 126.965426)
-        let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
+        let span = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
         let region = MKCoordinateRegion(center: coordinate, span: span)
         mapView.setRegion(region, animated: true)
         
@@ -126,5 +141,51 @@ extension mapViewController: CLLocationManagerDelegate {
         let latitude = coordinate.latitude
         let longitude = coordinate.longitude
         title = "위도: \(latitude), 경도: \(longitude)"
+    }
+    
+    func setTheaterAnnotations(_ theaterType: String) {
+        let annotations = mapView.annotations
+        mapView.removeAnnotations(annotations)
+        addCurrentAnnotation()
+        
+        for location in theaterCoordinates.mapAnnotations {
+            if location.type == theaterType {
+                let theaterCoordinate = CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude)
+                let theaterAnnotation = MKPointAnnotation()
+                theaterAnnotation.title = location.location
+                theaterAnnotation.coordinate = theaterCoordinate
+                
+                mapView.addAnnotation(theaterAnnotation)
+            }
+        }
+    }
+    
+    func addAllAnnotations() {
+        let annotations = mapView.annotations
+        mapView.removeAnnotations(annotations)
+        addCurrentAnnotation()
+
+        for location in theaterCoordinates.mapAnnotations {
+            let theaterCoordinate = CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude)
+            let theaterAnnotation = MKPointAnnotation()
+            theaterAnnotation.title = location.location
+            theaterAnnotation.coordinate = theaterCoordinate
+            
+            mapView.addAnnotation(theaterAnnotation)
+        }
+    }
+    
+    func addCurrentAnnotation() {
+        let coordinate = UserDefaults.standard.object(forKey: "coordinate") as! [Double]
+        let latitude = coordinate[0]
+        let longitude = coordinate[1]
+        
+        let currentCoordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        
+        let currentAnnotation = MKPointAnnotation()
+        currentAnnotation.title = "현재 위치"
+        currentAnnotation.coordinate = currentCoordinate
+        
+        mapView.addAnnotation(currentAnnotation)
     }
 }

@@ -29,7 +29,13 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="vli-Yv-BwF" secondAttribute="trailing" id="V0R-7S-X90"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="qdL-O7-oBs"/>
+                    <navigationItem key="navigationItem" id="qdL-O7-oBs">
+                        <barButtonItem key="rightBarButtonItem" title="Filter" id="hId-8T-NW8">
+                            <connections>
+                                <action selector="filterButtonTapped:" destination="Y6W-OH-hqX" id="0bN-bN-dl5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="vli-Yv-BwF" id="NOw-8r-gtQ"/>
                     </connections>
