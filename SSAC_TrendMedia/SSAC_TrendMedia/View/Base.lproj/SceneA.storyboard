@@ -275,7 +275,14 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="TREND MEDIA" id="iAg-Ao-TCq">
-                        <barButtonItem key="leftBarButtonItem" image="list.bullet" catalog="system" id="qZf-hn-1ag"/>
+                        <leftBarButtonItems>
+                            <barButtonItem image="list.bullet" catalog="system" id="qZf-hn-1ag"/>
+                            <barButtonItem image="map" catalog="system" id="EzU-Kz-xVi">
+                                <connections>
+                                    <action selector="mapButtonTapped:" destination="ncT-Uf-UD9" id="QsK-ft-Nxa"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
                         <barButtonItem key="rightBarButtonItem" image="magnifyingglass" catalog="system" id="vNz-71-8NL">
                             <connections>
                                 <action selector="searchButtonTapped:" destination="ncT-Uf-UD9" id="koU-MH-FPo"/>
@@ -316,6 +323,7 @@
         <image name="link.circle.fill" catalog="system" width="128" height="121"/>
         <image name="list.bullet" catalog="system" width="128" height="88"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="map" catalog="system" width="128" height="110"/>
         <image name="squid_game" width="350" height="515"/>
         <image name="tv" catalog="system" width="128" height="97"/>
         <systemColor name="systemBackgroundColor">

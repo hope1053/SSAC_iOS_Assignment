@@ -26,6 +26,8 @@
 		CB98608A271B21DD00F6580C /* TvShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB986089271B21DD00F6580C /* TvShow.swift */; };
 		CB98608C271BE3C000F6580C /* SceneATableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB98608B271BE3C000F6580C /* SceneATableViewController.swift */; };
 		CB98608E271BE43200F6580C /* SceneATableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB98608D271BE43200F6580C /* SceneATableViewCell.swift */; };
+		CB9B100127202B3B00A145BB /* mapView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9B100027202B3B00A145BB /* mapView.storyboard */; };
+		CB9B100327202B4F00A145BB /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9B100227202B4F00A145BB /* mapViewController.swift */; };
 		CBA0C384271EA7DF00062E28 /* SummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA0C382271EA7DF00062E28 /* SummaryTableViewCell.swift */; };
 		CBA0C385271EA7DF00062E28 /* SummaryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBA0C383271EA7DF00062E28 /* SummaryTableViewCell.xib */; };
 		CBA0C387271EB55800062E28 /* BookCollectionView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBA0C386271EB55800062E28 /* BookCollectionView.storyboard */; };
@@ -55,6 +57,8 @@
 		CB986089271B21DD00F6580C /* TvShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShow.swift; sourceTree = "<group>"; };
 		CB98608B271BE3C000F6580C /* SceneATableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneATableViewController.swift; sourceTree = "<group>"; };
 		CB98608D271BE43200F6580C /* SceneATableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneATableViewCell.swift; sourceTree = "<group>"; };
+		CB9B100027202B3B00A145BB /* mapView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = mapView.storyboard; sourceTree = "<group>"; };
+		CB9B100227202B4F00A145BB /* mapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
 		CBA0C382271EA7DF00062E28 /* SummaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryTableViewCell.swift; sourceTree = "<group>"; };
 		CBA0C383271EA7DF00062E28 /* SummaryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SummaryTableViewCell.xib; sourceTree = "<group>"; };
 		CBA0C386271EB55800062E28 /* BookCollectionView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BookCollectionView.storyboard; sourceTree = "<group>"; };
@@ -113,10 +117,11 @@
 				CB986079271B205300F6580C /* SceneA.storyboard */,
 				CB0D946D271C1485004D3FDF /* SceneB.storyboard */,
 				CB0D9467271BF8F7004D3FDF /* SceneC.storyboard */,
-				CBA0C383271EA7DF00062E28 /* SummaryTableViewCell.xib */,
 				CB16D6F5271D4CF600041A0A /* Web.storyboard */,
 				CBA0C386271EB55800062E28 /* BookCollectionView.storyboard */,
 				CBA0C38D271EB5CE00062E28 /* BookCollectionViewCell.xib */,
+				CBA0C383271EA7DF00062E28 /* SummaryTableViewCell.xib */,
+				CB9B100027202B3B00A145BB /* mapView.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 				CB16D6F7271D4D0B00041A0A /* WebViewController.swift */,
 				CBA0C388271EB57B00062E28 /* BookCollectionViewController.swift */,
 				CBA0C38C271EB5CE00062E28 /* BookCollectionViewCell.swift */,
+				CB9B100227202B4F00A145BB /* mapViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -219,6 +225,7 @@
 				CB16D6F6271D4CF600041A0A /* Web.storyboard in Resources */,
 				CB98607B271B205300F6580C /* SceneA.storyboard in Resources */,
 				CBA0C387271EB55800062E28 /* BookCollectionView.storyboard in Resources */,
+				CB9B100127202B3B00A145BB /* mapView.storyboard in Resources */,
 				CBA0C385271EA7DF00062E28 /* SummaryTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,6 +252,7 @@
 				CBA0C384271EA7DF00062E28 /* SummaryTableViewCell.swift in Sources */,
 				CB0D9474271C240D004D3FDF /* SceneBTableViewCell.swift in Sources */,
 				CB986088271B21C100F6580C /* TvShowInformation.swift in Sources */,
+				CB9B100327202B4F00A145BB /* mapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

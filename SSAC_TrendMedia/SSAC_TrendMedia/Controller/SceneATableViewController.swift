@@ -72,5 +72,11 @@ class SceneATableViewController: UITableViewController {
         let vc = storyboard.instantiateViewController(withIdentifier: "BookCollectionViewController") as! BookCollectionViewController
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
+    @IBAction func mapButtonTapped(_ sender: UIBarButtonItem) {
+        let storyboard = UIStoryboard(name: "mapView", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "mapViewController")
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
