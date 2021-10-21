@@ -98,6 +98,7 @@ extension mapViewController: CLLocationManagerDelegate {
             locationManager.startUpdatingLocation()
             updateNavigationTitle(coordinate)
             addAllAnnotations()
+            locationManager.stopUpdatingLocation()
         } else {
             showFakeRegion()
             let alertController = UIAlertController(title: "위치를 찾을 수 없습니다.", message: nil, preferredStyle: .alert)
