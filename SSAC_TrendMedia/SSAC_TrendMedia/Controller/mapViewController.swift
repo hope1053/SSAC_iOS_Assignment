@@ -18,6 +18,7 @@ class mapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         locationManager.delegate = self
+        self.navigationItem.backButtonTitle = ""
     }
     
     @IBAction func filterButtonTapped(_ sender: UIBarButtonItem) {
@@ -55,6 +56,7 @@ extension mapViewController: CLLocationManagerDelegate {
             
             alertController.addAction(OK)
             present(alertController, animated: true, completion: nil)
+            title = "위치를 찾을 수 없습니다."
         }
     }
     
@@ -66,6 +68,7 @@ extension mapViewController: CLLocationManagerDelegate {
             locationManager.startUpdatingLocation()
         case .restricted, .denied:
             showFakeRegion()
+            title = "위치를 찾을 수 없습니다."
             let alertController = UIAlertController(title: "위치 권한을 허락해주세요", message: "설정에서 위치 서비스를 켜주세요ㅜㅜ!", preferredStyle: .alert)
             let OK = UIAlertAction(title: "확인", style: .default) { _ in
                 guard let url = URL(string: UIApplication.openSettingsURLString) else {
@@ -90,32 +93,37 @@ extension mapViewController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let coordinate = locations.last?.coordinate {
+            print("success!!!!")
             let span = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
             let region = MKCoordinateRegion(center: coordinate, span: span)
             mapView.setRegion(region, animated: true)
             UserDefaults.standard.set([coordinate.latitude, coordinate.longitude], forKey: "coordinate")
             
             locationManager.startUpdatingLocation()
-            updateNavigationTitle(coordinate)
             addAllAnnotations()
             locationManager.stopUpdatingLocation()
+            converToAddress(coordinate)
         } else {
+            print("yes")
             showFakeRegion()
             let alertController = UIAlertController(title: "위치를 찾을 수 없습니다.", message: nil, preferredStyle: .alert)
             let OK = UIAlertAction(title: "확인", style: .default, handler: nil)
-            
+
             alertController.addAction(OK)
             present(alertController, animated: true, completion: nil)
+            title = "위치를 찾을 수 없습니다."
         }
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        showFakeRegion()
-        let alertController = UIAlertController(title: "위치를 찾을 수 없습니다.", message: nil, preferredStyle: .alert)
-        let OK = UIAlertAction(title: "확인", style: .default, handler: nil)
-        
-        alertController.addAction(OK)
-        present(alertController, animated: true, completion: nil)
+//        print("failed.......")
+//        showFakeRegion()
+//        title = "위치를 찾을 수 없습니다."
+//        let alertController = UIAlertController(title: "위치를 찾을 수 없습니다.", message: nil, preferredStyle: .alert)
+//        let OK = UIAlertAction(title: "확인", style: .default, handler: nil)
+//        
+//        alertController.addAction(OK)
+//        present(alertController, animated: true, completion: nil)
     }
     
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
@@ -136,12 +144,6 @@ extension mapViewController: CLLocationManagerDelegate {
         annotation.title = "서울 시청"
         annotation.coordinate = coordinate
         mapView.addAnnotation(annotation)
-    }
-    
-    func updateNavigationTitle(_ coordinate: CLLocationCoordinate2D) {
-        let latitude = coordinate.latitude
-        let longitude = coordinate.longitude
-        title = "위도: \(latitude), 경도: \(longitude)"
     }
     
     func setTheaterAnnotations(_ theaterType: String) {
@@ -188,5 +190,17 @@ extension mapViewController: CLLocationManagerDelegate {
         currentAnnotation.coordinate = currentCoordinate
         
         mapView.addAnnotation(currentAnnotation)
+    }
+    
+    func converToAddress(_ coordinate: CLLocationCoordinate2D) {
+        let geoCoder = CLGeocoder()
+        let currentLocation = CLLocation(latitude: coordinate.latitude, longitude: coordinate.longitude)
+        var currentAddress = ""
+        geoCoder.reverseGeocodeLocation(currentLocation) { (placemarks, error) in
+            if error != nil { return }
+            guard let currentAdd = placemarks?.first else {return}
+            currentAddress += currentAdd.locality! + " " + currentAdd.subLocality!
+            self.title = currentAddress
+        }
     }
 }
