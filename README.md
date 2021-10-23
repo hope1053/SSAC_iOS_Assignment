@@ -23,7 +23,7 @@ No. | 날짜 | 과제 | 주제 | TIL
 
 ## 👩‍💻 세부사항
 ### [1. Netflix Project Sign Up](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day4_SignUp)
-#### Stack View, isHidden, ID, Password 조건 체크(논리 연산)  
+#### Stack View, isHidden, ID, Password 조건체크(논리 연산)  
 <img src = "https://user-images.githubusercontent.com/22907483/135413960-985858af-9400-4d6e-829a-ff3614e368f9.gif" width="30%">
 
 ### [2. LED Board](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day5_LEDBoard)
