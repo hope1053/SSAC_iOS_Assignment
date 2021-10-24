@@ -17,7 +17,7 @@ No. | 날짜 | 과제 | 주제 | TIL
 12 | 2021.10.19 | [Trend Media](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_TrendMedia) | CollectionView, AutomaticDimension | [Day15 TIL](https://velog.io/@hope1053/SeSACiOSDay-15-TIL)
 13 | 2021.10.20 | [Trend Media](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_TrendMedia) | MapKit, Privacy & Authorization, CoreLocation | [Day16 TIL](https://velog.io/@hope1053/SeSACiOSDay-16-TIL)
 14 | 2021.10.21 | [Trend Media](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_TrendMedia) | CLGeocoder | [Day17 TIL](https://velog.io/@hope1053/SeSACiOSDay-17-TIL)
-15 | 2021.10.22 | | | [Day18 TIL](https://velog.io/@hope1053/SeSACiOSDay-18-TIL)
+15 | 2021.10.22 | [AutoLayout Practice](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_AutoLayoutPractice) | AutoLayout, StackView | [Day18 TIL](https://velog.io/@hope1053/SeSACiOSDay-18-TIL)
 
 <br>
 
