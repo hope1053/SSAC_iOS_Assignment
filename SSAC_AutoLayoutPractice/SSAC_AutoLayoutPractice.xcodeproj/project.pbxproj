@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		CBEAA4E12724FEC70020FA4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEAA4E02724FEC70020FA4F /* AppDelegate.swift */; };
 		CBEAA4E32724FEC70020FA4F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEAA4E22724FEC70020FA4F /* SceneDelegate.swift */; };
-		CBEAA4E52724FEC70020FA4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEAA4E42724FEC70020FA4F /* ViewController.swift */; };
-		CBEAA4E82724FEC70020FA4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBEAA4E62724FEC70020FA4F /* Main.storyboard */; };
+		CBEAA4E52724FEC70020FA4F /* KakaoTalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEAA4E42724FEC70020FA4F /* KakaoTalkViewController.swift */; };
+		CBEAA4E82724FEC70020FA4F /* KakaotalkProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBEAA4E62724FEC70020FA4F /* KakaotalkProfile.storyboard */; };
 		CBEAA4EA2724FEC90020FA4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBEAA4E92724FEC90020FA4F /* Assets.xcassets */; };
 		CBEAA4ED2724FEC90020FA4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBEAA4EB2724FEC90020FA4F /* LaunchScreen.storyboard */; };
+		CBEAA4F527250D560020FA4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBEAA4F427250D560020FA4F /* Main.storyboard */; };
+		CBEAA4F727250E7F0020FA4F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEAA4F627250E7F0020FA4F /* MainViewController.swift */; };
+		CBEAA4FB2725104A0020FA4F /* MusicPlayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBEAA4FA2725104A0020FA4F /* MusicPlayer.storyboard */; };
+		CBEAA4FD272510540020FA4F /* MusicPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEAA4FC272510540020FA4F /* MusicPlayerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CBEAA4DD2724FEC70020FA4F /* SSAC_AutoLayoutPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSAC_AutoLayoutPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBEAA4E02724FEC70020FA4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBEAA4E22724FEC70020FA4F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CBEAA4E42724FEC70020FA4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CBEAA4E72724FEC70020FA4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CBEAA4E42724FEC70020FA4F /* KakaoTalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoTalkViewController.swift; sourceTree = "<group>"; };
+		CBEAA4E72724FEC70020FA4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/KakaotalkProfile.storyboard; sourceTree = "<group>"; };
 		CBEAA4E92724FEC90020FA4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBEAA4EC2724FEC90020FA4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBEAA4EE2724FEC90020FA4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBEAA4F427250D560020FA4F /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CBEAA4F627250E7F0020FA4F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CBEAA4FA2725104A0020FA4F /* MusicPlayer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MusicPlayer.storyboard; sourceTree = "<group>"; };
+		CBEAA4FC272510540020FA4F /* MusicPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,35 @@
 		CBEAA4DF2724FEC70020FA4F /* SSAC_AutoLayoutPractice */ = {
 			isa = PBXGroup;
 			children = (
+				CBEAA4F9272510330020FA4F /* Controller */,
+				CBEAA4F8272510290020FA4F /* View */,
 				CBEAA4E02724FEC70020FA4F /* AppDelegate.swift */,
 				CBEAA4E22724FEC70020FA4F /* SceneDelegate.swift */,
-				CBEAA4E42724FEC70020FA4F /* ViewController.swift */,
-				CBEAA4E62724FEC70020FA4F /* Main.storyboard */,
 				CBEAA4E92724FEC90020FA4F /* Assets.xcassets */,
 				CBEAA4EB2724FEC90020FA4F /* LaunchScreen.storyboard */,
 				CBEAA4EE2724FEC90020FA4F /* Info.plist */,
 			);
 			path = SSAC_AutoLayoutPractice;
+			sourceTree = "<group>";
+		};
+		CBEAA4F8272510290020FA4F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CBEAA4F427250D560020FA4F /* Main.storyboard */,
+				CBEAA4E62724FEC70020FA4F /* KakaotalkProfile.storyboard */,
+				CBEAA4FA2725104A0020FA4F /* MusicPlayer.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBEAA4F9272510330020FA4F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CBEAA4F627250E7F0020FA4F /* MainViewController.swift */,
+				CBEAA4E42724FEC70020FA4F /* KakaoTalkViewController.swift */,
+				CBEAA4FC272510540020FA4F /* MusicPlayerViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +153,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBEAA4FB2725104A0020FA4F /* MusicPlayer.storyboard in Resources */,
 				CBEAA4ED2724FEC90020FA4F /* LaunchScreen.storyboard in Resources */,
 				CBEAA4EA2724FEC90020FA4F /* Assets.xcassets in Resources */,
-				CBEAA4E82724FEC70020FA4F /* Main.storyboard in Resources */,
+				CBEAA4E82724FEC70020FA4F /* KakaotalkProfile.storyboard in Resources */,
+				CBEAA4F527250D560020FA4F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,21 +168,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBEAA4E52724FEC70020FA4F /* ViewController.swift in Sources */,
+				CBEAA4E52724FEC70020FA4F /* KakaoTalkViewController.swift in Sources */,
 				CBEAA4E12724FEC70020FA4F /* AppDelegate.swift in Sources */,
+				CBEAA4FD272510540020FA4F /* MusicPlayerViewController.swift in Sources */,
 				CBEAA4E32724FEC70020FA4F /* SceneDelegate.swift in Sources */,
+				CBEAA4F727250E7F0020FA4F /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CBEAA4E62724FEC70020FA4F /* Main.storyboard */ = {
+		CBEAA4E62724FEC70020FA4F /* KakaotalkProfile.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				CBEAA4E72724FEC70020FA4F /* Base */,
 			);
-			name = Main.storyboard;
+			name = KakaotalkProfile.storyboard;
 			sourceTree = "<group>";
 		};
 		CBEAA4EB2724FEC90020FA4F /* LaunchScreen.storyboard */ = {

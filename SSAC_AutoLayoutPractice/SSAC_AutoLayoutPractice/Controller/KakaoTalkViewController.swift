@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class KakaoTalkViewController: UIViewController {
 
     @IBOutlet var profileImageView: UIImageView!
     
@@ -17,6 +17,9 @@ class ViewController: UIViewController {
         profileImageView.layer.cornerRadius = profileImageView.bounds.width / 3
     }
 
-
+    @IBAction func XmarkButtonTapped(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 }
 

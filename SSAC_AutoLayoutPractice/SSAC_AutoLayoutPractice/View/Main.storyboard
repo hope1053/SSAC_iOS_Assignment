@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="MainViewController" customModule="SSAC_AutoLayoutPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ar1-kf-cym">
+                                <rect key="frame" x="41.5" y="346" width="331" height="214"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8tQ-hI-8mN">
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="47.5"/>
+                                        <color key="backgroundColor" red="0.78958230920000005" green="0.68147936050000002" blue="0.83187095570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="카카오톡 프로필"/>
+                                        <connections>
+                                            <action selector="kakaoButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="rW8-dr-DcC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dH0-rQ-aHG">
+                                        <rect key="frame" x="0.0" y="55.5" width="331" height="47.5"/>
+                                        <color key="backgroundColor" red="0.78958230920000005" green="0.68147936050000002" blue="0.83187095570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="뮤직 플레이어"/>
+                                        <connections>
+                                            <action selector="musicPlayerTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Qmk-ba-Dqd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRb-Kj-wRB">
+                                        <rect key="frame" x="0.0" y="111" width="331" height="47.5"/>
+                                        <color key="backgroundColor" red="0.78958230920000005" green="0.68147936050000002" blue="0.83187095570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="3번"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALo-kl-ZJQ">
+                                        <rect key="frame" x="0.0" y="166.5" width="331" height="47.5"/>
+                                        <color key="backgroundColor" red="0.78958230920000005" green="0.68147936050000002" blue="0.83187095570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="4번"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="dH0-rQ-aHG" firstAttribute="height" secondItem="8tQ-hI-8mN" secondAttribute="height" id="NxT-pF-9LO"/>
+                                    <constraint firstItem="JRb-Kj-wRB" firstAttribute="height" secondItem="8tQ-hI-8mN" secondAttribute="height" id="oGD-uj-mEX"/>
+                                    <constraint firstItem="ALo-kl-ZJQ" firstAttribute="height" secondItem="8tQ-hI-8mN" secondAttribute="height" id="wSZ-Oe-7Nf"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ar1-kf-cym" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.238839" id="0iA-D4-Rw4"/>
+                            <constraint firstItem="ar1-kf-cym" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.8" id="GIu-ey-aNu"/>
+                            <constraint firstItem="ar1-kf-cym" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="eix-GK-MGa"/>
+                            <constraint firstItem="ar1-kf-cym" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="kbW-dz-THG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

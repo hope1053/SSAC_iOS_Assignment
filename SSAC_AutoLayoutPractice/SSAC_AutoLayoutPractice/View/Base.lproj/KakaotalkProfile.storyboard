@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--KakaotaolkProfile-->
+        <!--KakaotalkProfile-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="KakaotaolkProfile" customClass="ViewController" customModule="SSAC_AutoLayoutPractice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="KakaoTalkViewController" id="BYZ-38-t0r" userLabel="KakaotalkProfile" customClass="KakaoTalkViewController" customModule="SSAC_AutoLayoutPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -59,6 +59,9 @@
                                 <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="17"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="XmarkButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A37-N0-oBD"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="jg5-I9-qyy">
                                 <rect key="frame" x="49" y="551" width="316" height="166"/>
