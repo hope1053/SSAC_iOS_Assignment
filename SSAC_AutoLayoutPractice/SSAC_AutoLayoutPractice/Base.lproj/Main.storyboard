@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--KakaotaolkProfile-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="KakaotaolkProfile" customClass="ViewController" customModule="SSAC_AutoLayoutPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ps5-eg-trr">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LBI-FF-fB8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Enm-Yk-ImL">
+                                <rect key="frame" x="282" y="49" width="112" height="34"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSr-ar-j5g">
+                                        <rect key="frame" x="0.0" y="0.0" width="37.5" height="34"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="folder.circle" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="17"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uti-qP-Zrc">
+                                        <rect key="frame" x="37.5" y="0.0" width="37" height="34"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="tray.circle" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="17"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a07-GQ-GCF">
+                                        <rect key="frame" x="74.5" y="0.0" width="37.5" height="34"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="bookmark.circle" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="17"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j9e-dR-1lD">
+                                <rect key="frame" x="20" y="49" width="45" height="34"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="17"/>
+                                </buttonConfiguration>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="jg5-I9-qyy">
+                                <rect key="frame" x="49" y="551" width="316" height="166"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="cCi-CV-jB5">
+                                        <rect key="frame" x="102" y="0.0" width="112" height="112"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="cCi-CV-jB5" secondAttribute="height" multiplier="1:1" id="Aoi-Gc-MPf"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="혜린" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4M-Ni-gHn">
+                                        <rect key="frame" x="140.5" y="119" width="35" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="자기소개칸입니다 자기소개칸입니다 자기소개칸입니다 자기소개칸입니다" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CiW-k4-tC2">
+                                        <rect key="frame" x="63" y="150" width="190" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="cCi-CV-jB5" firstAttribute="width" secondItem="jg5-I9-qyy" secondAttribute="width" multiplier="0.35443" id="2RR-9N-WfI"/>
+                                    <constraint firstItem="CiW-k4-tC2" firstAttribute="width" secondItem="jg5-I9-qyy" secondAttribute="width" multiplier="0.6" id="UfR-WS-zEi"/>
+                                </constraints>
+                            </stackView>
+                            <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NTx-eK-ynz">
+                                <rect key="frame" x="0.0" y="747" width="414" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Bsu-NY-F2Q"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fMw-9a-E3K">
+                                <rect key="frame" x="47" y="764.5" width="320.5" height="57"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xMd-N8-mW1">
+                                        <rect key="frame" x="0.0" y="0.0" width="106.5" height="57"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="나와의 채팅" image="message.fill" catalog="system"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="message.fill" catalog="system" imagePlacement="top" title="나와의 채팅" imagePadding="10">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="13"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJw-AG-WnB">
+                                        <rect key="frame" x="106.5" y="0.0" width="107" height="57"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="나와의 채팅" image="message.fill" catalog="system"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="person.fill" catalog="system" imagePlacement="top" title="프로필 편집" imagePadding="10">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="13"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KtW-wf-f2R">
+                                        <rect key="frame" x="213.5" y="0.0" width="107" height="57"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="나와의 채팅" image="message.fill" catalog="system"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="paperplane.fill" catalog="system" imagePlacement="top" title="카카오스토리" imagePadding="10">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="13"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jg5-I9-qyy" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.763285" id="6Bt-FT-kmk"/>
+                            <constraint firstItem="j9e-dR-1lD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="Hpj-Ph-lX0"/>
+                            <constraint firstItem="fMw-9a-E3K" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.75" id="JGe-y8-QUI"/>
+                            <constraint firstItem="Enm-Yk-ImL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="NjI-P1-g5N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ps5-eg-trr" secondAttribute="trailing" id="Rs2-3s-xg5"/>
+                            <constraint firstItem="j9e-dR-1lD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="T3e-0T-gDE"/>
+                            <constraint firstItem="LBI-FF-fB8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="U2y-nk-FU9"/>
+                            <constraint firstItem="NTx-eK-ynz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZbG-kO-bIc"/>
+                            <constraint firstItem="Enm-Yk-ImL" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.27" id="ZhR-NJ-RDI"/>
+                            <constraint firstAttribute="bottom" secondItem="LBI-FF-fB8" secondAttribute="bottom" id="d1D-EU-JRY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NTx-eK-ynz" secondAttribute="trailing" id="e26-WU-vTN"/>
+                            <constraint firstItem="jg5-I9-qyy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="e9h-eM-PNQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LBI-FF-fB8" secondAttribute="trailing" id="gi4-Zh-H9Q"/>
+                            <constraint firstItem="NTx-eK-ynz" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.65" id="gmV-Wz-BpP"/>
+                            <constraint firstItem="NTx-eK-ynz" firstAttribute="top" secondItem="jg5-I9-qyy" secondAttribute="bottom" constant="30" id="gyc-9c-QSg"/>
+                            <constraint firstAttribute="bottom" secondItem="ps5-eg-trr" secondAttribute="bottom" id="hfC-by-EfZ"/>
+                            <constraint firstItem="fMw-9a-E3K" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hxd-8U-Sa8"/>
+                            <constraint firstItem="ps5-eg-trr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="lq9-uB-we7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Enm-Yk-ImL" secondAttribute="trailing" constant="20" id="rr2-fh-HIR"/>
+                            <constraint firstItem="ps5-eg-trr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="twT-ht-os5"/>
+                            <constraint firstItem="fMw-9a-E3K" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.774155" id="uFb-Uf-UdW"/>
+                            <constraint firstItem="LBI-FF-fB8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xbs-fb-ExB"/>
+                            <constraint firstItem="fMw-9a-E3K" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0636161" id="zoW-an-dMh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="profileImageView" destination="cCi-CV-jB5" id="E7b-Tv-DLd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="103.79464285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="615" height="898.5"/>
+        <image name="bookmark.circle" catalog="system" width="128" height="121"/>
+        <image name="folder.circle" catalog="system" width="128" height="121"/>
+        <image name="message.fill" catalog="system" width="128" height="113"/>
+        <image name="paperplane.fill" catalog="system" width="128" height="118"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="profile" width="1094.5" height="1493"/>
+        <image name="tray.circle" catalog="system" width="128" height="121"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
