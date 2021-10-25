@@ -10,9 +10,23 @@ import Alamofire
 import SwiftyJSON
 
 class ViewController: UIViewController {
+    @IBOutlet var firstView: extensionView!
+    @IBOutlet var secondView: extensionView!
+    @IBOutlet var thirdView: extensionView!
+    @IBOutlet var fourthView: extensionView!
+    @IBOutlet var fifthView: extensionView!
+    @IBOutlet var sixthView: extensionView!
+    @IBOutlet var seventhView: extensionView!
+    
+    @IBOutlet var firstLabel: UILabel!
+    @IBOutlet var secondLabel: UILabel!
+    @IBOutlet var thirdLabel: UILabel!
+    @IBOutlet var fourthLabel: UILabel!
+    @IBOutlet var fifthLabel: UILabel!
+    @IBOutlet var sixthLabel: UILabel!
+    @IBOutlet var seventhLabel: UILabel!
 
     @IBOutlet var dateLabel: UILabel!
-    @IBOutlet var resultLabel: UILabel!
     @IBOutlet var selectedRoundLabel: UILabel!
     @IBOutlet var selectRoundTextField: UITextField!
     override func viewDidLoad() {
@@ -24,6 +38,7 @@ class ViewController: UIViewController {
         selectRoundTextField.inputView = pickerView
         pickerView.selectRow(99, inComponent: 0, animated: true)
         getResult(986)
+        updateView()
     }
     
     func getResult(_ round: Int) {
@@ -35,12 +50,29 @@ class ViewController: UIViewController {
                 self.selectRoundTextField.text = "\(round)"
                 self.selectedRoundLabel.text = "\(round)회"
                 self.dateLabel.text = "\(json["drwNoDate"]) 추첨"
-                let result = "\(json["drwtNo1"]) \(json["drwtNo2"]) \(json["drwtNo3"]) \(json["drwtNo4"]) \(json["drwtNo5"]) \(json["drwtNo6"]) + \(json["bnusNo"])"
-                self.resultLabel.text = result
+
+                self.firstLabel.text = "\(json["drwtNo1"])"
+                self.secondLabel.text = "\(json["drwtNo2"])"
+                self.thirdLabel.text = "\(json["drwtNo3"])"
+                self.fourthLabel.text = "\(json["drwtNo4"])"
+                self.fifthLabel.text = "\(json["drwtNo5"])"
+                self.sixthLabel.text = "\(json["drwtNo6"])"
+                self.seventhLabel.text = "\(json["bnusNo"])"
             case .failure(let error):
-                print(error)
+                print("Error: \(error)")
             }
         }
+    }
+    
+    func updateView() {
+        let BGcolor = [#colorLiteral(red: 1, green: 0.9088488817, blue: 0, alpha: 1), #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1), #colorLiteral(red: 1, green: 0.3991929293, blue: 0.3315500319, alpha: 1), #colorLiteral(red: 0, green: 0.7649724483, blue: 1, alpha: 1)]
+        firstView.backgroundColor = BGcolor.randomElement()
+        secondView.backgroundColor = BGcolor.randomElement()
+        thirdView.backgroundColor = BGcolor.randomElement()
+        fourthView.backgroundColor = BGcolor.randomElement()
+        fifthView.backgroundColor = BGcolor.randomElement()
+        sixthView.backgroundColor = BGcolor.randomElement()
+        seventhView.backgroundColor = BGcolor.randomElement()
     }
 }
 
@@ -60,6 +92,7 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         getResult(887 + row)
         selectRoundTextField.endEditing(true)
+        updateView()
     }
 }
 

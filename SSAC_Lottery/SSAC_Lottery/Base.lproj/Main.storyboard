@@ -57,10 +57,148 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOL-yj-wi5">
-                                <rect key="frame" x="20" y="244" width="374" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="J2h-1j-m33">
+                                <rect key="frame" x="32" y="241" width="350" height="39.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YAH-k0-SXD" customClass="extensionView" customModule="SSAC_Lottery" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="39.5" height="39.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YzD-XU-hGP">
+                                                <rect key="frame" x="11" y="10.5" width="17.5" height="18"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstItem="YzD-XU-hGP" firstAttribute="centerX" secondItem="YAH-k0-SXD" secondAttribute="centerX" id="FC9-0L-ECS"/>
+                                            <constraint firstItem="YzD-XU-hGP" firstAttribute="centerY" secondItem="YAH-k0-SXD" secondAttribute="centerY" id="n5A-ur-SqK"/>
+                                            <constraint firstAttribute="width" secondItem="YAH-k0-SXD" secondAttribute="height" multiplier="1:1" id="oCr-qG-Km9"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0V2-jf-4wJ" customClass="extensionView" customModule="SSAC_Lottery" customModuleProvider="target">
+                                        <rect key="frame" x="44.5" y="0.0" width="39.5" height="39.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5l-9t-XwK">
+                                                <rect key="frame" x="11" y="10.5" width="17.5" height="18"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstItem="D5l-9t-XwK" firstAttribute="centerY" secondItem="0V2-jf-4wJ" secondAttribute="centerY" id="e7g-R6-qR2"/>
+                                            <constraint firstItem="D5l-9t-XwK" firstAttribute="centerX" secondItem="0V2-jf-4wJ" secondAttribute="centerX" id="eGB-Qi-Qhb"/>
+                                            <constraint firstAttribute="width" secondItem="0V2-jf-4wJ" secondAttribute="height" multiplier="1:1" id="le4-Q5-jFf"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M48-LE-w5U" customClass="extensionView" customModule="SSAC_Lottery" customModuleProvider="target">
+                                        <rect key="frame" x="89" y="0.0" width="39" height="39.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFF-SF-9g0">
+                                                <rect key="frame" x="11" y="10.5" width="17.5" height="18"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="M48-LE-w5U" secondAttribute="height" multiplier="1:1" id="H5O-Fb-LEF"/>
+                                            <constraint firstItem="gFF-SF-9g0" firstAttribute="centerX" secondItem="M48-LE-w5U" secondAttribute="centerX" id="m0E-8B-2f6"/>
+                                            <constraint firstItem="gFF-SF-9g0" firstAttribute="centerY" secondItem="M48-LE-w5U" secondAttribute="centerY" id="otR-ym-CQm"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g0G-uU-iMy" customClass="extensionView" customModule="SSAC_Lottery" customModuleProvider="target">
+                                        <rect key="frame" x="133" y="0.0" width="39.5" height="39.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1X-kr-2bZ">
+                                                <rect key="frame" x="11" y="10.5" width="17.5" height="18"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstItem="O1X-kr-2bZ" firstAttribute="centerX" secondItem="g0G-uU-iMy" secondAttribute="centerX" id="YDH-UY-1KY"/>
+                                            <constraint firstItem="O1X-kr-2bZ" firstAttribute="centerY" secondItem="g0G-uU-iMy" secondAttribute="centerY" id="diD-Iy-h1c"/>
+                                            <constraint firstAttribute="width" secondItem="g0G-uU-iMy" secondAttribute="height" multiplier="1:1" id="zG8-Nl-Hsa"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q7i-qd-4NW" customClass="extensionView" customModule="SSAC_Lottery" customModuleProvider="target">
+                                        <rect key="frame" x="177.5" y="0.0" width="39.5" height="39.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hcb-tl-Sj5">
+                                                <rect key="frame" x="11" y="10.5" width="17.5" height="18"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Hcb-tl-Sj5" firstAttribute="centerY" secondItem="Q7i-qd-4NW" secondAttribute="centerY" id="0O9-Mk-2ea"/>
+                                            <constraint firstAttribute="width" secondItem="Q7i-qd-4NW" secondAttribute="height" multiplier="1:1" id="Bs4-bb-WOj"/>
+                                            <constraint firstItem="Hcb-tl-Sj5" firstAttribute="centerX" secondItem="Q7i-qd-4NW" secondAttribute="centerX" id="nqA-Dp-sPT"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lH5-ib-tfx" customClass="extensionView" customModule="SSAC_Lottery" customModuleProvider="target">
+                                        <rect key="frame" x="222" y="0.0" width="39" height="39.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejb-mb-5wp">
+                                                <rect key="frame" x="10.5" y="10.5" width="17.5" height="18"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstItem="ejb-mb-5wp" firstAttribute="centerY" secondItem="lH5-ib-tfx" secondAttribute="centerY" id="LeC-Dm-TBL"/>
+                                            <constraint firstAttribute="width" secondItem="lH5-ib-tfx" secondAttribute="height" multiplier="1:1" id="Opn-Wu-G0V"/>
+                                            <constraint firstItem="ejb-mb-5wp" firstAttribute="centerX" secondItem="lH5-ib-tfx" secondAttribute="centerX" id="sdr-sb-S5Z"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yZR-N7-jDF">
+                                        <rect key="frame" x="266" y="0.0" width="39.5" height="39.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6l6-NF-FTf" customClass="extensionView" customModule="SSAC_Lottery" customModuleProvider="target">
+                                        <rect key="frame" x="310.5" y="0.0" width="39.5" height="39.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQd-3M-H1c">
+                                                <rect key="frame" x="11" y="10.5" width="17.5" height="18"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstItem="iQd-3M-H1c" firstAttribute="centerX" secondItem="6l6-NF-FTf" secondAttribute="centerX" id="Fjs-uX-nfC"/>
+                                            <constraint firstItem="iQd-3M-H1c" firstAttribute="centerY" secondItem="6l6-NF-FTf" secondAttribute="centerY" id="opr-Pu-Vk7"/>
+                                            <constraint firstAttribute="width" secondItem="6l6-NF-FTf" secondAttribute="height" multiplier="1:1" id="w6X-6r-3eY"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="g0G-uU-iMy" firstAttribute="width" secondItem="g0G-uU-iMy" secondAttribute="height" multiplier="1:1" id="EYb-nu-LtH"/>
+                                    <constraint firstItem="M48-LE-w5U" firstAttribute="width" secondItem="M48-LE-w5U" secondAttribute="height" multiplier="1:1" id="Tec-1d-x8A"/>
+                                    <constraint firstItem="0V2-jf-4wJ" firstAttribute="width" secondItem="0V2-jf-4wJ" secondAttribute="height" multiplier="1:1" id="aH2-8b-yyq"/>
+                                    <constraint firstItem="lH5-ib-tfx" firstAttribute="width" secondItem="lH5-ib-tfx" secondAttribute="height" multiplier="1:1" id="cIi-6C-9fV"/>
+                                    <constraint firstItem="Q7i-qd-4NW" firstAttribute="width" secondItem="Q7i-qd-4NW" secondAttribute="height" multiplier="1:1" id="cYb-P0-f93"/>
+                                    <constraint firstItem="6l6-NF-FTf" firstAttribute="width" secondItem="6l6-NF-FTf" secondAttribute="height" multiplier="1:1" id="rNn-9W-YV3"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="보너스" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDk-vp-6Lt">
+                                <rect key="frame" x="347.5" y="285.5" width="29" height="13.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -68,18 +206,20 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="1pO-Fe-tDV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0w9-08-I6o"/>
-                            <constraint firstItem="XOL-yj-wi5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="BSm-xq-zHo"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XOL-yj-wi5" secondAttribute="trailing" constant="20" id="FML-X3-Msy"/>
+                            <constraint firstItem="J2h-1j-m33" firstAttribute="top" secondItem="X7G-PH-gM6" secondAttribute="bottom" constant="20" id="2Y5-X1-4Q2"/>
+                            <constraint firstItem="TDk-vp-6Lt" firstAttribute="top" secondItem="J2h-1j-m33" secondAttribute="bottom" constant="5" id="Dmq-9X-hxT"/>
+                            <constraint firstItem="TDk-vp-6Lt" firstAttribute="centerX" secondItem="6l6-NF-FTf" secondAttribute="centerX" id="F5w-j4-izq"/>
                             <constraint firstItem="5rl-49-Api" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0535714" id="GC3-qa-EmR"/>
+                            <constraint firstItem="J2h-1j-m33" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="I5w-mM-P12"/>
                             <constraint firstItem="iBy-eP-85i" firstAttribute="top" secondItem="5rl-49-Api" secondAttribute="bottom" constant="20" id="Mhz-av-BfA"/>
                             <constraint firstItem="5rl-49-Api" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="N3a-zW-Km7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tz0-RU-wgI" secondAttribute="trailing" constant="20" id="NO4-HS-2HX"/>
                             <constraint firstItem="iBy-eP-85i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="PA9-e3-pne"/>
+                            <constraint firstItem="YAH-k0-SXD" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.095" id="Q3O-qS-SXS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5rl-49-Api" secondAttribute="trailing" constant="20" id="QZA-aS-ktB"/>
                             <constraint firstItem="tz0-RU-wgI" firstAttribute="centerY" secondItem="iBy-eP-85i" secondAttribute="centerY" id="WoE-6Z-817"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1pO-Fe-tDV" secondAttribute="trailing" constant="20" id="ZWd-Af-eYJ"/>
                             <constraint firstItem="1pO-Fe-tDV" firstAttribute="top" secondItem="iBy-eP-85i" secondAttribute="bottom" constant="10" id="cBx-Dh-aKG"/>
-                            <constraint firstItem="XOL-yj-wi5" firstAttribute="top" secondItem="X7G-PH-gM6" secondAttribute="bottom" constant="23" id="eKc-UO-fjD"/>
                             <constraint firstItem="5rl-49-Api" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jo5-Zc-B6g"/>
                             <constraint firstItem="X7G-PH-gM6" firstAttribute="top" secondItem="1pO-Fe-tDV" secondAttribute="bottom" constant="40" id="lFm-n0-GF8"/>
                             <constraint firstItem="X7G-PH-gM6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="oxn-DG-WDa"/>
@@ -87,9 +227,22 @@
                     </view>
                     <connections>
                         <outlet property="dateLabel" destination="tz0-RU-wgI" id="DK4-gh-3FX"/>
-                        <outlet property="resultLabel" destination="XOL-yj-wi5" id="X10-Fn-gbE"/>
+                        <outlet property="fifthLabel" destination="Hcb-tl-Sj5" id="sXk-Gy-skA"/>
+                        <outlet property="fifthView" destination="Q7i-qd-4NW" id="cYi-fy-zjt"/>
+                        <outlet property="firstLabel" destination="YzD-XU-hGP" id="msR-MT-ySv"/>
+                        <outlet property="firstView" destination="YAH-k0-SXD" id="M6D-I7-2Pk"/>
+                        <outlet property="fourthLabel" destination="O1X-kr-2bZ" id="fXv-fz-K5r"/>
+                        <outlet property="fourthView" destination="g0G-uU-iMy" id="IJc-VG-rOW"/>
+                        <outlet property="secondLabel" destination="D5l-9t-XwK" id="dCz-BH-XGv"/>
+                        <outlet property="secondView" destination="0V2-jf-4wJ" id="vcW-po-dy3"/>
                         <outlet property="selectRoundTextField" destination="5rl-49-Api" id="d9K-mE-Hed"/>
                         <outlet property="selectedRoundLabel" destination="MIY-gZ-WwN" id="hH8-ga-FaZ"/>
+                        <outlet property="seventhLabel" destination="iQd-3M-H1c" id="N6c-Cf-PJd"/>
+                        <outlet property="seventhView" destination="6l6-NF-FTf" id="54I-EH-XEj"/>
+                        <outlet property="sixthLabel" destination="ejb-mb-5wp" id="c7u-pn-ZLF"/>
+                        <outlet property="sixthView" destination="lH5-ib-tfx" id="L28-Zh-b8z"/>
+                        <outlet property="thirdLabel" destination="gFF-SF-9g0" id="vUt-Uv-pWu"/>
+                        <outlet property="thirdView" destination="M48-LE-w5U" id="j3B-in-pl7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
