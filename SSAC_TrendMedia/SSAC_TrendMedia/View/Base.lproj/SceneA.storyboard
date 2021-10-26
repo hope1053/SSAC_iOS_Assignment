@@ -29,17 +29,22 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oTB-iZ-Ze5">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="123.5"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OH RIN!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlp-ca-H45">
-                                            <rect key="frame" x="131.5" y="31.5" width="151.5" height="48"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgG-kx-KBU">
+                                            <rect key="frame" x="131" y="25.5" width="152" height="60"/>
                                             <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="OH RIN!">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="boxOffcieButtonTapped:" destination="ncT-Uf-UD9" eventType="touchUpInside" id="oVU-W7-zXe"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <color key="backgroundColor" red="0.40459420109999999" green="0.39714127510000002" blue="0.83187095570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <constraints>
-                                        <constraint firstItem="dlp-ca-H45" firstAttribute="centerX" secondItem="oTB-iZ-Ze5" secondAttribute="centerX" id="dah-PZ-ZU9"/>
-                                        <constraint firstItem="dlp-ca-H45" firstAttribute="centerY" secondItem="oTB-iZ-Ze5" secondAttribute="centerY" multiplier="0.9" id="lV0-8w-fo2"/>
+                                        <constraint firstItem="rgG-kx-KBU" firstAttribute="centerX" secondItem="oTB-iZ-Ze5" secondAttribute="centerX" id="64q-FA-WOa"/>
+                                        <constraint firstItem="rgG-kx-KBU" firstAttribute="centerY" secondItem="oTB-iZ-Ze5" secondAttribute="centerY" multiplier="0.9" id="hCy-Yk-v7B"/>
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OJb-pT-isX">

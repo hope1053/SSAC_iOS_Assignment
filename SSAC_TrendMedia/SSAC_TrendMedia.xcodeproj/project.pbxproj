@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB07113727279D2D0056A1EB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CB07113627279D2D0056A1EB /* Alamofire */; };
+		CB07113A27279D3B0056A1EB /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = CB07113927279D3B0056A1EB /* SwiftyJSON */; };
+		CB07113C2727E8D00056A1EB /* dayBeforeBoxOffice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB07113B2727E8D00056A1EB /* dayBeforeBoxOffice.storyboard */; };
+		CB0711402727E98E0056A1EB /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB07113F2727E98E0056A1EB /* APIKey.swift */; };
+		CB0711432727E9E00056A1EB /* dayBeforeBoxOfficeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0711412727E9E00056A1EB /* dayBeforeBoxOfficeTableViewController.swift */; };
+		CB0711472727EA090056A1EB /* dayBeforeBoxOfficeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0711452727EA090056A1EB /* dayBeforeBoxOfficeTableViewCell.swift */; };
+		CB0711482727EA090056A1EB /* dayBeforeBoxOfficeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB0711462727EA090056A1EB /* dayBeforeBoxOfficeTableViewCell.xib */; };
 		CB0D9466271BF465004D3FDF /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0D9465271BF465004D3FDF /* UIView+Extension.swift */; };
 		CB0D9468271BF8F7004D3FDF /* SceneC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB0D9467271BF8F7004D3FDF /* SceneC.storyboard */; };
 		CB0D946A271BF93D004D3FDF /* SceneCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0D9469271BF93D004D3FDF /* SceneCTableViewCell.swift */; };
@@ -39,6 +46,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB07113B2727E8D00056A1EB /* dayBeforeBoxOffice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = dayBeforeBoxOffice.storyboard; sourceTree = "<group>"; };
+		CB07113F2727E98E0056A1EB /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		CB0711412727E9E00056A1EB /* dayBeforeBoxOfficeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dayBeforeBoxOfficeTableViewController.swift; sourceTree = "<group>"; };
+		CB0711452727EA090056A1EB /* dayBeforeBoxOfficeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dayBeforeBoxOfficeTableViewCell.swift; sourceTree = "<group>"; };
+		CB0711462727EA090056A1EB /* dayBeforeBoxOfficeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = dayBeforeBoxOfficeTableViewCell.xib; sourceTree = "<group>"; };
 		CB0D9465271BF465004D3FDF /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		CB0D9467271BF8F7004D3FDF /* SceneC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SceneC.storyboard; sourceTree = "<group>"; };
 		CB0D9469271BF93D004D3FDF /* SceneCTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCTableViewCell.swift; sourceTree = "<group>"; };
@@ -76,7 +88,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB07113A27279D3B0056A1EB /* SwiftyJSON in Frameworks */,
 				CB16D6F4271D434E00041A0A /* Kingfisher in Frameworks */,
+				CB07113727279D2D0056A1EB /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,9 +137,11 @@
 				CB0D9467271BF8F7004D3FDF /* SceneC.storyboard */,
 				CB16D6F5271D4CF600041A0A /* Web.storyboard */,
 				CBA0C386271EB55800062E28 /* BookCollectionView.storyboard */,
+				CB9B100027202B3B00A145BB /* mapView.storyboard */,
+				CB07113B2727E8D00056A1EB /* dayBeforeBoxOffice.storyboard */,
+				CB0711462727EA090056A1EB /* dayBeforeBoxOfficeTableViewCell.xib */,
 				CBA0C38D271EB5CE00062E28 /* BookCollectionViewCell.xib */,
 				CBA0C383271EA7DF00062E28 /* SummaryTableViewCell.xib */,
-				CB9B100027202B3B00A145BB /* mapView.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -137,6 +153,7 @@
 				CB986089271B21DD00F6580C /* TvShow.swift */,
 				CB9B10042720357B00A145BB /* coordinateInformation.swift */,
 				CB9B10062720359A00A145BB /* theaterLocation.swift */,
+				CB07113F2727E98E0056A1EB /* APIKey.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -155,6 +172,8 @@
 				CBA0C388271EB57B00062E28 /* BookCollectionViewController.swift */,
 				CBA0C38C271EB5CE00062E28 /* BookCollectionViewCell.swift */,
 				CB9B100227202B4F00A145BB /* mapViewController.swift */,
+				CB0711412727E9E00056A1EB /* dayBeforeBoxOfficeTableViewController.swift */,
+				CB0711452727EA090056A1EB /* dayBeforeBoxOfficeTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -177,6 +196,8 @@
 			name = SSAC_TrendMedia;
 			packageProductDependencies = (
 				CB16D6F3271D434E00041A0A /* Kingfisher */,
+				CB07113627279D2D0056A1EB /* Alamofire */,
+				CB07113927279D3B0056A1EB /* SwiftyJSON */,
 			);
 			productName = SSAC_Day13_TrendMedia;
 			productReference = CB986070271B205300F6580C /* SSAC_TrendMedia.app */;
@@ -208,6 +229,8 @@
 			mainGroup = CB986067271B205300F6580C;
 			packageReferences = (
 				CB16D6F2271D434E00041A0A /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				CB07113527279D2D0056A1EB /* XCRemoteSwiftPackageReference "Alamofire" */,
+				CB07113827279D3B0056A1EB /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 			);
 			productRefGroup = CB986071271B205300F6580C /* Products */;
 			projectDirPath = "";
@@ -223,6 +246,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB07113C2727E8D00056A1EB /* dayBeforeBoxOffice.storyboard in Resources */,
+				CB0711482727EA090056A1EB /* dayBeforeBoxOfficeTableViewCell.xib in Resources */,
 				CB986080271B205600F6580C /* LaunchScreen.storyboard in Resources */,
 				CB0D946E271C1485004D3FDF /* SceneB.storyboard in Resources */,
 				CB0D9468271BF8F7004D3FDF /* SceneC.storyboard in Resources */,
@@ -250,14 +275,17 @@
 				CBA0C38E271EB5CE00062E28 /* BookCollectionViewCell.swift in Sources */,
 				CBA0C389271EB57B00062E28 /* BookCollectionViewController.swift in Sources */,
 				CB986074271B205300F6580C /* AppDelegate.swift in Sources */,
+				CB0711432727E9E00056A1EB /* dayBeforeBoxOfficeTableViewController.swift in Sources */,
 				CB0D9470271C149E004D3FDF /* SceneBTableViewController.swift in Sources */,
 				CB98608E271BE43200F6580C /* SceneATableViewCell.swift in Sources */,
 				CB0D946C271BF94F004D3FDF /* SceneCTableViewController.swift in Sources */,
 				CB16D6F8271D4D0B00041A0A /* WebViewController.swift in Sources */,
 				CB98608A271B21DD00F6580C /* TvShow.swift in Sources */,
 				CB986076271B205300F6580C /* SceneDelegate.swift in Sources */,
+				CB0711402727E98E0056A1EB /* APIKey.swift in Sources */,
 				CBA0C384271EA7DF00062E28 /* SummaryTableViewCell.swift in Sources */,
 				CB9B10072720359A00A145BB /* theaterLocation.swift in Sources */,
+				CB0711472727EA090056A1EB /* dayBeforeBoxOfficeTableViewCell.swift in Sources */,
 				CB0D9474271C240D004D3FDF /* SceneBTableViewCell.swift in Sources */,
 				CB986088271B21C100F6580C /* TvShowInformation.swift in Sources */,
 				CB9B100327202B4F00A145BB /* mapViewController.swift in Sources */,
@@ -482,6 +510,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		CB07113527279D2D0056A1EB /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		CB07113827279D3B0056A1EB /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.0.0;
+			};
+		};
 		CB16D6F2271D434E00041A0A /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
@@ -493,6 +537,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		CB07113627279D2D0056A1EB /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB07113527279D2D0056A1EB /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		CB07113927279D3B0056A1EB /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB07113827279D3B0056A1EB /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
 		CB16D6F3271D434E00041A0A /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CB16D6F2271D434E00041A0A /* XCRemoteSwiftPackageReference "Kingfisher" */;

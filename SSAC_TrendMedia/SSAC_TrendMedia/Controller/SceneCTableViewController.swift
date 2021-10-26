@@ -25,8 +25,8 @@ class SceneCTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "출연/제작"
-        starring = currentTvShow!.starring
-        tvShowName = currentTvShow?.title
+//        starring = currentTvShow!.starring
+//        tvShowName = currentTvShow?.title
         starringList = starring.components(separatedBy: ", ")
         updateUI()
 
@@ -37,8 +37,8 @@ class SceneCTableViewController: UITableViewController {
     func updateUI() {
         headerPosterImageView.image = UIImage(named: tvShowName!)
         headerTitleLabel.text = tvShowName!
-        let url = URL(string: currentTvShow!.backdropImage)
-        headerImageView.kf.setImage(with: url)
+//        let url = URL(string: currentTvShow!.backdropImage)
+//        headerImageView.kf.setImage(with: url)
     }
     
     @objc func upDownButtonTapped(selectedButton: UIButton) {
@@ -65,7 +65,7 @@ class SceneCTableViewController: UITableViewController {
             let image = isButtonClicked == true ? UIImage(systemName: "chevron.up") : UIImage(systemName: "chevron.down")
             
             cell.upDownButton.setImage(image, for: .normal)
-            cell.summaryLabel.text = currentTvShow?.overview
+//            cell.summaryLabel.text = currentTvShow?.overview
             cell.upDownButton.addTarget(self, action: #selector(upDownButtonTapped(selectedButton:)), for: .touchUpInside)
             print(cell.bounds.height)
             return cell

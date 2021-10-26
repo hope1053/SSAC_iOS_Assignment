@@ -9,7 +9,7 @@ import UIKit
 
 class SceneATableViewController: UITableViewController {
 
-    let tvShowInformation = TvShowInformation()
+//    let tvShowInformation = TvShowInformation()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +20,8 @@ class SceneATableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tvShowInformation.tvShow.count
+//        return tvShowInformation.tvShow.count
+        return 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -28,22 +29,22 @@ class SceneATableViewController: UITableViewController {
             return UITableViewCell()
         }
         
-        let tvShowInfo = tvShowInformation.tvShow[indexPath.row]
+//        let tvShowInfo = tvShowInformation.tvShow[indexPath.row]
         
-        cell.releaseDate.text = tvShowInfo.releaseDate
-        cell.genreLabel.text = "#\(tvShowInfo.genre)"
-        cell.posterImageView.image = UIImage(named: tvShowInfo.title)
-        cell.rateLabel.text = "\(tvShowInfo.rate)"
-        cell.titleLabel.text = tvShowInfo.title
-        cell.starring.text = tvShowInfo.starring
-        
-        cell.linkButtonTapHandler = {
-            let storyboard = UIStoryboard(name: "Web", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "WebViewController") as! WebViewController
-            vc.currentTitle = tvShowInfo.title
-            let nav = UINavigationController(rootViewController: vc)
-            self.present(nav, animated: true, completion: nil)
-        }
+//        cell.releaseDate.text = tvShowInfo.releaseDate
+//        cell.genreLabel.text = "#\(tvShowInfo.genre)"
+//        cell.posterImageView.image = UIImage(named: tvShowInfo.title)
+//        cell.rateLabel.text = "\(tvShowInfo.rate)"
+//        cell.titleLabel.text = tvShowInfo.title
+//        cell.starring.text = tvShowInfo.starring
+//
+//        cell.linkButtonTapHandler = {
+//            let storyboard = UIStoryboard(name: "Web", bundle: nil)
+//            let vc = storyboard.instantiateViewController(withIdentifier: "WebViewController") as! WebViewController
+//            vc.currentTitle = tvShowInfo.title
+//            let nav = UINavigationController(rootViewController: vc)
+//            self.present(nav, animated: true, completion: nil)
+//        }
         
         return cell
     }
@@ -55,7 +56,7 @@ class SceneATableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "SceneC", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "SceneCTableViewController") as! SceneCTableViewController
-        vc.currentTvShow = tvShowInformation.tvShow[indexPath.row]
+//        vc.currentTvShow = tvShowInformation.tvShow[indexPath.row]
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -76,6 +77,12 @@ class SceneATableViewController: UITableViewController {
     @IBAction func mapButtonTapped(_ sender: UIBarButtonItem) {
         let storyboard = UIStoryboard(name: "mapView", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "mapViewController")
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func boxOffcieButtonTapped(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "dayBeforeBoxOffice", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "dayBeforeBoxOfficeTableViewController")
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
