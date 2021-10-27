@@ -46,31 +46,7 @@ class ViewController: UIViewController {
         commentLabel.layer.cornerRadius = 10
     }
     
-    func getCurrentWeather(_ latitude: Double, _ longitude: Double) {
-        let url = "https://api.openweathermap.org/data/2.5/weather?lat=\(latitude)&lon=\(longitude)&appid=\(Constants.API_KEY_WEATHER)"
-        AF.request(url, method: .get).validate().responseJSON { response in
-            switch response.result {
-            case .success(let value):
-                let json = JSON(value)
-                
-                let currentTemp = json["main"]["temp"].doubleValue - 273.15
-                self.currentTemperatureLabel.text = "   지금은 \(Int(currentTemp))도예요"
-                print("JSON: \(json)")
-                
-                let currentHumidity = json["main"]["humidity"].doubleValue
-                self.currentHumidityLabel.text = "   \(Int(currentHumidity))%만큼 습해요"
-                
-                let currentWind = json["wind"]["speed"].doubleValue
-                self.currentWindLabel.text = "   \(round(currentWind * 10) / 10)m/s의 바람이 불어요"
-                
-                let currentImage = json["weather"][0]["icon"]
-                let url = URL(string: "https://openweathermap.org/img/wn/\(currentImage)@2x.png")
-                self.currentWeatherImageView.kf.setImage(with: url)
-            case .failure(let error):
-                print(error)
-            }
-        }
-    }
+
     
     @IBAction func resetButtonTapped(_ sender: UIButton) {
         checkUserLocationServicesAuthorization()
@@ -129,7 +105,34 @@ extension ViewController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let coordinate = locations.last?.coordinate {
-            getCurrentWeather(coordinate.latitude, coordinate.longitude)
+            
+            WeatherAPIManager.shared.getCurrentWeather(coordinate.latitude, coordinate.longitude) { statusCode, json in
+                switch statusCode {
+                case 200:
+                    let currentTemp = json["main"]["temp"].doubleValue - 273.15
+                    self.currentTemperatureLabel.text = "   지금은 \(Int(currentTemp))도예요"
+
+                    let currentHumidity = json["main"]["humidity"].doubleValue
+                    self.currentHumidityLabel.text = "   \(Int(currentHumidity))%만큼 습해요"
+
+                    let currentWind = json["wind"]["speed"].doubleValue
+                    self.currentWindLabel.text = "   \(round(currentWind * 10) / 10)m/s의 바람이 불어요"
+
+                    let currentImage = json["weather"][0]["icon"]
+                    let url = URL(string: "https://openweathermap.org/img/wn/\(currentImage)@2x.png")
+                    self.currentWeatherImageView.kf.setImage(with: url)
+                case 400:
+                    let alertController = UIAlertController(title: "위치를 받아올 수 없습니다.", message: nil, preferredStyle: .alert)
+                    let OK = UIAlertAction(title: "확인", style: .default, handler: nil)
+
+                    alertController.addAction(OK)
+                    self.present(alertController, animated: true, completion: nil)
+                default:
+                    print("오류")
+                    
+                }
+            }
+            
             convertToAddress(coordinate)
             
             locationManager.startUpdatingLocation()
