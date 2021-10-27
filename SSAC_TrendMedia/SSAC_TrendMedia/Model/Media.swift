@@ -13,5 +13,6 @@ struct Media {
     let posterImage: String
     let rate: String
     let title: String
+    let mediaType: String
 //    let
 }

@@ -13,8 +13,8 @@ class SceneATableViewController: UITableViewController {
 //    let tvShowInformation = TvShowInformation()
     
     var trendingData: [Media] = []
-    var TVGenreList: [String:String] = [:]
-    var MovieGenreList: [String:String] = [:]
+    var TVGenreList: [String: String] = [:]
+    var MovieGenreList: [String: String] = [:]
     
     var TmpList : [String] = []
     
@@ -38,7 +38,6 @@ class SceneATableViewController: UITableViewController {
                 self.MovieGenreList[item["id"].stringValue] = item["name"].stringValue
             }
         }
-        print(TmpList)
     }
     
     func fetchTrendingData() {
@@ -50,22 +49,20 @@ class SceneATableViewController: UITableViewController {
                     if self.trendingData.count == 20 { break }
                     if item["media_type"].stringValue == "tv" {
                         let genreID = item["genre_ids"][0].stringValue
-                        let genre = self.TVGenreList[genreID] ?? "장르가 없습니다."
                         let releasedDate = item["first_air_date"].stringValue
                         let posterImage = item["poster_path"].stringValue
                         let rate = item["vote_average"].stringValue
                         let title = item["name"].stringValue
                         
-                        self.trendingData.append(Media(releasedDate: releasedDate, genre: genre, posterImage: posterImage, rate: rate, title: title))
+                        self.trendingData.append(Media(releasedDate: releasedDate, genre: genreID, posterImage: posterImage, rate: rate, title: title, mediaType: "tv"))
                     } else if item["media_type"].stringValue == "movie" {
                         let genreID = item["genre_ids"][0].stringValue
-                        let genre = self.MovieGenreList[genreID] ?? "장르가 없습니다."
                         let releasedDate = item["release_date"].stringValue
                         let posterImage = item["poster_path"].stringValue
                         let rate = item["vote_average"].stringValue
                         let title = item["title"].stringValue
                         
-                        self.trendingData.append(Media(releasedDate: releasedDate, genre: genre, posterImage: posterImage, rate: rate, title: title))
+                        self.trendingData.append(Media(releasedDate: releasedDate, genre: genreID, posterImage: posterImage, rate: rate, title: title, mediaType: "movie"))
                     } else {
                         print("")
                     }
@@ -90,15 +87,20 @@ class SceneATableViewController: UITableViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "tvShowCell", for: indexPath) as? SceneATableViewCell else {
             return UITableViewCell()
         }
-        
+        print("로딩중이니...? 이건 테이블뷰 셀인데...")
         let MediaInfo = trendingData[indexPath.row]
         
         cell.releaseDate.text = MediaInfo.releasedDate
-        cell.genreLabel.text = "#\(MediaInfo.genre)"
         let url = URL(string: EndPoint.TMDB_POSTER_URL + MediaInfo.posterImage)
         cell.posterImageView.kf.setImage(with: url)
         cell.rateLabel.text = "\(MediaInfo.rate)"
         cell.titleLabel.text = MediaInfo.title
+        
+        if MediaInfo.mediaType == "tv" {
+            cell.genreLabel.text = "#" + TVGenreList[MediaInfo.genre]!
+        } else {
+            cell.genreLabel.text = "#" + MovieGenreList[MediaInfo.genre]!
+        }
 
         cell.linkButtonTapHandler = {
             let storyboard = UIStoryboard(name: "Web", bundle: nil)
