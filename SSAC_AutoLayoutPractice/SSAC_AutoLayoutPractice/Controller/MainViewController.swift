@@ -26,4 +26,12 @@ class MainViewController: UIViewController {
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true, completion: nil)
     }
+    
+    @IBAction func BaeminButtonTapped(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Baemin", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "BaeminViewController")
+        let nav = UINavigationController(rootViewController: vc)
+        nav.modalPresentationStyle = .fullScreen
+        present(nav, animated: true, completion: nil)
+    }
 }

@@ -45,7 +45,10 @@
                                         <color key="backgroundColor" red="0.78958230920000005" green="0.68147936050000002" blue="0.83187095570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="3번"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="배달의 민족"/>
+                                        <connections>
+                                            <action selector="BaeminButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="nEc-JC-oNa"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALo-kl-ZJQ">
                                         <rect key="frame" x="0.0" y="166.5" width="331" height="47.5"/>
