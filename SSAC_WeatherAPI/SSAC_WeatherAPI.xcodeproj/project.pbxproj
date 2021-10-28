@@ -16,8 +16,8 @@
 		CB0711042726446D0056A1EB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CB0711032726446D0056A1EB /* Alamofire */; };
 		CB071107272644E60056A1EB /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = CB071106272644E60056A1EB /* SwiftyJSON */; };
 		CB071132272787480056A1EB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CB071131272787470056A1EB /* Kingfisher */; };
-		CB07114A2727F62A0056A1EB /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0711492727F62A0056A1EB /* APIKey.swift */; };
 		CBF34DC9272984C400E97456 /* WeatherAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF34DC8272984C300E97456 /* WeatherAPIManager.swift */; };
+		CBF34DCB27298AA500E97456 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF34DCA27298AA500E97456 /* APIKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,8 +29,8 @@
 		CB0710F7272644550056A1EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB0710FA272644550056A1EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB0710FC272644550056A1EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB0711492727F62A0056A1EB /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		CBF34DC8272984C300E97456 /* WeatherAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIManager.swift; sourceTree = "<group>"; };
+		CBF34DCA27298AA500E97456 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,8 +73,8 @@
 				CB0710F7272644550056A1EB /* Assets.xcassets */,
 				CB0710F9272644550056A1EB /* LaunchScreen.storyboard */,
 				CB0710FC272644550056A1EB /* Info.plist */,
-				CB0711492727F62A0056A1EB /* APIKey.swift */,
 				CBF34DC8272984C300E97456 /* WeatherAPIManager.swift */,
+				CBF34DCA27298AA500E97456 /* APIKey.swift */,
 			);
 			path = SSAC_WeatherAPI;
 			sourceTree = "<group>";
@@ -164,7 +164,7 @@
 				CB0710EF272644530056A1EB /* AppDelegate.swift in Sources */,
 				CBF34DC9272984C400E97456 /* WeatherAPIManager.swift in Sources */,
 				CB0710F1272644530056A1EB /* SceneDelegate.swift in Sources */,
-				CB07114A2727F62A0056A1EB /* APIKey.swift in Sources */,
+				CBF34DCB27298AA500E97456 /* APIKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
