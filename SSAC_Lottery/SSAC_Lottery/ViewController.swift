@@ -37,16 +37,18 @@ class ViewController: UIViewController {
         pickerView.dataSource = self
         selectRoundTextField.inputView = pickerView
         pickerView.selectRow(99, inComponent: 0, animated: true)
+        
         getResult(986)
         updateView()
     }
     
     func getResult(_ round: Int) {
-        let url = "https://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo="
-        AF.request(url + "\(round)", method: .get).validate().responseJSON { response in
+        let url = "https://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo=\(round)"
+        AF.request(url, method: .get).validate().responseJSON { response in
             switch response.result {
             case .success(let value):
                 let json = JSON(value)
+                
                 self.selectRoundTextField.text = "\(round)"
                 self.selectedRoundLabel.text = "\(round)회"
                 self.dateLabel.text = "\(json["drwNoDate"]) 추첨"
