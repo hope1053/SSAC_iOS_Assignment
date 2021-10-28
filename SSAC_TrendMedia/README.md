@@ -66,3 +66,6 @@ extension SceneATableViewController: UITableViewDataSourcePrefetching {
 ```
 🔘 TMDB API 연결
 - 기존에 주어진 swift 파일 안에 있는 데이터를 테이블뷰에 띄우도록 구현했던 부분을 TMDB API를 이용하여 현재 Trending List에 있는 데이터를 받아와 반영하도록 코드를 수정했다.
+## ✔️ 21.10.28 업데이트
+🔘 Cast & Crew 정보 네트워킹 부분 추가  
+🔘 로딩되는 경우 JGProgressHUD 라이브러리를 이용해 UI부분 처리
