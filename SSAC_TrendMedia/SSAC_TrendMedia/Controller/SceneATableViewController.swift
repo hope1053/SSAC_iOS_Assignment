@@ -7,30 +7,30 @@
 
 import UIKit
 import SwiftyJSON
+import Alamofire
 
 class SceneATableViewController: UITableViewController {
-
-//    let tvShowInformation = TvShowInformation()
+    
+    var startPage = 1
     
     var trendingData: [Media] = []
     var TVGenreList: [String: String] = [:]
     var MovieGenreList: [String: String] = [:]
     
-    var TmpList : [String] = []
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.prefetchDataSource = self
         tableHeaderView.updateUI()
         fetchTrendingData()
+        fetchGenreData()
     }
+    
     @IBOutlet weak var tableHeaderView: UIView!
     
     func fetchGenreData() {
         TheMovieAPIManager.shared.fetchTVGenreData { json in
             for item in json["genres"].arrayValue {
-                let value = item["id"].stringValue
                 self.TVGenreList[item["id"].stringValue] = item["name"].stringValue
-                self.TmpList.append(value)
             }
         }
         TheMovieAPIManager.shared.fetchMovieGenreData { json in
@@ -41,38 +41,46 @@ class SceneATableViewController: UITableViewController {
     }
     
     func fetchTrendingData() {
-        TheMovieAPIManager.shared.fetchTrendingData { statusCode, json in
-            switch statusCode {
-            case 200:
-                self.fetchGenreData()
-                for item in json["results"].arrayValue {
-                    if self.trendingData.count == 20 { break }
-                    if item["media_type"].stringValue == "tv" {
-                        let genreID = item["genre_ids"][0].stringValue
-                        let releasedDate = item["first_air_date"].stringValue
-                        let posterImage = item["poster_path"].stringValue
-                        let rate = item["vote_average"].stringValue
-                        let title = item["name"].stringValue
-                        
-                        self.trendingData.append(Media(releasedDate: releasedDate, genre: genreID, posterImage: posterImage, rate: rate, title: title, mediaType: "tv"))
-                    } else if item["media_type"].stringValue == "movie" {
-                        let genreID = item["genre_ids"][0].stringValue
-                        let releasedDate = item["release_date"].stringValue
-                        let posterImage = item["poster_path"].stringValue
-                        let rate = item["vote_average"].stringValue
-                        let title = item["title"].stringValue
-                        
-                        self.trendingData.append(Media(releasedDate: releasedDate, genre: genreID, posterImage: posterImage, rate: rate, title: title, mediaType: "movie"))
-                    } else {
-                        print("")
+        let url = "https://api.themoviedb.org/3/trending/all/week?page=\(startPage)&api_key=\(Constants.API_KEY_TMDB)"
+        print(url)
+        AF.request(url, method: .get).validate().responseJSON { response in
+            switch response.result {
+            case .success(let value):
+                let json = JSON(value)
+                let statusCode = response.response?.statusCode ?? 500
+                switch statusCode {
+                case 200:
+                    print(json)
+                    for item in json["results"].arrayValue {
+                        if item["media_type"].stringValue == "tv" {
+                            let genreID = item["genre_ids"][0].stringValue
+                            let releasedDate = item["first_air_date"].stringValue
+                            let posterImage = item["poster_path"].stringValue
+                            let rate = item["vote_average"].stringValue
+                            let title = item["name"].stringValue
+                            
+                            self.trendingData.append(Media(releasedDate: releasedDate, genre: genreID, posterImage: posterImage, rate: rate, title: title, mediaType: "tv"))
+                        } else if item["media_type"].stringValue == "movie" {
+                            let genreID = item["genre_ids"][0].stringValue
+                            let releasedDate = item["release_date"].stringValue
+                            let posterImage = item["poster_path"].stringValue
+                            let rate = item["vote_average"].stringValue
+                            let title = item["title"].stringValue
+                            
+                            self.trendingData.append(Media(releasedDate: releasedDate, genre: genreID, posterImage: posterImage, rate: rate, title: title, mediaType: "movie"))
+                        } else {
+                            print("")
+                        }
                     }
+                    
+                    self.tableView.reloadData()
+                case 400:
+                    print("error")
+                default:
+                    print("error")
                 }
-                
-                self.tableView.reloadData()
-            case 400:
-                print("error")
-            default:
-                print("error")
+            case .failure(let error):
+                print(error)
             }
         }
     }
@@ -87,7 +95,6 @@ class SceneATableViewController: UITableViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "tvShowCell", for: indexPath) as? SceneATableViewCell else {
             return UITableViewCell()
         }
-        print("로딩중이니...? 이건 테이블뷰 셀인데...")
         let MediaInfo = trendingData[indexPath.row]
         
         cell.releaseDate.text = MediaInfo.releasedDate
@@ -97,9 +104,11 @@ class SceneATableViewController: UITableViewController {
         cell.titleLabel.text = MediaInfo.title
         
         if MediaInfo.mediaType == "tv" {
-            cell.genreLabel.text = "#" + TVGenreList[MediaInfo.genre]!
+            let genre = TVGenreList[MediaInfo.genre] ?? ""
+            cell.genreLabel.text = "#" + genre
         } else {
-            cell.genreLabel.text = "#" + MovieGenreList[MediaInfo.genre]!
+            let genre = MovieGenreList[MediaInfo.genre] ?? ""
+            cell.genreLabel.text = "#" + genre
         }
 
         cell.linkButtonTapHandler = {
@@ -148,6 +157,18 @@ class SceneATableViewController: UITableViewController {
         let storyboard = UIStoryboard(name: "dayBeforeBoxOffice", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "dayBeforeBoxOfficeTableViewController")
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+}
+
+extension SceneATableViewController: UITableViewDataSourcePrefetching {
+    func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
+        for indexPath in indexPaths {
+            if trendingData.count - 1 == indexPath.row && startPage <= 10 {
+                startPage += 1
+                fetchTrendingData()
+                print("prefetch: \(indexPath)")
+            }
+        }
     }
 }
 

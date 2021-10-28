@@ -40,6 +40,7 @@ class SceneBTableViewController: UITableViewController, UITableViewDataSourcePre
         super.viewDidLoad()
         
         movieSeachBar.delegate = self
+//        movieSeachBar.showsCancelButton = true
         movieTableView.prefetchDataSource = self
         
         navigationItem.title = "영화 검색"
@@ -60,7 +61,6 @@ class SceneBTableViewController: UITableViewController, UITableViewDataSourcePre
                 switch response.result {
                 case .success(let value):
                     let json = JSON(value)
-                    print(json)
 //                    self.movieData = []
                     self.totalCount = json["total"].intValue
                     for item in json["items"].arrayValue {
@@ -119,7 +119,30 @@ class SceneBTableViewController: UITableViewController, UITableViewDataSourcePre
 }
 
 extension SceneBTableViewController: UISearchBarDelegate {
+    // 취소버튼 눌렀을 때 실행
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.text = ""
+        movieData.removeAll()
+        startPage = 1
+        tableView.reloadData()
+        movieSeachBar.setShowsCancelButton(false, animated: true)
+    }
+    
+    // 서치바에서 커서가 깜빡이기 시작할때를 인식함
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        print(#function)
+        movieSeachBar.setShowsCancelButton(true, animated: true)
+    }
+    
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        view.endEditing(true)
+        movieData.removeAll()
+        startPage = 1
         fetchMovieData()
     }
+    
+    // 실시간으로 검색할 수 있는 기능~
+//    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+//        <#code#>
+//    }
 }
