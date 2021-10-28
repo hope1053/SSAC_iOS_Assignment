@@ -21,6 +21,7 @@ No. | 날짜 | 과제 | 주제 | TIL
 16 | 2021.10.25 | [Lottery Project](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Lottery) | Network, SwiftyJSON, Alamofire | [Day19 TIL](https://velog.io/@hope1053/SeSACiOSDay-19-TIL)
 17 | 2021.10.26 | [Trend Media](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_TrendMedia)</br>[Weather API](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_WeatherAPI) | NetWork, CoreLocation | [Day20 TIL](https://velog.io/@hope1053/SeSACiOSDay-20-TIL)
 18 | 2021.10.27 | [Weather API](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_WeatherAPI)</br>[Trend Media](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_TrendMedia) | - API, Networking 파트 코드 개선</br>- TMDB API, PageNation | [Day21 TIL](https://velog.io/@hope1053/SeSACiOSDay-21-TIL)
+19 | 2021.10.28 | [Trend Media](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_TrendMedia)
 
 <br>
 
