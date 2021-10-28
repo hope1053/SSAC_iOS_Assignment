@@ -10,9 +10,12 @@ import Foundation
 struct Media {
     let releasedDate: String
     let genre: String
+    let backdrop: String
     let posterImage: String
     let rate: String
     let title: String
     let mediaType: String
-//    let
+    let overview: String
+    
+    let mediaID: Int
 }

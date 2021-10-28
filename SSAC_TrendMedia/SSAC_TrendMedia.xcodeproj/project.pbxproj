@@ -24,6 +24,9 @@
 		CB16D6F4271D434E00041A0A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CB16D6F3271D434E00041A0A /* Kingfisher */; };
 		CB16D6F6271D4CF600041A0A /* Web.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB16D6F5271D4CF600041A0A /* Web.storyboard */; };
 		CB16D6F8271D4D0B00041A0A /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB16D6F7271D4D0B00041A0A /* WebViewController.swift */; };
+		CB359D5A272A7FD70028778F /* Cast.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB359D59272A7FD70028778F /* Cast.swift */; };
+		CB359D5C272A7FF90028778F /* Crew.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB359D5B272A7FF90028778F /* Crew.swift */; };
+		CB359D5F272A87910028778F /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = CB359D5E272A87910028778F /* JGProgressHUD */; };
 		CB986074271B205300F6580C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB986073271B205300F6580C /* AppDelegate.swift */; };
 		CB986076271B205300F6580C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB986075271B205300F6580C /* SceneDelegate.swift */; };
 		CB98607B271B205300F6580C /* SceneA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB986079271B205300F6580C /* SceneA.storyboard */; };
@@ -62,6 +65,8 @@
 		CB0D9473271C240D004D3FDF /* SceneBTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneBTableViewCell.swift; sourceTree = "<group>"; };
 		CB16D6F5271D4CF600041A0A /* Web.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Web.storyboard; sourceTree = "<group>"; };
 		CB16D6F7271D4D0B00041A0A /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		CB359D59272A7FD70028778F /* Cast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cast.swift; sourceTree = "<group>"; };
+		CB359D5B272A7FF90028778F /* Crew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crew.swift; sourceTree = "<group>"; };
 		CB986070271B205300F6580C /* SSAC_TrendMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSAC_TrendMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB986073271B205300F6580C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB986075271B205300F6580C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB359D5F272A87910028778F /* JGProgressHUD in Frameworks */,
 				CB07113A27279D3B0056A1EB /* SwiftyJSON in Frameworks */,
 				CB16D6F4271D434E00041A0A /* Kingfisher in Frameworks */,
 				CB07113727279D2D0056A1EB /* Alamofire in Frameworks */,
@@ -159,6 +165,8 @@
 				CB9B10042720357B00A145BB /* coordinateInformation.swift */,
 				CB9B10062720359A00A145BB /* theaterLocation.swift */,
 				CBF34DD327299D0100E97456 /* Media.swift */,
+				CB359D59272A7FD70028778F /* Cast.swift */,
+				CB359D5B272A7FF90028778F /* Crew.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -212,6 +220,7 @@
 				CB16D6F3271D434E00041A0A /* Kingfisher */,
 				CB07113627279D2D0056A1EB /* Alamofire */,
 				CB07113927279D3B0056A1EB /* SwiftyJSON */,
+				CB359D5E272A87910028778F /* JGProgressHUD */,
 			);
 			productName = SSAC_Day13_TrendMedia;
 			productReference = CB986070271B205300F6580C /* SSAC_TrendMedia.app */;
@@ -245,6 +254,7 @@
 				CB16D6F2271D434E00041A0A /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				CB07113527279D2D0056A1EB /* XCRemoteSwiftPackageReference "Alamofire" */,
 				CB07113827279D3B0056A1EB /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				CB359D5D272A87900028778F /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
 			);
 			productRefGroup = CB986071271B205300F6580C /* Products */;
 			projectDirPath = "";
@@ -286,6 +296,7 @@
 				CB98608C271BE3C000F6580C /* SceneATableViewController.swift in Sources */,
 				CB0D9466271BF465004D3FDF /* UIView+Extension.swift in Sources */,
 				CBF34DD427299D0100E97456 /* Media.swift in Sources */,
+				CB359D5C272A7FF90028778F /* Crew.swift in Sources */,
 				CB9B10052720357B00A145BB /* coordinateInformation.swift in Sources */,
 				CBA0C38E271EB5CE00062E28 /* BookCollectionViewCell.swift in Sources */,
 				CBA0C389271EB57B00062E28 /* BookCollectionViewController.swift in Sources */,
@@ -298,6 +309,7 @@
 				CB16D6F8271D4D0B00041A0A /* WebViewController.swift in Sources */,
 				CB98608A271B21DD00F6580C /* TvShow.swift in Sources */,
 				CB986076271B205300F6580C /* SceneDelegate.swift in Sources */,
+				CB359D5A272A7FD70028778F /* Cast.swift in Sources */,
 				CB0711402727E98E0056A1EB /* APIKey.swift in Sources */,
 				CBA0C384271EA7DF00062E28 /* SummaryTableViewCell.swift in Sources */,
 				CB9B10072720359A00A145BB /* theaterLocation.swift in Sources */,
@@ -550,6 +562,14 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		CB359D5D272A87900028778F /* XCRemoteSwiftPackageReference "JGProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JonasGessner/JGProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -567,6 +587,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CB16D6F2271D434E00041A0A /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		CB359D5E272A87910028778F /* JGProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB359D5D272A87900028778F /* XCRemoteSwiftPackageReference "JGProgressHUD" */;
+			productName = JGProgressHUD;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

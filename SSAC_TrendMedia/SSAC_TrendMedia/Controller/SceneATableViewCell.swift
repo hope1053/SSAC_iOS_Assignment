@@ -12,7 +12,7 @@ class SceneATableViewCell: UITableViewCell {
     @IBOutlet weak var genreLabel: UILabel!
     @IBOutlet weak var posterImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var starring: UILabel!
+    @IBOutlet weak var overview: UILabel!
     @IBOutlet weak var rateLabel: UILabel!
     @IBOutlet var mediaView: UIView!
     

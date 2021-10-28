@@ -8,6 +8,7 @@
 import UIKit
 import SwiftyJSON
 import Alamofire
+import JGProgressHUD
 
 class SceneATableViewController: UITableViewController {
     
@@ -16,6 +17,8 @@ class SceneATableViewController: UITableViewController {
     var trendingData: [Media] = []
     var TVGenreList: [String: String] = [:]
     var MovieGenreList: [String: String] = [:]
+    
+    let progress = JGProgressHUD()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,8 +44,9 @@ class SceneATableViewController: UITableViewController {
     }
     
     func fetchTrendingData() {
+        progress.textLabel.text = "불러오는 중..."
+        progress.show(in: view, animated: true)
         let url = "https://api.themoviedb.org/3/trending/all/week?page=\(startPage)&api_key=\(Constants.API_KEY_TMDB)"
-        print(url)
         AF.request(url, method: .get).validate().responseJSON { response in
             switch response.result {
             case .success(let value):
@@ -50,7 +54,7 @@ class SceneATableViewController: UITableViewController {
                 let statusCode = response.response?.statusCode ?? 500
                 switch statusCode {
                 case 200:
-                    print(json)
+//                    print(json)
                     for item in json["results"].arrayValue {
                         if item["media_type"].stringValue == "tv" {
                             let genreID = item["genre_ids"][0].stringValue
@@ -58,22 +62,29 @@ class SceneATableViewController: UITableViewController {
                             let posterImage = item["poster_path"].stringValue
                             let rate = item["vote_average"].stringValue
                             let title = item["name"].stringValue
+                            let overview = item["overview"].stringValue
+                            let mediaID = item["id"].intValue
+                            let backdrop = item["backdrop_path"].stringValue
                             
-                            self.trendingData.append(Media(releasedDate: releasedDate, genre: genreID, posterImage: posterImage, rate: rate, title: title, mediaType: "tv"))
+                            self.trendingData.append(Media(releasedDate: releasedDate, genre: genreID, backdrop: backdrop, posterImage: posterImage, rate: rate, title: title, mediaType: "tv", overview: overview, mediaID: mediaID))
                         } else if item["media_type"].stringValue == "movie" {
                             let genreID = item["genre_ids"][0].stringValue
                             let releasedDate = item["release_date"].stringValue
                             let posterImage = item["poster_path"].stringValue
                             let rate = item["vote_average"].stringValue
                             let title = item["title"].stringValue
+                            let overview = item["overview"].stringValue
+                            let mediaID = item["id"].intValue
+                            let backdrop = item["backdrop_path"].stringValue
                             
-                            self.trendingData.append(Media(releasedDate: releasedDate, genre: genreID, posterImage: posterImage, rate: rate, title: title, mediaType: "movie"))
+                            self.trendingData.append(Media(releasedDate: releasedDate, genre: genreID, backdrop: backdrop, posterImage: posterImage, rate: rate, title: title, mediaType: "movie", overview: overview, mediaID: mediaID))
                         } else {
                             print("")
                         }
                     }
                     
                     self.tableView.reloadData()
+                    self.progress.dismiss(animated: true)
                 case 400:
                     print("error")
                 default:
@@ -98,10 +109,11 @@ class SceneATableViewController: UITableViewController {
         let MediaInfo = trendingData[indexPath.row]
         
         cell.releaseDate.text = MediaInfo.releasedDate
-        let url = URL(string: EndPoint.TMDB_POSTER_URL + MediaInfo.posterImage)
+        let url = URL(string: EndPoint.TMDB_IMAGE_URL + MediaInfo.posterImage)
         cell.posterImageView.kf.setImage(with: url)
         cell.rateLabel.text = "\(MediaInfo.rate)"
         cell.titleLabel.text = MediaInfo.title
+        cell.overview.text = MediaInfo.overview
         
         if MediaInfo.mediaType == "tv" {
             let genre = TVGenreList[MediaInfo.genre] ?? ""
@@ -129,7 +141,10 @@ class SceneATableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "SceneC", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "SceneCTableViewController") as! SceneCTableViewController
-//        vc.currentTvShow = trendingData[indexPath.row]
+//        vc.mediaID = trendingData[indexPath.row].mediaID
+//        vc.mediaType = trendingData[indexPath.row].mediaType
+        vc.currentMedia = trendingData[indexPath.row]
+        
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
