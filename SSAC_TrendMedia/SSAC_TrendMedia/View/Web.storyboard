@@ -11,13 +11,32 @@
         <!--Web View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="WebViewController" id="Y6W-OH-hqX" customClass="WebViewController" customModule="SSAC_Day14_TrendMedia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WebViewController" id="Y6W-OH-hqX" customClass="WebViewController" customModule="SSAC_TrendMedia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p9b-ek-AQH">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="p9b-ek-AQH" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="3aR-G5-CcU"/>
+                            <constraint firstItem="p9b-ek-AQH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Dda-Ap-7an"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="p9b-ek-AQH" secondAttribute="trailing" id="dZe-kB-YrX"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="p9b-ek-AQH" secondAttribute="bottom" id="z9s-Ae-dD9"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="p9b-ek-AQH" id="PLh-Yi-NEw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -24,8 +24,8 @@ class SceneATableViewController: UITableViewController {
         super.viewDidLoad()
         tableView.prefetchDataSource = self
         tableHeaderView.updateUI()
-        fetchTrendingData()
         fetchGenreData()
+        fetchTrendingData()
     }
     
     @IBOutlet weak var tableHeaderView: UIView!
@@ -54,7 +54,6 @@ class SceneATableViewController: UITableViewController {
                 let statusCode = response.response?.statusCode ?? 500
                 switch statusCode {
                 case 200:
-//                    print(json)
                     for item in json["results"].arrayValue {
                         if item["media_type"].stringValue == "tv" {
                             let genreID = item["genre_ids"][0].stringValue
@@ -126,7 +125,7 @@ class SceneATableViewController: UITableViewController {
         cell.linkButtonTapHandler = {
             let storyboard = UIStoryboard(name: "Web", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "WebViewController") as! WebViewController
-            vc.currentTitle = MediaInfo.title
+            vc.currentMedia = MediaInfo
             let nav = UINavigationController(rootViewController: vc)
             self.present(nav, animated: true, completion: nil)
         }
@@ -141,8 +140,6 @@ class SceneATableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "SceneC", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "SceneCTableViewController") as! SceneCTableViewController
-//        vc.mediaID = trendingData[indexPath.row].mediaID
-//        vc.mediaType = trendingData[indexPath.row].mediaType
         vc.currentMedia = trendingData[indexPath.row]
         
         self.navigationController?.pushViewController(vc, animated: true)

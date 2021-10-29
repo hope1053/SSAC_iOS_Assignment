@@ -8,6 +8,7 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import JGProgressHUD
 
 class dayBeforeBoxOfficeTableViewController: UITableViewController {
         
@@ -15,6 +16,8 @@ class dayBeforeBoxOfficeTableViewController: UITableViewController {
     @IBOutlet var boxOfficeTableView: UITableView!
     
     var dayBeforeBoxOffice: [String] = []
+    
+    let progress = JGProgressHUD()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +29,8 @@ class dayBeforeBoxOfficeTableViewController: UITableViewController {
     }
     
     func fetchData() {
+        progress.textLabel.text = "불러오는 중..."
+        progress.show(in: view, animated: true)
         let date = Date().dayBefore
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyyMMdd"
@@ -45,6 +50,7 @@ class dayBeforeBoxOfficeTableViewController: UITableViewController {
                     self.dayBeforeBoxOffice.append(title)
                 }
                 self.boxOfficeTableView.reloadData()
+                self.progress.dismiss(animated: true)
             case .failure(let error):
                 print(error)
             }
