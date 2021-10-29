@@ -1,6 +1,6 @@
 # Trend Media
 ## ✔️ 21.10.18 업데이트
-### KingFisher(Image Library) & Passing data between viewControllers
+### 🔘 KingFisher(Image Library) & Passing data between viewControllers
 `Scene A` 컨트롤러에서 table view cell을 클릭했을 때 `Scene C`컨트롤러로 데이터를 전달해주는 기능
 1. 먼저 데이터를 받을 SceneCviewController에 데이터를 받을 변수를 정의해주었다.
 ```swift
@@ -37,7 +37,7 @@ func updateUI() {
     }
 ```
 ## ✔️ 21.10.27 업데이트
-🔘 PageNation 구현
+### 🔘 PageNation 구현
 - TMDB의 URL에는 따로 page나 보여줄 콘텐츠의 갯수가 언급돼있지 않아서 `page='숫자'` 쿼리를 추가해봤는데 적용이 되는걸 확인할 수 있었다! 
 - startPage라는 변수를 생성 후 1을 할당해주었다.(1페이지부터 정보를 받아올 것이기 때문에!)
 - viewDidLoad 메서드 내에서 prefetchDatasource도 연결시켜주었다.
@@ -64,8 +64,11 @@ extension SceneATableViewController: UITableViewDataSourcePrefetching {
     }
 }
 ```
-🔘 TMDB API 연결
+### 🔘 TMDB API 연결
 - 기존에 주어진 swift 파일 안에 있는 데이터를 테이블뷰에 띄우도록 구현했던 부분을 TMDB API를 이용하여 현재 Trending List에 있는 데이터를 받아와 반영하도록 코드를 수정했다.
 ## ✔️ 21.10.28 업데이트
-🔘 Cast & Crew 정보 네트워킹 부분 추가  
-🔘 로딩되는 경우 JGProgressHUD 라이브러리를 이용해 UI부분 처리
+### 🔘 Cast & Crew 정보 네트워킹 부분 추가  
+### 🔘 로딩되는 경우 JGProgressHUD 라이브러리를 이용해 UI부분 처리  
+### 🔘 메인 화면 Table View Cell 속 링크 버튼 클릭 시 관련 Video 보여주는 WebView로 이동
+이 부분 구현하는 과정에서 Media 데이터 didSet을 사용해서 구현하려고 했으나 ... webView가 생성되는 타이밍과 서버로부터 정보를 받는 타이밍을 조절하지 못하여!! 그냥 간단하게 fetchVideoData() 메서드 내에서 url을 생성 후 웹뷰를 띄우는 과정까지 모두 구현해서 실행하니까 해결할 수 있었다.
+현재 webView는 이전 뷰컨트롤러부터 정보를 전달받고 있는데 이는 viewDidLoad단계에서 이미 다 처리가 된 상태이기 때문에 그 후에 url 생성 및 웹뷰를 띄우는 것 모두 무리없이 구현할 수 있었다!
