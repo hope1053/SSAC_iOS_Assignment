@@ -24,6 +24,7 @@ No. | 날짜 | 과제 | 주제 | TIL
 19 | 2021.10.28 | [Trend Media](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_TrendMedia)
 20 | 2021.10.29
 21 | 2021.11.01 | | | [Day24 TIL](https://velog.io/@hope1053/SeSACiOSDay-24-TIL)
+22 | 2021.11.02 | | | [Day25 TIL](https://velog.io/@hope1053/SeSACiOSDay-25-TIL)
 
 <br>
 
