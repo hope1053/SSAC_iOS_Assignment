@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SSAC_Day12_ShoppingList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SSAC_ShoppingList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -35,12 +35,16 @@
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLb-Ot-bAy">
                                         <rect key="frame" x="310" y="17" width="49" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="CLb-Ot-bAy" secondAttribute="height" multiplier="49:31" id="ffJ-Xm-itZ"/>
+                                        </constraints>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="추가">
                                             <backgroundConfiguration key="background" cornerRadius="10">
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                             </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="10"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="addList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nlE-5L-omX"/>
@@ -49,13 +53,13 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
-                                    <constraint firstItem="CLb-Ot-bAy" firstAttribute="leading" secondItem="tfF-vi-cAj" secondAttribute="trailing" constant="10" id="5p9-Mk-0FL"/>
                                     <constraint firstItem="tfF-vi-cAj" firstAttribute="top" secondItem="Ft9-So-ObK" secondAttribute="top" id="G1O-XB-dgF"/>
                                     <constraint firstItem="tfF-vi-cAj" firstAttribute="width" secondItem="Ft9-So-ObK" secondAttribute="width" multiplier="0.738786" id="R1v-n4-976"/>
                                     <constraint firstAttribute="bottom" secondItem="tfF-vi-cAj" secondAttribute="bottom" id="RQO-du-uZq"/>
                                     <constraint firstAttribute="trailing" secondItem="CLb-Ot-bAy" secondAttribute="trailing" constant="20" id="W0e-H5-NEC"/>
                                     <constraint firstItem="tfF-vi-cAj" firstAttribute="leading" secondItem="Ft9-So-ObK" secondAttribute="leading" constant="20" symbolic="YES" id="myy-6P-B2a"/>
                                     <constraint firstItem="CLb-Ot-bAy" firstAttribute="centerY" secondItem="Ft9-So-ObK" secondAttribute="centerY" id="q4H-0i-CBb"/>
+                                    <constraint firstItem="CLb-Ot-bAy" firstAttribute="width" secondItem="Ft9-So-ObK" secondAttribute="width" multiplier="0.129288" id="yWc-y0-ewK"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tZV-dZ-XBs">
@@ -63,7 +67,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="shoppingCell" id="fIy-b6-yoq" customClass="shoppingCell" customModule="SSAC_Day12_ShoppingList" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="shoppingCell" id="fIy-b6-yoq" customClass="shoppingCell" customModule="SSAC_ShoppingList" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="374" height="31"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fIy-b6-yoq" id="L09-wH-hzt">

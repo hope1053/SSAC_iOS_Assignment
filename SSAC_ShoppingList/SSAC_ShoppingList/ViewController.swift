@@ -6,15 +6,12 @@
 //
 
 import UIKit
+import RealmSwift
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var shoppingList: [Shopping] = [] {
-        didSet{
-            updateUI()
-            saveData()
-        }
-    }
+    let localRealm = try! Realm()
+    var tasks: Results<ShoppingList>!
     
     @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var alertLabel: UILabel!
@@ -23,13 +20,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadData()
+        tasks = localRealm.objects(ShoppingList.self)
         updateUI()
         shoppingTable.rowHeight = UITableView.automaticDimension
     }
 
     func updateUI() {
-        if shoppingList.isEmpty {
+        if tasks.isEmpty {
             alertLabel.alpha = 1
         } else {
             alertLabel.alpha = 0
@@ -38,42 +35,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         backgroundView.layer.cornerRadius = 10
     }
     
-    func saveData() {
-        var tmpList: [[String: Any]] = []
-        
-        for product in shoppingList {
-            let data: [String: Any] = [
-                "whatToBuy": product.whatToBuy,
-                "checkTapped": product.checkTapped,
-                "starTapped": product.starTapped
-            ]
-            tmpList.append(data)
-        }
-        
-        UserDefaults.standard.set(tmpList, forKey: "shoppingList")
-        shoppingTable.reloadData()
-    }
-    
-    func loadData() {
-        if let data = UserDefaults.standard.object(forKey: "shoppingList") as? [[String: Any]] {
-            var tmpList = [Shopping]()
-            
-            for datum in data {
-                guard let whatToBuy = datum["whatToBuy"] as? String else {return}
-                guard let starTapped = datum["starTapped"] as? Bool else {return}
-                guard let checkTapped = datum["checkTapped"] as? Bool else {return}
-                
-                let currentProduct = Shopping(whatToBuy: whatToBuy, checkTapped: checkTapped, starTapped: starTapped)
-                tmpList.append(currentProduct)
-            }
-            print(tmpList)
-            self.shoppingList = tmpList
-//            print(shoppingList)
-        }
-    }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return shoppingList.count
+        return tasks.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -81,37 +44,35 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             return UITableViewCell()
         }
         
-        let currentProduct = shoppingList[indexPath.row]
-        cell.nameLabel.text = currentProduct.whatToBuy
-        cell.starButton.isSelected = currentProduct.starTapped
-        cell.checkButton.isSelected = currentProduct.checkTapped
+        let currentProduct = tasks[indexPath.row]
+        
+        cell.nameLabel.text = currentProduct.content
+        cell.starButton.isSelected = currentProduct.favorite
+        cell.checkButton.isSelected = currentProduct.isDone
         
         cell.background.layer.masksToBounds = true
         cell.background.layer.cornerRadius = 10
         
-        cell.starButtonTapHandler = { isSelected in
-            self.shoppingList[indexPath.row].starTapped = isSelected
-        }
-        
-        cell.checkButtonTapHandler = { isSelected in
-            self.shoppingList[indexPath.row].checkTapped = isSelected
-        }
+//        cell.starButtonTapHandler = { isSelected in
+//            self.shoppingList[indexPath.row].starTapped = isSelected
+//        }
+//
+//        cell.checkButtonTapHandler = { isSelected in
+//            self.shoppingList[indexPath.row].checkTapped = isSelected
+//        }
         
         return cell
     }
     
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            shoppingList.remove(at: indexPath.row)
-            saveData()
-        }
-    }
-    
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return UIScreen.main.bounds.height / 18
+//    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+//        if editingStyle == .delete {
+//            shoppingList.remove(at: indexPath.row)
+//            saveData()
+//        }
 //    }
+    
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UIScreen.main.bounds.height / 18
+        return UIScreen.main.bounds.height / 16
     }
     
     @IBAction func addList(_ sender: UIButton) {
@@ -122,12 +83,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             alert.addAction(OK)
             present(alert, animated: true, completion: nil)
         } else {
-            let newProduct = Shopping(whatToBuy: newProduct, checkTapped: false, starTapped: false)
-            shoppingList.append(newProduct)
+            let task = ShoppingList(content: newProduct)
+            try! localRealm.write {
+                localRealm.add(task)
+            }
+            tasks = localRealm.objects(ShoppingList.self)
+            shoppingTable.reloadData()
+            print("Realm is located at:", localRealm.configuration.fileURL!)
         }
 
         inputTextField.text = ""
-        saveData()
     }
     
     @IBAction func BGTapped(_ sender: UITapGestureRecognizer) {
