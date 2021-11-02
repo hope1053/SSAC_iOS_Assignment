@@ -31,7 +31,6 @@ class SceneBTableViewController: UITableViewController, UITableViewDataSourcePre
     @IBOutlet var movieTableView: UITableView!
     @IBOutlet var movieSeachBar: UISearchBar!
     
-//    let tvShowInformation = TvShowInformation()
     var startPage = 1
     var totalCount = 0
     var movieData: [TvShow] = []
@@ -40,7 +39,6 @@ class SceneBTableViewController: UITableViewController, UITableViewDataSourcePre
         super.viewDidLoad()
         
         movieSeachBar.delegate = self
-//        movieSeachBar.showsCancelButton = true
         movieTableView.prefetchDataSource = self
         
         navigationItem.title = "영화 검색"
@@ -49,7 +47,6 @@ class SceneBTableViewController: UITableViewController, UITableViewDataSourcePre
     
     // 네이버 영화 네트워크 통신
     func fetchMovieData() {
-        // 옵셔널 스트링 타입 -> 옵셔널 풀어줘야함~ -> 쿼리에 문제가 없을 때 네트워킹을 진행해라~
         let searchKeyword = movieSeachBar.text ?? ""
         if let query = searchKeyword.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) {
             let url = "https://openapi.naver.com/v1/search/movie.json?query=\(query)&display=10&start=\(startPage)"
@@ -61,7 +58,6 @@ class SceneBTableViewController: UITableViewController, UITableViewDataSourcePre
                 switch response.result {
                 case .success(let value):
                     let json = JSON(value)
-//                    self.movieData = []
                     self.totalCount = json["total"].intValue
                     for item in json["items"].arrayValue {
                         let titleValue = item["title"].stringValue.replacingOccurrences(of: "<b>", with: "").replacingOccurrences(of: "</b>", with: "")

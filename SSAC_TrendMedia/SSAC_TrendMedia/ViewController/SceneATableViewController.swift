@@ -82,7 +82,9 @@ class SceneATableViewController: UITableViewController {
                         }
                     }
                     
-                    self.tableView.reloadData()
+                    DispatchQueue.main.async {
+                        self.tableView.reloadData()
+                    }
                     self.progress.dismiss(animated: true)
                 case 400:
                     print("error")
