@@ -22,7 +22,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         tasks = localRealm.objects(ShoppingList.self)
         updateUI()
-        shoppingTable.rowHeight = UITableView.automaticDimension
     }
 
     func updateUI() {
@@ -53,25 +52,31 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.background.layer.masksToBounds = true
         cell.background.layer.cornerRadius = 10
         
-//        cell.starButtonTapHandler = { isSelected in
-//            self.shoppingList[indexPath.row].starTapped = isSelected
-//        }
-//
-//        cell.checkButtonTapHandler = { isSelected in
-//            self.shoppingList[indexPath.row].checkTapped = isSelected
-//        }
+        cell.starButtonTapHandler = { isSelected in
+            try! self.localRealm.write {
+                currentProduct.favorite = !currentProduct.favorite
+            }
+        }
+
+        cell.checkButtonTapHandler = { isSelected in
+            try! self.localRealm.write {
+                currentProduct.isDone = !currentProduct.isDone
+            }
+        }
         
         return cell
     }
     
-//    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-//        if editingStyle == .delete {
-//            shoppingList.remove(at: indexPath.row)
-//            saveData()
-//        }
-//    }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            try! localRealm.write {
+                localRealm.delete(tasks[indexPath.row])
+                tableView.reloadData()
+            }
+        }
+    }
     
-    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UIScreen.main.bounds.height / 16
     }
     
@@ -102,6 +107,32 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBAction func returnKeyTapped(_ sender: UITextField) {
         view.endEditing(true)
     }
+    
+    @IBAction func sortDataButtonTapped(_ sender: UIButton) {
+        let alert = UIAlertController(title: "정렬", message: nil, preferredStyle: .actionSheet)
+        
+        let todo = UIAlertAction(title: "완료 기준", style: .default) { _ in
+            self.tasks = self.tasks.sorted(byKeyPath: "isDone", ascending: true)
+            self.shoppingTable.reloadData()
+        }
+        let favorite = UIAlertAction(title: "즐겨찾기 기준", style: .default) { _ in
+            self.tasks = self.tasks.sorted(byKeyPath: "favorite", ascending: false)
+            self.shoppingTable.reloadData()
+        }
+        let product = UIAlertAction(title: "품목 기준", style: .default) { _ in
+            self.tasks = self.tasks.sorted(byKeyPath: "content", ascending: true)
+            self.shoppingTable.reloadData()
+        }
+        let cancel = UIAlertAction(title: "취소", style: .cancel)
+        
+        alert.addAction(todo)
+        alert.addAction(favorite)
+        alert.addAction(product)
+        alert.addAction(cancel)
+        
+        present(alert, animated: true, completion: nil)
+    }
+    
 }
 
 class shoppingCell: UITableViewCell {

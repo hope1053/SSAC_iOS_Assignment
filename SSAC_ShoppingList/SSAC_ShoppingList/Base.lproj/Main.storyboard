@@ -143,12 +143,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QmK-eC-CDM">
+                                <rect key="frame" x="351" y="50.5" width="43" height="31"/>
+                                <color key="tintColor" red="0.1070211391" green="0.1070211391" blue="0.1070211391" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="ellipsis" catalog="system"/>
+                                <connections>
+                                    <action selector="sortDataButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ysx-f1-Fse"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="PWH-kb-bar" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1iX-UJ-89M"/>
+                            <constraint firstItem="QmK-eC-CDM" firstAttribute="centerY" secondItem="PWH-kb-bar" secondAttribute="centerY" id="4Id-VZ-geT"/>
                             <constraint firstItem="Ft9-So-ObK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="17" id="4TY-27-MoJ"/>
                             <constraint firstItem="Ft9-So-ObK" firstAttribute="top" secondItem="PWH-kb-bar" secondAttribute="bottom" constant="32" id="5Hw-9P-tDF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tZV-dZ-XBs" secondAttribute="trailing" constant="20" id="5Ml-7y-rN4"/>
@@ -156,6 +166,7 @@
                             <constraint firstItem="zm3-kf-zIx" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ILp-rt-Kw8"/>
                             <constraint firstItem="Ft9-So-ObK" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0725446" id="NIS-D6-d38"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ft9-So-ObK" secondAttribute="trailing" constant="18" id="Rpc-gc-oYO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QmK-eC-CDM" secondAttribute="trailing" constant="20" id="UXc-jt-XfT"/>
                             <constraint firstItem="tZV-dZ-XBs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="VNC-2o-1S2"/>
                             <constraint firstItem="zm3-kf-zIx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="m1t-xA-dOO"/>
                             <constraint firstItem="PWH-kb-bar" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="uNY-fz-7UQ"/>
@@ -185,6 +196,7 @@
     <resources>
         <image name="checkmark.square" catalog="system" width="128" height="114"/>
         <image name="checkmark.square.fill" catalog="system" width="128" height="114"/>
+        <image name="ellipsis" catalog="system" width="128" height="37"/>
         <image name="star" catalog="system" width="128" height="116"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <systemColor name="systemBackgroundColor">
