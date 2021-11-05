@@ -16,33 +16,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="1SM-WU-fCx">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="어제 일간 순위" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hut-O2-FQl">
-                                    <rect key="frame" x="20" y="20" width="168.5" height="36"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="일간 순위" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hut-O2-FQl">
+                                    <rect key="frame" x="20" y="20" width="110.5" height="36"/>
                                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2021.10.26" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PqJ-Ib-EcU">
-                                    <rect key="frame" x="201" y="39" width="70.5" height="17"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeN-Ih-3N5">
+                                    <rect key="frame" x="20" y="70" width="374" height="54"/>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="2021년 11월 4일"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="2021년 11월 4일">
+                                        <backgroundConfiguration key="background">
+                                            <color key="strokeColor" red="0.1070211391" green="0.1070211391" blue="0.1070211391" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </backgroundConfiguration>
+                                        <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="dateButtonTapped:" destination="CEL-z7-YKi" eventType="touchUpInside" id="Agy-at-84G"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstItem="Hut-O2-FQl" firstAttribute="leading" secondItem="1SM-WU-fCx" secondAttribute="leading" constant="20" id="6zx-m5-wPg"/>
-                                <constraint firstItem="PqJ-Ib-EcU" firstAttribute="bottom" secondItem="Hut-O2-FQl" secondAttribute="bottom" id="Axo-AT-aKF"/>
+                                <constraint firstItem="oeN-Ih-3N5" firstAttribute="leading" secondItem="1SM-WU-fCx" secondAttribute="leading" constant="20" id="Acp-su-0oo"/>
+                                <constraint firstItem="oeN-Ih-3N5" firstAttribute="top" secondItem="Hut-O2-FQl" secondAttribute="bottom" constant="14" id="SPa-yN-Lue"/>
+                                <constraint firstAttribute="trailing" secondItem="oeN-Ih-3N5" secondAttribute="trailing" constant="20" id="Xjd-1r-ECg"/>
                                 <constraint firstItem="Hut-O2-FQl" firstAttribute="top" secondItem="1SM-WU-fCx" secondAttribute="top" constant="20" id="et2-1q-1cw"/>
-                                <constraint firstItem="PqJ-Ib-EcU" firstAttribute="leading" secondItem="Hut-O2-FQl" secondAttribute="trailing" constant="12.5" id="tKB-Qt-qBZ"/>
+                                <constraint firstItem="oeN-Ih-3N5" firstAttribute="height" secondItem="1SM-WU-fCx" secondAttribute="height" multiplier="0.391304" id="tep-Z7-eAg"/>
                             </constraints>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="s9S-Qa-hLQ">
-                                <rect key="frame" x="0.0" y="119.5" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="182.5" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="s9S-Qa-hLQ" id="0wl-6a-1lL">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -57,7 +68,7 @@
                     </tableView>
                     <connections>
                         <outlet property="boxOfficeTableView" destination="ZjZ-68-oG0" id="yT0-LP-s6a"/>
-                        <outlet property="yesterdayLabel" destination="PqJ-Ib-EcU" id="M0Z-zK-VWw"/>
+                        <outlet property="dateButton" destination="oeN-Ih-3N5" id="Xx1-Eh-6PK"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QG0-Mh-jgZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
