@@ -49,6 +49,7 @@
 		CBA0CC5A2731730500BCC778 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = CBA0CC592731730500BCC778 /* Realm */; };
 		CBA0CC5C2731730500BCC778 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CBA0CC5B2731730500BCC778 /* RealmSwift */; };
 		CBA0CC5F2731734900BCC778 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA0CC5E2731734900BCC778 /* RealmModel.swift */; };
+		CBAA41AA2735547A00657569 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAA41A92735547A00657569 /* DatePickerViewController.swift */; };
 		CBF34DD22729991100E97456 /* TheMovieAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF34DD12729991100E97456 /* TheMovieAPIManager.swift */; };
 		CBF34DD427299D0100E97456 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF34DD327299D0100E97456 /* Media.swift */; };
 /* End PBXBuildFile section */
@@ -92,6 +93,7 @@
 		CBA0C38C271EB5CE00062E28 /* BookCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCollectionViewCell.swift; sourceTree = "<group>"; };
 		CBA0C38D271EB5CE00062E28 /* BookCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookCollectionViewCell.xib; sourceTree = "<group>"; };
 		CBA0CC5E2731734900BCC778 /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
+		CBAA41A92735547A00657569 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		CBF34DD12729991100E97456 /* TheMovieAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMovieAPIManager.swift; sourceTree = "<group>"; };
 		CBF34DD327299D0100E97456 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,6 +134,7 @@
 		CB986072271B205300F6580C /* SSAC_TrendMedia */ = {
 			isa = PBXGroup;
 			children = (
+				CBAA41A8273550F100657569 /* Extension */,
 				CBA0CC5D2731733E00BCC778 /* Realm */,
 				CBA0CC57273172AE00BCC778 /* Cell */,
 				CBF34DD0272998F100E97456 /* API */,
@@ -143,7 +146,6 @@
 				CB98607C271B205600F6580C /* Assets.xcassets */,
 				CB98607E271B205600F6580C /* LaunchScreen.storyboard */,
 				CB986081271B205600F6580C /* Info.plist */,
-				CB0D9465271BF465004D3FDF /* UIView+Extension.swift */,
 			);
 			path = SSAC_TrendMedia;
 			sourceTree = "<group>";
@@ -187,6 +189,7 @@
 				CBA0C388271EB57B00062E28 /* BookCollectionViewController.swift */,
 				CB9B100227202B4F00A145BB /* mapViewController.swift */,
 				CB0711412727E9E00056A1EB /* dayBeforeBoxOfficeTableViewController.swift */,
+				CBAA41A92735547A00657569 /* DatePickerViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -212,6 +215,14 @@
 				CBA0CC5E2731734900BCC778 /* RealmModel.swift */,
 			);
 			path = Realm;
+			sourceTree = "<group>";
+		};
+		CBAA41A8273550F100657569 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CB0D9465271BF465004D3FDF /* UIView+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		CBF34DD0272998F100E97456 /* API */ = {
@@ -320,6 +331,7 @@
 			files = (
 				CB0D946A271BF93D004D3FDF /* SceneCTableViewCell.swift in Sources */,
 				CB98608C271BE3C000F6580C /* SceneATableViewController.swift in Sources */,
+				CBAA41AA2735547A00657569 /* DatePickerViewController.swift in Sources */,
 				CB0D9466271BF465004D3FDF /* UIView+Extension.swift in Sources */,
 				CBF34DD427299D0100E97456 /* Media.swift in Sources */,
 				CB359D5C272A7FF90028778F /* Crew.swift in Sources */,

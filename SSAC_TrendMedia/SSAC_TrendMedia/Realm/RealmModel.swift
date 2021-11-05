@@ -10,12 +10,12 @@ import RealmSwift
 
 class dayBeforeBoxOffice: Object {
     @Persisted(primaryKey: true) var _id: ObjectId
-    
+    @Persisted var dateInfo: String
     @Persisted var boxOfficeList: List<String>
     
-    convenience init(boxOfficeList: List<String>) {
+    convenience init(dateInfo: String, boxOfficeList: List<String>) {
         self.init()
-        
+        self.dateInfo = dateInfo
         self.boxOfficeList = boxOfficeList
     }
 }
