@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e2q-PJ-6Gk">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--쇼핑-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SSAC_ShoppingList" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,14 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="쇼핑" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWH-kb-bar">
-                                <rect key="frame" x="189.5" y="54" width="35" height="24"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ft9-So-ObK">
-                                <rect key="frame" x="17" y="110" width="379" height="65"/>
+                                <rect key="frame" x="17" y="93" width="379" height="65"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="무엇을 구매하실건가요?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tfF-vi-cAj">
                                         <rect key="frame" x="20" y="0.0" width="280" height="65"/>
@@ -63,7 +57,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tZV-dZ-XBs">
-                                <rect key="frame" x="20" y="200" width="374" height="662"/>
+                                <rect key="frame" x="20" y="201" width="374" height="661"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
@@ -138,16 +132,18 @@
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="항목을 입력해주세요!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zm3-kf-zIx">
-                                <rect key="frame" x="136" y="442.5" width="142" height="21"/>
+                                <rect key="frame" x="136" y="464.5" width="142" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QmK-eC-CDM">
-                                <rect key="frame" x="351" y="50.5" width="43" height="31"/>
+                                <rect key="frame" x="353" y="173" width="41" height="18"/>
                                 <color key="tintColor" red="0.1070211391" green="0.1070211391" blue="0.1070211391" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="ellipsis" catalog="system"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="arrow.up.arrow.down" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="14"/>
+                                </state>
                                 <connections>
                                     <action selector="sortDataButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ysx-f1-Fse"/>
                                 </connections>
@@ -157,25 +153,25 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="PWH-kb-bar" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1iX-UJ-89M"/>
-                            <constraint firstItem="QmK-eC-CDM" firstAttribute="centerY" secondItem="PWH-kb-bar" secondAttribute="centerY" id="4Id-VZ-geT"/>
                             <constraint firstItem="Ft9-So-ObK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="17" id="4TY-27-MoJ"/>
-                            <constraint firstItem="Ft9-So-ObK" firstAttribute="top" secondItem="PWH-kb-bar" secondAttribute="bottom" constant="32" id="5Hw-9P-tDF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tZV-dZ-XBs" secondAttribute="trailing" constant="20" id="5Ml-7y-rN4"/>
-                            <constraint firstItem="tZV-dZ-XBs" firstAttribute="top" secondItem="Ft9-So-ObK" secondAttribute="bottom" constant="25" id="Eca-zO-gtO"/>
+                            <constraint firstItem="tZV-dZ-XBs" firstAttribute="top" secondItem="QmK-eC-CDM" secondAttribute="bottom" constant="10" id="GrL-zf-CCS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QmK-eC-CDM" secondAttribute="trailing" constant="20" id="Hbo-mu-IhX"/>
                             <constraint firstItem="zm3-kf-zIx" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ILp-rt-Kw8"/>
                             <constraint firstItem="Ft9-So-ObK" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0725446" id="NIS-D6-d38"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ft9-So-ObK" secondAttribute="trailing" constant="18" id="Rpc-gc-oYO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QmK-eC-CDM" secondAttribute="trailing" constant="20" id="UXc-jt-XfT"/>
                             <constraint firstItem="tZV-dZ-XBs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="VNC-2o-1S2"/>
+                            <constraint firstItem="QmK-eC-CDM" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.0990338" id="WR3-fk-XGy"/>
+                            <constraint firstItem="Ft9-So-ObK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="khl-yp-jyx"/>
                             <constraint firstItem="zm3-kf-zIx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="m1t-xA-dOO"/>
-                            <constraint firstItem="PWH-kb-bar" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="uNY-fz-7UQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tZV-dZ-XBs" secondAttribute="bottom" id="yIi-4E-Z9z"/>
+                            <constraint firstItem="QmK-eC-CDM" firstAttribute="top" secondItem="Ft9-So-ObK" secondAttribute="bottom" constant="15" id="zPb-nq-e3V"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="0Fu-wW-Etx" appends="YES" id="IBL-Wr-iQo"/>
                         </connections>
                     </view>
+                    <navigationItem key="navigationItem" title="쇼핑" id="cqT-hq-kQz"/>
                     <connections>
                         <outlet property="alertLabel" destination="zm3-kf-zIx" id="L56-DB-zos"/>
                         <outlet property="backgroundView" destination="Ft9-So-ObK" id="xjn-Ks-m2m"/>
@@ -190,13 +186,31 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="118.52678571428571"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lYP-3l-ErT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e2q-PJ-6Gk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GiK-BM-SUp">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="TAU-DI-XvE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SnC-7t-99r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.up.arrow.down" catalog="system" width="128" height="98"/>
         <image name="checkmark.square" catalog="system" width="128" height="114"/>
         <image name="checkmark.square.fill" catalog="system" width="128" height="114"/>
-        <image name="ellipsis" catalog="system" width="128" height="37"/>
         <image name="star" catalog="system" width="128" height="116"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <systemColor name="systemBackgroundColor">

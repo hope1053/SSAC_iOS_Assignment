@@ -24,6 +24,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         updateUI()
     }
 
+    @objc func reloadTable() {
+        shoppingTable.reloadData()
+    }
+    
     func updateUI() {
         if tasks.isEmpty {
             alertLabel.alpha = 1
@@ -32,9 +36,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         backgroundView.layer.masksToBounds = true
         backgroundView.layer.cornerRadius = 10
+        
+        navigationController?.navigationBar.tintColor = .black
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "externaldrive.badge.timemachine"), style: .plain, target: self, action: #selector(menuButtonClicked))
+    }
+    
+    @objc func menuButtonClicked() {
+        let storyboard = UIStoryboard(name: "DataBackup", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "DataBackupViewController") as! DataBackupViewController
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(tasks.count)
         return tasks.count
     }
     
@@ -72,6 +86,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             try! localRealm.write {
                 localRealm.delete(tasks[indexPath.row])
                 tableView.reloadData()
+                updateUI()
             }
         }
     }
@@ -98,6 +113,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
 
         inputTextField.text = ""
+        updateUI()
     }
     
     @IBAction func BGTapped(_ sender: UITapGestureRecognizer) {
@@ -111,16 +127,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBAction func sortDataButtonTapped(_ sender: UIButton) {
         let alert = UIAlertController(title: "정렬", message: nil, preferredStyle: .actionSheet)
         
-        let todo = UIAlertAction(title: "완료 기준", style: .default) { _ in
-            self.tasks = self.tasks.sorted(byKeyPath: "isDone", ascending: true)
+        let todo = UIAlertAction(title: "아직 완료되지 않은 목록", style: .default) { _ in
+            self.tasks = self.localRealm.objects(ShoppingList.self).filter("isDone == false")
             self.shoppingTable.reloadData()
         }
-        let favorite = UIAlertAction(title: "즐겨찾기 기준", style: .default) { _ in
-            self.tasks = self.tasks.sorted(byKeyPath: "favorite", ascending: false)
+        let favorite = UIAlertAction(title: "즐겨찾는 목록", style: .default) { _ in
+            self.tasks = self.localRealm.objects(ShoppingList.self).filter("favorite == true")
             self.shoppingTable.reloadData()
         }
-        let product = UIAlertAction(title: "품목 기준", style: .default) { _ in
-            self.tasks = self.tasks.sorted(byKeyPath: "content", ascending: true)
+        let product = UIAlertAction(title: "가나다순 정렬", style: .default) { _ in
+            self.tasks = self.localRealm.objects(ShoppingList.self).sorted(byKeyPath: "content", ascending: true)
             self.shoppingTable.reloadData()
         }
         let cancel = UIAlertAction(title: "취소", style: .cancel)
