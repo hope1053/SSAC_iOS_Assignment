@@ -28,7 +28,7 @@ No. | 날짜 | 과제 | 주제 | TIL
 26 | 2021.11.03 | [Shopping List](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_ShoppingList)</br>[Trend Media](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_TrendMedia) | Realm 수정, 삭제, 데이터 정렬</br>Realm 활용하여 이미 있는 정보는 데이터 불러오기, 없는 정보는 서버 통신 | [Day26 TIL](https://velog.io/@hope1053/SeSACiOSDay-26-TIL)
 27 | 2021.11.04 | [Shopping List](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_ShoppingList) | 데이터 백업 및 복구 | 
 28 | 2021.11.05 |
-29 | 2021.11.08 | 평가 과제(메모 앱) - 추후 링크 추가 | Realm Create, Save, Update, Delete, TableView, UISearchController, UIToolBar | [Day29 TIL](https://velog.io/@hope1053/SeSACiOSDay-29-TIL)
+29 | 2021.11.08(월) | 평가 과제(메모 앱) - 추후 링크 추가 | Realm Create, Save, Update, Delete, TableView, UISearchController, UIToolBar | [Day29 TIL](https://velog.io/@hope1053/SeSACiOSDay-29-TIL)
 
 <br>
 
