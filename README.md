@@ -29,6 +29,7 @@ No. | 날짜 | 과제 | 주제 | TIL
 27 | 2021.11.04 | [Shopping List](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_ShoppingList) | 데이터 백업 및 복구 | 
 28 | 2021.11.05 |
 29 | 2021.11.08(월) | 평가 과제(메모 앱) - 추후 링크 추가 | Realm Create, Save, Update, Delete, TableView, UISearchController, UIToolBar | [Day29 TIL](https://velog.io/@hope1053/SeSACiOSDay-29-TIL)
+30 | 2021.11.09(화) | 평가 과제(메모 앱) - 추후 링크 추가 | 메모 고정 기능, 공유 기능(UIActivityViewController) | 
 
 <br>
 
