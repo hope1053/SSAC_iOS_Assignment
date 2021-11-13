@@ -31,7 +31,7 @@ No. | 날짜 | 과제 | 주제 | TIL
 29 | 2021.11.08(월) | 평가 과제(메모 앱) - 추후 링크 추가 | Realm Create, Save, Update, Delete, TableView, UISearchController, UIToolBar | [Day29 TIL](https://velog.io/@hope1053/SeSACiOSDay-29-TIL)
 30 | 2021.11.09(화) | 평가 과제(메모 앱) - 추후 링크 추가 | 메모 고정 기능, 공유 기능(UIActivityViewController) | 
 31 | 2021.11.10(수) | 평가 과제(메모 앱) - 추후 링크 추가 | Search 기능, NumberFormatter, DateFormatter | 
-32 | 2021.11.11(목) | 평가 과제(메모 앱) - 추후 링크 추가 | 코드 정리 | 
+32 | 2021.11.11(목) | 평가 과제(메모 앱) - 추후 링크 추가 | 코드정리 | 
 33 | 2021.11.12(금) | 평가 과제(메모 앱) - 추후 링크 추가 | 과제 마무리 
 
 <br>
