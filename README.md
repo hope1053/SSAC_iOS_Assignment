@@ -28,11 +28,11 @@ No. | 날짜 | 과제 | 주제 | TIL
 26 | 2021.11.03 | [Shopping List](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_ShoppingList)</br>[Trend Media](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_TrendMedia) | Realm 수정, 삭제, 데이터 정렬</br>Realm 활용하여 이미 있는 정보는 데이터 불러오기, 없는 정보는 서버 통신 | [Day26 TIL](https://velog.io/@hope1053/SeSACiOSDay-26-TIL)
 27 | 2021.11.04 | [Shopping List](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_ShoppingList) | 데이터 백업 및 복구 | 
 28 | 2021.11.05 |
-29 | 2021.11.08(월) | 평가 과제(메모 앱) - 추후 링크 추가 | Realm Create, Save, Update, Delete, TableView, UISearchController, UIToolBar | [Day29 TIL](https://velog.io/@hope1053/SeSACiOSDay-29-TIL)
-30 | 2021.11.09(화) | 평가 과제(메모 앱) - 추후 링크 추가 | 메모 고정 기능, 공유 기능(UIActivityViewController) | 
-31 | 2021.11.10(수) | 평가 과제(메모 앱) - 추후 링크 추가 | Search 기능, NumberFormatter, DateFormatter | 
-32 | 2021.11.11(목) | 평가 과제(메모 앱) - 추후 링크 추가 | 코드정리 | 
-33 | 2021.11.12(금) | 평가 과제(메모 앱) - 추후 링크 추가 | 과제 마무리 
+29 | 2021.11.08(월) | [평가 과제(메모 앱)](https://github.com/hope1053/SeSAC_SimpleMemo) | Realm Create, Save, Update, Delete, TableView, UISearchController, UIToolBar | [Day29 TIL](https://velog.io/@hope1053/SeSACiOSDay-29-TIL)
+30 | 2021.11.09(화) | [평가 과제(메모 앱)](https://github.com/hope1053/SeSAC_SimpleMemo) | 메모 고정 기능, 공유 기능(UIActivityViewController) | 
+31 | 2021.11.10(수) | [평가 과제(메모 앱)](https://github.com/hope1053/SeSAC_SimpleMemo) | Search 기능, NumberFormatter, DateFormatter | 
+32 | 2021.11.11(목) | [평가 과제(메모 앱)](https://github.com/hope1053/SeSAC_SimpleMemo) | 코드정리 | 
+33 | 2021.11.12(금) | [평가 과제(메모 앱)](https://github.com/hope1053/SeSAC_SimpleMemo) | 과제 마무리 
 
 <br>
 
