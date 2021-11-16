@@ -1,6 +1,10 @@
 # SSAC iOS 앱 개발자 데뷔 과정 Assignment 
-✨ SSAC iOS 앱 개발자 데뷔과정 과제 및 미션 아카이빙
+#### ✨ SSAC iOS 앱 개발자 데뷔과정 과제 및 미션 아카이빙
 
+<details>
+<summary>Phase 1. iOS</summary>
+<div markdown="1">    
+  
 No. | 날짜 | 과제 | 주제 | TIL
 ------------ | ------------- | ------------- | ------------- | ------------- 
 1 | 2021.09.30 | [Netflix SignUp](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_Day4_SignUp) | Stack View, 논리연산 | 
@@ -33,6 +37,22 @@ No. | 날짜 | 과제 | 주제 | TIL
 31 | 2021.11.10(수) | [평가 과제(메모 앱)](https://github.com/hope1053/SeSAC_SimpleMemo) | Search 기능, NumberFormatter, DateFormatter | [Day31 TIL](https://velog.io/@hope1053/SeSACiOSDay-31-TIL)
 32 | 2021.11.11(목) | [평가 과제(메모 앱)](https://github.com/hope1053/SeSAC_SimpleMemo) | 코드정리 | 
 33 | 2021.11.12(금) | [평가 과제(메모 앱)](https://github.com/hope1053/SeSAC_SimpleMemo) | 과제 마무리 
+  
+</div>
+</details>
+
+<details>
+<summary>Phase 2. 개이 출시 프로젝트</summary>
+<div markdown="1">    
+  
+No. | 날짜 | 과제 | 주제 | TIL
+------------ | ------------- | ------------- | ------------- | ------------- 
+34 | 2021.11.15(월)
+35 | 2021.11.16(화)
+  
+</div>
+</details>
+
 
 <br>
 
