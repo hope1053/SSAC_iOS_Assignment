@@ -42,7 +42,7 @@ No. | 날짜 | 과제 | 주제 | TIL
 </details>
 
 <details>
-<summary>Phase 2. 개이 출시 프로젝트</summary>
+<summary>Phase 2. 개인 출시 프로젝트</summary>
 <div markdown="1">    
   
 No. | 날짜 | 과제 | 주제 | TIL
