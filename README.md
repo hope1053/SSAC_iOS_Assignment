@@ -41,6 +41,15 @@ No. | 날짜 | 과제 | 주제 | TIL
 </div>
 </details>
 
+<details>
+<summary>Phase 2. iOS Advanced</summary>
+<div markdown="1">    
+  
+No. | 날짜 | 과제 | 주제 | TIL
+------------ | ------------- | ------------- | ------------- | ------------- 
+1 | 2021.12.13 | - | Xib, @IBInspectable, @IBDesignable, 스토리보드 없이 개발하기 | [211213 TIL](https://velog.io/@hope1053/SeSACiOS211213-TIL) 
+</div>
+</details>
 
 <br>
 
