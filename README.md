@@ -47,7 +47,8 @@ No. | 날짜 | 과제 | 주제 | TIL
   
 No. | 날짜 | 과제 | 주제 | TIL
 ------------ | ------------- | ------------- | ------------- | ------------- 
-1 | 2021.12.13 | - | Xib, @IBInspectable, @IBDesignable, 스토리보드 없이 개발하기 | [211213 TIL](https://velog.io/@hope1053/SeSACiOS211213-TIL) 
+1 | 2021.12.13 | - | Xib, @IBInspectable, @IBDesignable, 스토리보드 없이 개발하기 | [Day 53 TIL](https://velog.io/@hope1053/SeSACiOS211213-TIL) 
+2 | 2021.12.14(화) | - | Auto Resizing, NSLayoutConstraints, Anchor, Snapkit | 
 </div>
 </details>
 
