@@ -52,6 +52,7 @@
 		CBAA41AA2735547A00657569 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAA41A92735547A00657569 /* DatePickerViewController.swift */; };
 		CBF34DD22729991100E97456 /* TheMovieAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF34DD12729991100E97456 /* TheMovieAPIManager.swift */; };
 		CBF34DD427299D0100E97456 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF34DD327299D0100E97456 /* Media.swift */; };
+		CBF697832747958600911BA6 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF697822747958600911BA6 /* DateFormatter+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +97,7 @@
 		CBAA41A92735547A00657569 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		CBF34DD12729991100E97456 /* TheMovieAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMovieAPIManager.swift; sourceTree = "<group>"; };
 		CBF34DD327299D0100E97456 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
+		CBF697822747958600911BA6 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				CB0D9465271BF465004D3FDF /* UIView+Extension.swift */,
+				CBF697822747958600911BA6 /* DateFormatter+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				CBA0C38E271EB5CE00062E28 /* BookCollectionViewCell.swift in Sources */,
 				CBA0C389271EB57B00062E28 /* BookCollectionViewController.swift in Sources */,
 				CB986074271B205300F6580C /* AppDelegate.swift in Sources */,
+				CBF697832747958600911BA6 /* DateFormatter+Extension.swift in Sources */,
 				CB0711432727E9E00056A1EB /* dayBeforeBoxOfficeTableViewController.swift in Sources */,
 				CB0D9470271C149E004D3FDF /* SceneBTableViewController.swift in Sources */,
 				CBA0CC5F2731734900BCC778 /* RealmModel.swift in Sources */,
