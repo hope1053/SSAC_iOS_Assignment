@@ -23,10 +23,19 @@ class TabBarController: UITabBarController {
         firstView.tabBarItem = UITabBarItem(title: "상품", image: UIImage(systemName: "list.bullet.circle"), selectedImage: UIImage(systemName: "list.bullet.circle.fill"))
         secondView.tabBarItem = UITabBarItem(title: "나의 당근", image: UIImage(systemName: "person.circle"), selectedImage: UIImage(systemName: "person.circle.fill"))
         
-        firstView.navigationItem.title = "역삼동"
-        secondView.title = "나의 당근"
+        
+        firstView.navigationItem.leftBarButtonItem = configureNavigationTitle(title: "역삼동")
+        secondView.navigationItem.leftBarButtonItem = configureNavigationTitle(title: "나의 당근")
         
         setViewControllers([firstNav, secondNav], animated: true)
+    }
+    
+    func configureNavigationTitle(title: String) -> UIBarButtonItem {
+        let label = UILabel()
+        label.text = title
+        label.font = .boldSystemFont(ofSize: 23)
+        return UIBarButtonItem.init(customView: label)
+//        navigationView.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: label)
     }
     
     func setUpTabBarAppearance() {

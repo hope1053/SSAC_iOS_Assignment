@@ -29,15 +29,14 @@ class ProductTableViewCell: UITableViewCell {
     
     let productName: UILabel = {
         let label = UILabel()
-        label.font = .boldSystemFont(ofSize: 20)
+        label.font = .systemFont(ofSize: 18)
         label.numberOfLines = 0
         return label
     }()
     
     let productPrice: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 15)
-        label.textColor = .lightGray
+        label.font = .boldSystemFont(ofSize: 20)
         return label
     }()
     
@@ -60,7 +59,7 @@ class ProductTableViewCell: UITableViewCell {
         }
         
         productPrice.snp.makeConstraints {
-            $0.top.equalTo(self.productName.snp.bottom).offset(10)
+            $0.top.equalTo(self.productName.snp.bottom).offset(5)
             $0.leading.equalTo(self.productName.snp.leading)
             $0.trailing.equalToSuperview().inset(10)
         }
