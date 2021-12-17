@@ -60,4 +60,10 @@ extension ProductViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UIScreen.main.bounds.height / 6
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let nextController = ProductDetailViewController()
+        nextController.currentProduct = productList[indexPath.row]
+        self.navigationController?.pushViewController(nextController, animated: true)
+    }
 }

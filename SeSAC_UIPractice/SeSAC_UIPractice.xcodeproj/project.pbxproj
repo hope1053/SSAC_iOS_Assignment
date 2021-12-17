@@ -18,6 +18,7 @@
 		CBE078F5276C5B4B002CA88C /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE078F4276C5B4B002CA88C /* ProductTableViewCell.swift */; };
 		CBE078F7276C5F3E002CA88C /* ProductAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE078F6276C5F3E002CA88C /* ProductAPI.swift */; };
 		CBE078F9276C5F9A002CA88C /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE078F8276C5F9A002CA88C /* Product.swift */; };
+		CBE078FB276C721C002CA88C /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE078FA276C721C002CA88C /* ProductDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		CBE078F4276C5B4B002CA88C /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		CBE078F6276C5F3E002CA88C /* ProductAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductAPI.swift; sourceTree = "<group>"; };
 		CBE078F8276C5F9A002CA88C /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		CBE078FA276C721C002CA88C /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				CBE078EF276C5255002CA88C /* SettingViewController.swift */,
 				CBE078F6276C5F3E002CA88C /* ProductAPI.swift */,
 				CBE078F8276C5F9A002CA88C /* Product.swift */,
+				CBE078FA276C721C002CA88C /* ProductDetailViewController.swift */,
 			);
 			path = SeSAC_UIPractice;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 			files = (
 				CBE078F0276C5255002CA88C /* SettingViewController.swift in Sources */,
 				CBE078F9276C5F9A002CA88C /* Product.swift in Sources */,
+				CBE078FB276C721C002CA88C /* ProductDetailViewController.swift in Sources */,
 				CBE078EC276C51BE002CA88C /* TabBarController.swift in Sources */,
 				CBE078D8276C5160002CA88C /* AppDelegate.swift in Sources */,
 				CBE078F7276C5F3E002CA88C /* ProductAPI.swift in Sources */,

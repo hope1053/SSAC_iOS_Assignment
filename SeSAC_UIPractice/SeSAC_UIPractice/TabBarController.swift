@@ -33,7 +33,7 @@ class TabBarController: UITabBarController {
     func configureNavigationTitle(title: String) -> UIBarButtonItem {
         let label = UILabel()
         label.text = title
-        label.font = .boldSystemFont(ofSize: 23)
+        label.font = .boldSystemFont(ofSize: 21)
         return UIBarButtonItem.init(customView: label)
 //        navigationView.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: label)
     }

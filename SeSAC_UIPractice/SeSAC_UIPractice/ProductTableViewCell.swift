@@ -29,14 +29,14 @@ class ProductTableViewCell: UITableViewCell {
     
     let productName: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 18)
+        label.font = .systemFont(ofSize: 16)
         label.numberOfLines = 0
         return label
     }()
     
     let productPrice: UILabel = {
         let label = UILabel()
-        label.font = .boldSystemFont(ofSize: 20)
+        label.font = .boldSystemFont(ofSize: 18)
         return label
     }()
     
