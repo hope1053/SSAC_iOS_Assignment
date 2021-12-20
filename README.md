@@ -51,6 +51,7 @@ No. | 날짜 | 과제 | 주제 | TIL
 54 | 2021.12.14(화) | - | Auto Resizing, NSLayoutConstraints, Anchor, Snapkit | [Day 54 TIL](https://velog.io/@hope1053/SeSACiOSDay-54-TIL)
 55 | 2021.12.15(수) | [코드로 당근마켓 UI 구현하기](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SeSAC_UIPractice)  | 코드로 UI짜기 | [Day 55 TIL](https://velog.io/@hope1053/SeSACiOSDay-55-TIL)
 56 | 2021.12.16(목) | [출시 프로젝트에 Push Notification 추가하기](https://github.com/hope1053/SeSAC_plit.git) | Push Notification | [Day 56 TIL](https://velog.io/@hope1053/SeSACiOSDay-56-TIL)  
+58 | 2021.12.20(월) | | Push Notification, Codable | [Day 58 TIL](https://velog.io/@hope1053/SeSACiOSDay-58-TIL)  
 </div>
 </details>
 
