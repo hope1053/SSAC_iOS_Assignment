@@ -37,7 +37,7 @@ func updateUI() {
     }
 ```
 ## ✔️ 21.10.27 업데이트
-### 🔘 PageNation 구현
+### 🔘 PagiNation 구현
 - TMDB의 URL에는 따로 page나 보여줄 콘텐츠의 갯수가 언급돼있지 않아서 `page='숫자'` 쿼리를 추가해봤는데 적용이 되는걸 확인할 수 있었다! 
 - startPage라는 변수를 생성 후 1을 할당해주었다.(1페이지부터 정보를 받아올 것이기 때문에!)
 - viewDidLoad 메서드 내에서 prefetchDatasource도 연결시켜주었다.
