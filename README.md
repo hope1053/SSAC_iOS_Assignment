@@ -53,6 +53,7 @@ No. | 날짜 | 과제 | 주제 | TIL
 56 | 2021.12.16(목) | [출시 프로젝트에 Push Notification 추가하기](https://github.com/hope1053/SeSAC_plit.git) | Push Notification | [Day 56 TIL](https://velog.io/@hope1053/SeSACiOSDay-56-TIL)  
 58 | 2021.12.20(월) | [Beer Recommendation](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SeSAC_BeerRecommendation) | Push Notification, Codable | [Day 58 TIL](https://velog.io/@hope1053/SeSACiOSDay-58-TIL)  
 59 | 2021.12.21(화) | [Search TV Show](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SeSAC_SearchTVShow) | URLSession | [Day 59 TIL](https://velog.io/@hope1053/SeSACiOSDay-59-TIL)  
+60 | 2021.12.22(수) | - | loadView(), URLSessionDataDelegate | [Day60 TIL](https://velog.io/@hope1053/SeSACiOSDay-60-TIL)
 </div>
 </details>
 
