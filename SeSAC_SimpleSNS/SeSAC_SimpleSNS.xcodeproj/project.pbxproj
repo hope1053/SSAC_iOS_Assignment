@@ -20,6 +20,11 @@
 		CBE5B76B2781E19B00828151 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE5B76A2781E19B00828151 /* PostTableViewCell.swift */; };
 		CBE5B76F2781E2B600828151 /* TableViewCellRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE5B76E2781E2B600828151 /* TableViewCellRepresentable.swift */; };
 		CBE5B7712781ED1700828151 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE5B7702781ED1700828151 /* Date+Extension.swift */; };
+		CBE5B7742781F6D200828151 /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE5B7732781F6D200828151 /* PostDetailViewController.swift */; };
+		CBE5B7772781F81700828151 /* PostEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE5B7762781F81700828151 /* PostEditViewController.swift */; };
+		CBE5B7792781F87600828151 /* PostEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE5B7782781F87600828151 /* PostEditorView.swift */; };
+		CBE5B77C2781FB9A00828151 /* PostAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE5B77B2781FB9A00828151 /* PostAddViewController.swift */; };
+		CBE5B77E2781FE8800828151 /* PostAddViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE5B77D2781FE8800828151 /* PostAddViewModel.swift */; };
 		CBF51B902781968600EEAEB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF51B8F2781968600EEAEB5 /* AppDelegate.swift */; };
 		CBF51B922781968600EEAEB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF51B912781968600EEAEB5 /* SceneDelegate.swift */; };
 		CBF51B992781968900EEAEB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBF51B982781968900EEAEB5 /* Assets.xcassets */; };
@@ -48,6 +53,11 @@
 		CBE5B76A2781E19B00828151 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		CBE5B76E2781E2B600828151 /* TableViewCellRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellRepresentable.swift; sourceTree = "<group>"; };
 		CBE5B7702781ED1700828151 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		CBE5B7732781F6D200828151 /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
+		CBE5B7762781F81700828151 /* PostEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditViewController.swift; sourceTree = "<group>"; };
+		CBE5B7782781F87600828151 /* PostEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditorView.swift; sourceTree = "<group>"; };
+		CBE5B77B2781FB9A00828151 /* PostAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAddViewController.swift; sourceTree = "<group>"; };
+		CBE5B77D2781FE8800828151 /* PostAddViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAddViewModel.swift; sourceTree = "<group>"; };
 		CBF51B8C2781968600EEAEB5 /* SeSAC_SimpleSNS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSAC_SimpleSNS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF51B8F2781968600EEAEB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBF51B912781968600EEAEB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +131,31 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
+		CBE5B7722781F6B500828151 /* PostDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CBE5B7732781F6D200828151 /* PostDetailViewController.swift */,
+			);
+			path = PostDetail;
+			sourceTree = "<group>";
+		};
+		CBE5B7752781F7FC00828151 /* PostEdit */ = {
+			isa = PBXGroup;
+			children = (
+				CBE5B7762781F81700828151 /* PostEditViewController.swift */,
+			);
+			path = PostEdit;
+			sourceTree = "<group>";
+		};
+		CBE5B77A2781FB7F00828151 /* PostAdd */ = {
+			isa = PBXGroup;
+			children = (
+				CBE5B77B2781FB9A00828151 /* PostAddViewController.swift */,
+				CBE5B77D2781FE8800828151 /* PostAddViewModel.swift */,
+			);
+			path = PostAdd;
+			sourceTree = "<group>";
+		};
 		CBF51B832781968600EEAEB5 = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +184,9 @@
 				CB794BEC27819B8E00DCA4DC /* Register */,
 				CB794BED27819B9200DCA4DC /* Login */,
 				CB794BF82781A38700DCA4DC /* PostList */,
+				CBE5B7722781F6B500828151 /* PostDetail */,
+				CBE5B77A2781FB7F00828151 /* PostAdd */,
+				CBE5B7752781F7FC00828151 /* PostEdit */,
 				CBF51B8F2781968600EEAEB5 /* AppDelegate.swift */,
 				CBF51B912781968600EEAEB5 /* SceneDelegate.swift */,
 				CBF51B982781968900EEAEB5 /* Assets.xcassets */,
@@ -172,6 +210,7 @@
 				CBF51BAA2781977E00EEAEB5 /* MainButton.swift */,
 				CBF51BAC2781978600EEAEB5 /* MainTextField.swift */,
 				CBF51BAE2781978C00EEAEB5 /* StartView.swift */,
+				CBE5B7782781F87600828151 /* PostEditorView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -273,6 +312,8 @@
 			files = (
 				CB794BFC2781A3E700DCA4DC /* Observable.swift in Sources */,
 				CB794BF127819BC700DCA4DC /* LoginViewController.swift in Sources */,
+				CBE5B7772781F81700828151 /* PostEditViewController.swift in Sources */,
+				CBE5B7742781F6D200828151 /* PostDetailViewController.swift in Sources */,
 				CBF51BAB2781977E00EEAEB5 /* MainButton.swift in Sources */,
 				CB794BEF27819BA300DCA4DC /* RegisterViewController.swift in Sources */,
 				CBF51BAD2781978600EEAEB5 /* MainTextField.swift in Sources */,
@@ -285,12 +326,15 @@
 				CB794BF32781A36400DCA4DC /* RegisterViewModel.swift in Sources */,
 				CBE5B76F2781E2B600828151 /* TableViewCellRepresentable.swift in Sources */,
 				CBF51BA5278196C400EEAEB5 /* MainViewController.swift in Sources */,
+				CBE5B77C2781FB9A00828151 /* PostAddViewController.swift in Sources */,
 				CBE5B7692781C7A300828151 /* PostViewModel.swift in Sources */,
 				CBF51BB7278197BF00EEAEB5 /* APIService.swift in Sources */,
 				CBF51BB22781979C00EEAEB5 /* User.swift in Sources */,
 				CBE5B7672781C63A00828151 /* Post.swift in Sources */,
+				CBE5B77E2781FE8800828151 /* PostAddViewModel.swift in Sources */,
 				CB794BEB278199DF00DCA4DC /* UIColor+Extension.swift in Sources */,
 				CBE5B7652781C29300828151 /* UITextField+Extension.swift in Sources */,
+				CBE5B7792781F87600828151 /* PostEditorView.swift in Sources */,
 				CBE5B7712781ED1700828151 /* Date+Extension.swift in Sources */,
 				CBE5B76B2781E19B00828151 /* PostTableViewCell.swift in Sources */,
 			);

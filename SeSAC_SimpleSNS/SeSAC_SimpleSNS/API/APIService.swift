@@ -37,7 +37,16 @@ class APIService {
         var request = URLRequest(url: Endpoint.viewPost.url)
         request.httpMethod = Method.GET.rawValue
         request.setValue("Bearer \(loginToken)", forHTTPHeaderField: "Authorization")
-        print(loginToken)
+        
+        URLSession.request(endpoint: request, completion: completion)
+    }
+    
+    static func addPost(text: String, completion: @escaping (PostElement?, APIError?) -> Void) {
+        let loginToken = UserDefaults.standard.value(forKey: "token") ?? ""
+        var request = URLRequest(url: Endpoint.viewPost.url)
+        request.httpMethod = Method.POST.rawValue
+        request.httpBody = "text=\(text)".data(using: .utf8, allowLossyConversion: false)
+        request.setValue("Bearer \(loginToken)", forHTTPHeaderField: "Authorization")
         
         URLSession.request(endpoint: request, completion: completion)
     }
