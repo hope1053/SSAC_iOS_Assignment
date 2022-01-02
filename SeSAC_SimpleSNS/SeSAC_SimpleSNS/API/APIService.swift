@@ -15,8 +15,8 @@ enum APIError: Error {
 }
 
 class APIService {
-    static func signup(username: String, email: String, password: String, completion: @escaping (User?, APIError?) -> Void) {
-        var request = URLRequest(url: Endpoint.login.url)
+    static func register(username: String, email: String, password: String, completion: @escaping (User?, APIError?) -> Void) {
+        var request = URLRequest(url: Endpoint.register.url)
         request.httpMethod = Method.POST.rawValue
         request.httpBody = "username=\(username)&email=\(email)&password=\(password)".data(using: .utf8, allowLossyConversion: false)
         

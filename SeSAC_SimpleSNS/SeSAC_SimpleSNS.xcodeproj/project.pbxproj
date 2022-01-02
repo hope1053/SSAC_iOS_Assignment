@@ -10,6 +10,10 @@
 		CB794BEB278199DF00DCA4DC /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB794BEA278199DF00DCA4DC /* UIColor+Extension.swift */; };
 		CB794BEF27819BA300DCA4DC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB794BEE27819BA300DCA4DC /* RegisterViewController.swift */; };
 		CB794BF127819BC700DCA4DC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB794BF027819BC700DCA4DC /* LoginViewController.swift */; };
+		CB794BF32781A36400DCA4DC /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB794BF22781A36400DCA4DC /* RegisterViewModel.swift */; };
+		CB794BF52781A36F00DCA4DC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB794BF42781A36F00DCA4DC /* LoginViewModel.swift */; };
+		CB794BFA2781A39700DCA4DC /* PostListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB794BF92781A39700DCA4DC /* PostListViewController.swift */; };
+		CB794BFC2781A3E700DCA4DC /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB794BFB2781A3E700DCA4DC /* Observable.swift */; };
 		CBF51B902781968600EEAEB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF51B8F2781968600EEAEB5 /* AppDelegate.swift */; };
 		CBF51B922781968600EEAEB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF51B912781968600EEAEB5 /* SceneDelegate.swift */; };
 		CBF51B992781968900EEAEB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBF51B982781968900EEAEB5 /* Assets.xcassets */; };
@@ -28,6 +32,10 @@
 		CB794BEA278199DF00DCA4DC /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		CB794BEE27819BA300DCA4DC /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CB794BF027819BC700DCA4DC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CB794BF22781A36400DCA4DC /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		CB794BF42781A36F00DCA4DC /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		CB794BF92781A39700DCA4DC /* PostListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewController.swift; sourceTree = "<group>"; };
+		CB794BFB2781A3E700DCA4DC /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		CBF51B8C2781968600EEAEB5 /* SeSAC_SimpleSNS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSAC_SimpleSNS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF51B8F2781968600EEAEB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBF51B912781968600EEAEB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				CB794BEE27819BA300DCA4DC /* RegisterViewController.swift */,
+				CB794BF22781A36400DCA4DC /* RegisterViewModel.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -75,8 +84,17 @@
 			isa = PBXGroup;
 			children = (
 				CB794BF027819BC700DCA4DC /* LoginViewController.swift */,
+				CB794BF42781A36F00DCA4DC /* LoginViewModel.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		CB794BF82781A38700DCA4DC /* PostList */ = {
+			isa = PBXGroup;
+			children = (
+				CB794BF92781A39700DCA4DC /* PostListViewController.swift */,
+			);
+			path = PostList;
 			sourceTree = "<group>";
 		};
 		CBF51B832781968600EEAEB5 = {
@@ -105,6 +123,7 @@
 				CBF51BA3278196AC00EEAEB5 /* Main */,
 				CB794BEC27819B8E00DCA4DC /* Register */,
 				CB794BED27819B9200DCA4DC /* Login */,
+				CB794BF82781A38700DCA4DC /* PostList */,
 				CBF51B8F2781968600EEAEB5 /* AppDelegate.swift */,
 				CBF51B912781968600EEAEB5 /* SceneDelegate.swift */,
 				CBF51B982781968900EEAEB5 /* Assets.xcassets */,
@@ -145,6 +164,7 @@
 			children = (
 				CBF51BB4278197A500EEAEB5 /* Endpoint.swift */,
 				CBF51BB6278197BF00EEAEB5 /* APIService.swift */,
+				CB794BFB2781A3E700DCA4DC /* Observable.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -225,14 +245,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB794BFC2781A3E700DCA4DC /* Observable.swift in Sources */,
 				CB794BF127819BC700DCA4DC /* LoginViewController.swift in Sources */,
 				CBF51BAB2781977E00EEAEB5 /* MainButton.swift in Sources */,
 				CB794BEF27819BA300DCA4DC /* RegisterViewController.swift in Sources */,
 				CBF51BAD2781978600EEAEB5 /* MainTextField.swift in Sources */,
 				CBF51BB5278197A500EEAEB5 /* Endpoint.swift in Sources */,
 				CBF51B902781968600EEAEB5 /* AppDelegate.swift in Sources */,
+				CB794BF52781A36F00DCA4DC /* LoginViewModel.swift in Sources */,
 				CBF51BAF2781978C00EEAEB5 /* StartView.swift in Sources */,
 				CBF51B922781968600EEAEB5 /* SceneDelegate.swift in Sources */,
+				CB794BFA2781A39700DCA4DC /* PostListViewController.swift in Sources */,
+				CB794BF32781A36400DCA4DC /* RegisterViewModel.swift in Sources */,
 				CBF51BA5278196C400EEAEB5 /* MainViewController.swift in Sources */,
 				CBF51BB7278197BF00EEAEB5 /* APIService.swift in Sources */,
 				CBF51BB22781979C00EEAEB5 /* User.swift in Sources */,

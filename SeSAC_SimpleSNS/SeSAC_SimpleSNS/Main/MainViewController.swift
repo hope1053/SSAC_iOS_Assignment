@@ -47,9 +47,18 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        NotificationCenter.default.addObserver(self, selector: #selector(registerEnded), name: NSNotification.Name("registerEnded"), object: nil)
+        
         view.backgroundColor = .white
         setUpConstraints()
     }
+    
+//    @objc func registerEnded() {
+//        let vc = LoginViewController()
+//        let currentEmail = UserDefaults.standard.value(forKey: "email")
+//        vc.startView.emailTextField.text = currentEmail as? String
+//        self.navigationController?.pushViewController(vc, animated: true)
+//    }
     
     func setUpConstraints() {
         [logoImage, registerButton, loginButton].forEach { subView in

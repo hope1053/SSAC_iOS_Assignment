@@ -13,14 +13,14 @@ enum Method: String {
 }
 
 enum Endpoint {
-    case signup
+    case register
     case login
 }
 
 extension Endpoint {
     var url: URL {
         switch self {
-        case .signup:
+        case .register:
             return .makeEndpoint("auth/local/register")
         case .login:
             return .makeEndpoint("auth/local")
@@ -29,7 +29,7 @@ extension Endpoint {
 }
 
 extension URL {
-    static let baseURL = "http://test.monocoding.com:1231"
+    static let baseURL = "http://test.monocoding.com:1231/"
     
     static func makeEndpoint(_ endPoint: String) -> URL {
         URL(string: baseURL + endPoint)!
@@ -51,13 +51,11 @@ extension URLSession {
         session.dataTask(endpoint) { data, response, error in
             DispatchQueue.main.async {
                 guard error == nil else {
-                    // 오류가 존재하는 상황
                     completion(nil, .failed)
                     return
                 }
                 
                 guard let data = data else {
-                    // data가 없는 경우
                     completion(nil, .noData)
                     return
                 }
@@ -75,6 +73,7 @@ extension URLSession {
                 do {
                     let decoder = JSONDecoder()
                     let userData = try decoder.decode(T.self, from: data)
+                    print(userData)
                     completion(userData, nil)
                 } catch {
                     completion(nil, .invalidData)
