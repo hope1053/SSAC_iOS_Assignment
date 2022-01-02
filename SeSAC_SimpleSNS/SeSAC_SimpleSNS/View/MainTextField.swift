@@ -43,6 +43,8 @@ class MainTextField: UITextField {
         self.cornerRadius = 10
         self.borderColor = .lightGray
         self.borderWidth = 1
+        
+        self.addLeftPadding()
     }
     
     required init?(coder: NSCoder) {

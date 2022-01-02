@@ -15,6 +15,7 @@ enum Method: String {
 enum Endpoint {
     case register
     case login
+    case viewPost
 }
 
 extension Endpoint {
@@ -24,6 +25,8 @@ extension Endpoint {
             return .makeEndpoint("auth/local/register")
         case .login:
             return .makeEndpoint("auth/local")
+        case .viewPost:
+            return .makeEndpoint("posts")
         }
     }
 }
@@ -66,15 +69,21 @@ extension URLSession {
                 }
                 
                 guard response.statusCode == 200 else {
-                    completion(nil, .failed)
-                    return
+                    if response.statusCode == 401 {
+                        print(response.statusCode)
+                        completion(nil, .invalidToken)
+                        return
+                    } else {
+                        completion(nil, .failed)
+                        return
+                    }
                 }
                 
                 do {
                     let decoder = JSONDecoder()
-                    let userData = try decoder.decode(T.self, from: data)
-                    print(userData)
-                    completion(userData, nil)
+                    let decodedData = try decoder.decode(T.self, from: data)
+
+                    completion(decodedData, nil)
                 } catch {
                     completion(nil, .invalidData)
                 }

@@ -14,6 +14,9 @@
 		CB794BF52781A36F00DCA4DC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB794BF42781A36F00DCA4DC /* LoginViewModel.swift */; };
 		CB794BFA2781A39700DCA4DC /* PostListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB794BF92781A39700DCA4DC /* PostListViewController.swift */; };
 		CB794BFC2781A3E700DCA4DC /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB794BFB2781A3E700DCA4DC /* Observable.swift */; };
+		CBE5B7652781C29300828151 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE5B7642781C29300828151 /* UITextField+Extension.swift */; };
+		CBE5B7672781C63A00828151 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE5B7662781C63A00828151 /* Post.swift */; };
+		CBE5B7692781C7A300828151 /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE5B7682781C7A300828151 /* PostListViewModel.swift */; };
 		CBF51B902781968600EEAEB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF51B8F2781968600EEAEB5 /* AppDelegate.swift */; };
 		CBF51B922781968600EEAEB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF51B912781968600EEAEB5 /* SceneDelegate.swift */; };
 		CBF51B992781968900EEAEB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBF51B982781968900EEAEB5 /* Assets.xcassets */; };
@@ -36,6 +39,9 @@
 		CB794BF42781A36F00DCA4DC /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		CB794BF92781A39700DCA4DC /* PostListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewController.swift; sourceTree = "<group>"; };
 		CB794BFB2781A3E700DCA4DC /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		CBE5B7642781C29300828151 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		CBE5B7662781C63A00828151 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		CBE5B7682781C7A300828151 /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
 		CBF51B8C2781968600EEAEB5 /* SeSAC_SimpleSNS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSAC_SimpleSNS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF51B8F2781968600EEAEB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBF51B912781968600EEAEB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				CB794BEA278199DF00DCA4DC /* UIColor+Extension.swift */,
+				CBE5B7642781C29300828151 /* UITextField+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -93,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				CB794BF92781A39700DCA4DC /* PostListViewController.swift */,
+				CBE5B7682781C7A300828151 /* PostListViewModel.swift */,
 			);
 			path = PostList;
 			sourceTree = "<group>";
@@ -155,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				CBF51BB12781979C00EEAEB5 /* User.swift */,
+				CBE5B7662781C63A00828151 /* Post.swift */,
 			);
 			path = Struct;
 			sourceTree = "<group>";
@@ -258,9 +267,12 @@
 				CB794BFA2781A39700DCA4DC /* PostListViewController.swift in Sources */,
 				CB794BF32781A36400DCA4DC /* RegisterViewModel.swift in Sources */,
 				CBF51BA5278196C400EEAEB5 /* MainViewController.swift in Sources */,
+				CBE5B7692781C7A300828151 /* PostListViewModel.swift in Sources */,
 				CBF51BB7278197BF00EEAEB5 /* APIService.swift in Sources */,
 				CBF51BB22781979C00EEAEB5 /* User.swift in Sources */,
+				CBE5B7672781C63A00828151 /* Post.swift in Sources */,
 				CB794BEB278199DF00DCA4DC /* UIColor+Extension.swift in Sources */,
+				CBE5B7652781C29300828151 /* UITextField+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

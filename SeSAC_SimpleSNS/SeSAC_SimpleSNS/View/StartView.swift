@@ -16,25 +16,25 @@ class StartView: UIView {
     
     let emailTextField: MainTextField = {
         let textField = MainTextField()
-        textField.placeholder = "  이메일 주소"
+        textField.placeholder = "이메일 주소"
         return textField
     }()
     
     let nickNameTextField: MainTextField = {
         let textField = MainTextField()
-        textField.placeholder = "  닉네임"
+        textField.placeholder = "닉네임"
         return textField
     }()
     
     let passwordTextField: MainTextField = {
         let textField = MainTextField()
-        textField.placeholder = "  비밀번호"
+        textField.placeholder = "비밀번호"
         return textField
     }()
     
     let passwordCheckTextField: MainTextField = {
         let textField = MainTextField()
-        textField.placeholder = "  비밀번호 확인"
+        textField.placeholder = "비밀번호 확인"
         return textField
     }()
     

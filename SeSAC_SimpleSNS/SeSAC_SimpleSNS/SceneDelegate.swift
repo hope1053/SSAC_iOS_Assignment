@@ -20,7 +20,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowScene)
         
         window?.windowScene = windowScene
-        window?.rootViewController = UINavigationController(rootViewController: MainViewController())
+        let loginToken = UserDefaults.standard.value(forKey: "token")
+        window?.rootViewController = loginToken == nil ? UINavigationController(rootViewController: MainViewController()) : UINavigationController(rootViewController: PostListViewController())
         window?.makeKeyAndVisible()
     }
 
