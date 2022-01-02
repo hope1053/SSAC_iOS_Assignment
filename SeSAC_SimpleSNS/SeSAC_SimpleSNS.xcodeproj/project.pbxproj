@@ -16,7 +16,10 @@
 		CB794BFC2781A3E700DCA4DC /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB794BFB2781A3E700DCA4DC /* Observable.swift */; };
 		CBE5B7652781C29300828151 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE5B7642781C29300828151 /* UITextField+Extension.swift */; };
 		CBE5B7672781C63A00828151 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE5B7662781C63A00828151 /* Post.swift */; };
-		CBE5B7692781C7A300828151 /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE5B7682781C7A300828151 /* PostListViewModel.swift */; };
+		CBE5B7692781C7A300828151 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE5B7682781C7A300828151 /* PostViewModel.swift */; };
+		CBE5B76B2781E19B00828151 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE5B76A2781E19B00828151 /* PostTableViewCell.swift */; };
+		CBE5B76F2781E2B600828151 /* TableViewCellRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE5B76E2781E2B600828151 /* TableViewCellRepresentable.swift */; };
+		CBE5B7712781ED1700828151 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE5B7702781ED1700828151 /* Date+Extension.swift */; };
 		CBF51B902781968600EEAEB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF51B8F2781968600EEAEB5 /* AppDelegate.swift */; };
 		CBF51B922781968600EEAEB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF51B912781968600EEAEB5 /* SceneDelegate.swift */; };
 		CBF51B992781968900EEAEB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBF51B982781968900EEAEB5 /* Assets.xcassets */; };
@@ -41,7 +44,10 @@
 		CB794BFB2781A3E700DCA4DC /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		CBE5B7642781C29300828151 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		CBE5B7662781C63A00828151 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		CBE5B7682781C7A300828151 /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
+		CBE5B7682781C7A300828151 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		CBE5B76A2781E19B00828151 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		CBE5B76E2781E2B600828151 /* TableViewCellRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellRepresentable.swift; sourceTree = "<group>"; };
+		CBE5B7702781ED1700828151 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		CBF51B8C2781968600EEAEB5 /* SeSAC_SimpleSNS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSAC_SimpleSNS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF51B8F2781968600EEAEB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBF51B912781968600EEAEB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +80,7 @@
 			children = (
 				CB794BEA278199DF00DCA4DC /* UIColor+Extension.swift */,
 				CBE5B7642781C29300828151 /* UITextField+Extension.swift */,
+				CBE5B7702781ED1700828151 /* Date+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -100,9 +107,18 @@
 			isa = PBXGroup;
 			children = (
 				CB794BF92781A39700DCA4DC /* PostListViewController.swift */,
-				CBE5B7682781C7A300828151 /* PostListViewModel.swift */,
+				CBE5B7682781C7A300828151 /* PostViewModel.swift */,
+				CBE5B76A2781E19B00828151 /* PostTableViewCell.swift */,
 			);
 			path = PostList;
+			sourceTree = "<group>";
+		};
+		CBE5B76D2781E2AF00828151 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				CBE5B76E2781E2B600828151 /* TableViewCellRepresentable.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		CBF51B832781968600EEAEB5 = {
@@ -124,6 +140,7 @@
 		CBF51B8E2781968600EEAEB5 /* SeSAC_SimpleSNS */ = {
 			isa = PBXGroup;
 			children = (
+				CBE5B76D2781E2AF00828151 /* Protocol */,
 				CB794BE9278199D500DCA4DC /* Extension */,
 				CBF51BB32781979F00EEAEB5 /* API */,
 				CBF51BB02781979500EEAEB5 /* Struct */,
@@ -266,13 +283,16 @@
 				CBF51B922781968600EEAEB5 /* SceneDelegate.swift in Sources */,
 				CB794BFA2781A39700DCA4DC /* PostListViewController.swift in Sources */,
 				CB794BF32781A36400DCA4DC /* RegisterViewModel.swift in Sources */,
+				CBE5B76F2781E2B600828151 /* TableViewCellRepresentable.swift in Sources */,
 				CBF51BA5278196C400EEAEB5 /* MainViewController.swift in Sources */,
-				CBE5B7692781C7A300828151 /* PostListViewModel.swift in Sources */,
+				CBE5B7692781C7A300828151 /* PostViewModel.swift in Sources */,
 				CBF51BB7278197BF00EEAEB5 /* APIService.swift in Sources */,
 				CBF51BB22781979C00EEAEB5 /* User.swift in Sources */,
 				CBE5B7672781C63A00828151 /* Post.swift in Sources */,
 				CB794BEB278199DF00DCA4DC /* UIColor+Extension.swift in Sources */,
 				CBE5B7652781C29300828151 /* UITextField+Extension.swift in Sources */,
+				CBE5B7712781ED1700828151 /* Date+Extension.swift in Sources */,
+				CBE5B76B2781E19B00828151 /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
