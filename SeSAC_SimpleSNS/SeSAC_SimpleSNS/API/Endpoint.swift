@@ -10,12 +10,14 @@ import Foundation
 enum Method: String {
     case GET
     case POST
+    case DELETE
 }
 
 enum Endpoint {
     case register
     case login
-    case viewPost
+    case post
+    case editPost(id: Int)
 }
 
 extension Endpoint {
@@ -25,8 +27,10 @@ extension Endpoint {
             return .makeEndpoint("auth/local/register")
         case .login:
             return .makeEndpoint("auth/local")
-        case .viewPost:
+        case .post:
             return .makeEndpoint("posts")
+        case .editPost(id: let id):
+            return .makeEndpoint("posts/\(id)")
         }
     }
 }
@@ -70,7 +74,7 @@ extension URLSession {
                 
                 guard response.statusCode == 200 else {
                     if response.statusCode == 401 {
-                        print(response.statusCode)
+                        print(response)
                         completion(nil, .invalidToken)
                         return
                     } else {

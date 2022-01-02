@@ -11,7 +11,11 @@ import UIKit
 class PostDetailViewController: UIViewController {
     
     let viewModel = PostDetailViewModel()
-    var currentPost: PostElement?
+    var currentPost: PostElement? {
+        didSet {
+            viewModel.currentPost.value = self.currentPost!
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +50,9 @@ class PostDetailViewController: UIViewController {
         let alert = UIAlertController(title: "메뉴", message: "", preferredStyle: .actionSheet)
         
         let edit = UIAlertAction(title: "수정", style: .default)
-        let delete = UIAlertAction(title: "삭제", style: .destructive)
+        let delete = UIAlertAction(title: "삭제", style: .destructive) { _ in
+            self.checkAlert()
+        }
         let cancel = UIAlertAction(title: "취소", style: .cancel)
         
         alert.addAction(edit)
@@ -61,6 +67,22 @@ class PostDetailViewController: UIViewController {
         
         let ok = UIAlertAction(title: "확인", style: .default)
         alert.addAction(ok)
+        
+        present(alert, animated: true, completion: nil)
+    }
+    
+    func checkAlert() {
+        let alert = UIAlertController(title: "알림", message: "글을 삭제하시겠습니까?", preferredStyle: .alert)
+        
+        let ok = UIAlertAction(title: "확인", style: .default) { _ in
+            self.viewModel.deletePost {
+                self.navigationController?.popViewController(animated: true)
+            }
+        }
+        let cancel = UIAlertAction(title: "취소", style: .cancel)
+        
+        alert.addAction(ok)
+        alert.addAction(cancel)
         
         present(alert, animated: true, completion: nil)
     }

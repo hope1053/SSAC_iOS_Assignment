@@ -34,7 +34,7 @@ class APIService {
     
     static func viewPosts(completion: @escaping (Post?, APIError?) -> Void) {
         let loginToken = UserDefaults.standard.value(forKey: "token") ?? ""
-        var request = URLRequest(url: Endpoint.viewPost.url)
+        var request = URLRequest(url: Endpoint.post.url)
         request.httpMethod = Method.GET.rawValue
         request.setValue("Bearer \(loginToken)", forHTTPHeaderField: "Authorization")
         
@@ -43,9 +43,19 @@ class APIService {
     
     static func addPost(text: String, completion: @escaping (PostElement?, APIError?) -> Void) {
         let loginToken = UserDefaults.standard.value(forKey: "token") ?? ""
-        var request = URLRequest(url: Endpoint.viewPost.url)
+        var request = URLRequest(url: Endpoint.post.url)
         request.httpMethod = Method.POST.rawValue
         request.httpBody = "text=\(text)".data(using: .utf8, allowLossyConversion: false)
+        request.setValue("Bearer \(loginToken)", forHTTPHeaderField: "Authorization")
+        
+        URLSession.request(endpoint: request, completion: completion)
+    }
+    
+    static func deletePost(id: Int, completion: @escaping (PostElement?, APIError?) -> Void) {
+        let loginToken = UserDefaults.standard.value(forKey: "token") ?? ""
+        
+        var request = URLRequest(url: Endpoint.editPost(id: id).url)
+        request.httpMethod = Method.DELETE.rawValue
         request.setValue("Bearer \(loginToken)", forHTTPHeaderField: "Authorization")
         
         URLSession.request(endpoint: request, completion: completion)
