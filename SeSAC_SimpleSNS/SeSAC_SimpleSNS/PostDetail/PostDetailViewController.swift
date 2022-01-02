@@ -10,8 +10,58 @@ import UIKit
 
 class PostDetailViewController: UIViewController {
     
+    let viewModel = PostDetailViewModel()
+    var currentPost: PostElement?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .lightGray
+        
+        configureView()
+    }
+    
+    func connectView() {
+        viewModel.currentPost.bind { post in
+            self.currentPost = post
+        }
+    }
+    
+    func configureView() {
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "ellipsis"), style: .plain, target: self, action: #selector(menuButtonTapped))
+    }
+    
+    @objc func menuButtonTapped() {
+        let writerID = currentPost?.user.id
+        // 로그인 다시 한 번 진행 후 확인해야함
+        let myID = UserDefaults.standard.value(forKey: "id") as? Int
+        
+        if writerID == myID {
+            showActionSheet()
+        } else {
+            showAlert()
+        }
+    }
+    
+    func showActionSheet() {
+        let alert = UIAlertController(title: "메뉴", message: "", preferredStyle: .actionSheet)
+        
+        let edit = UIAlertAction(title: "수정", style: .default)
+        let delete = UIAlertAction(title: "삭제", style: .destructive)
+        let cancel = UIAlertAction(title: "취소", style: .cancel)
+        
+        alert.addAction(edit)
+        alert.addAction(delete)
+        alert.addAction(cancel)
+        
+        present(alert, animated: true, completion: nil)
+    }
+    
+    func showAlert() {
+        let alert = UIAlertController(title: "알림", message: "본인이 작성한 글만 수정 및 삭제할 수 있습니다!", preferredStyle: .alert)
+        
+        let ok = UIAlertAction(title: "확인", style: .default)
+        alert.addAction(ok)
+        
+        present(alert, animated: true, completion: nil)
     }
 }

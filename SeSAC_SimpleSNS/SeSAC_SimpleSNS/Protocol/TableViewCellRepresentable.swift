@@ -10,6 +10,7 @@ import UIKit
 protocol TableViewCellRepresentable {
     var numberOfRowsInSection: Int { get }
     func cellForRowAt(_ tableView: UITableView, indexPath: IndexPath) -> UITableViewCell
+    func didSelectRowAt(_ tableView: UITableView, indexPath: IndexPath) -> UIViewController
 }
 
 //extension TableViewCellRepresentable {

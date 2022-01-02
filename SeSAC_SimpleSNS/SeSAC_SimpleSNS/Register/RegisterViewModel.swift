@@ -16,7 +16,7 @@ class RegisterViewModel {
         APIService.register(username: username.value, email: email.value, password: password.value) { user, error in
             guard let user = user else { return }
             
-            UserDefaults.standard.set(user.user.username, forKey: "nickname")
+            UserDefaults.standard.set(user.user.username, forKey: "username")
             UserDefaults.standard.set(user.user.id, forKey: "id")
             UserDefaults.standard.set(user.user.email, forKey: "email")
             

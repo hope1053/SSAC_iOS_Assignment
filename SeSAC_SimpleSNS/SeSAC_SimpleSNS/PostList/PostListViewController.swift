@@ -104,7 +104,7 @@ extension PostListViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = PostDetailViewController()
-        self.navigationController?.pushViewController(vc, animated: true)
+        let viewController = viewModel.didSelectRowAt(tableView, indexPath: indexPath)
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
 }
