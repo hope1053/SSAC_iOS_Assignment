@@ -60,6 +60,7 @@ No. | 날짜 | 과제 | 주제 | TIL
 64 | 2021.12.28(화)  
 65 | 2021.12.29(수)
 73 | 2022.01.10(월) | - | - | [Day73 TIL](https://hyelinda.notion.site/22-01-10-d2478c2d2151462fbda69277b090e899)
+74 | 2022.01.11(화) | - | - | [Day74 TIL](https://hyelinda.notion.site/22-01-11-4df897c41ba64600b89c40a23b1c20b4)
   
 </div>
 </details>
