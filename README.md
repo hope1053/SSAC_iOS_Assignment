@@ -62,7 +62,7 @@ No. | 날짜 | 과제 | 주제 | TIL
 73 | 2022.01.10(월) | - | - | [Day73 TIL](https://hyelinda.notion.site/22-01-10-d2478c2d2151462fbda69277b090e899)
 74 | 2022.01.11(화) | - | - | [Day74 TIL](https://hyelinda.notion.site/22-01-11-4df897c41ba64600b89c40a23b1c20b4)
 75 | 2022.01.12(수) |
-76 | 2022.01.13(목) |
+76 | 2022.01.13(목) | - | iOS15 업데이트(Configuration, Formatted 등), defer, NSObject | [Day76 TIL](https://hyelinda.notion.site/22-01-13-76bf24d2b90c48eba1a0b23889309b8c)
 77 | 2022.01.14(금) | - | Socket통신 | [Day77 TIL](https://hyelinda.notion.site/22-01-14-dea7c767aec04b7fa3d08f611b6ea00f)
   
 </div>
