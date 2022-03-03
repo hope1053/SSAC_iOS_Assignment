@@ -1,9 +1,5 @@
 # SSAC iOS 앱 개발자 데뷔 과정 Assignment 
 #### ✨ SSAC iOS 앱 개발자 데뷔과정 과제 및 미션 아카이빙
-
-<details>
-<summary>Phase 1. iOS</summary>
-<div markdown="1">    
   
 No. | 날짜 | 과제 | 주제 | TIL
 ------------ | ------------- | ------------- | ------------- | ------------- 
@@ -38,12 +34,6 @@ No. | 날짜 | 과제 | 주제 | TIL
 32 | 2021.11.11(목) | [평가 과제(메모 앱)](https://github.com/hope1053/SeSAC_SimpleMemo) | 코드정리 | -
 33 | 2021.11.12(금) | [평가 과제(메모 앱)](https://github.com/hope1053/SeSAC_SimpleMemo) | 과제 마무리 | -
   
-</div>
-</details>
-
-<details>
-<summary>Phase 2. iOS Advanced</summary>
-<div markdown="1">    
   
 No. | 날짜 | 과제 | 주제 | TIL
 ------------ | ------------- | ------------- | ------------- | ------------- 
@@ -64,9 +54,6 @@ No. | 날짜 | 과제 | 주제 | TIL
 75 | 2022.01.12(수) |
 76 | 2022.01.13(목) | - | iOS15 업데이트(Configuration, Formatted 등), defer, NSObject | [Day76 TIL](https://hyelinda.notion.site/22-01-13-76bf24d2b90c48eba1a0b23889309b8c)
 77 | 2022.01.14(금) | - | Socket통신 | [Day77 TIL](https://hyelinda.notion.site/22-01-14-dea7c767aec04b7fa3d08f611b6ea00f)
-  
-</div>
-</details>
 
 <br>
 
