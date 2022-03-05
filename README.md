@@ -27,7 +27,6 @@ No. | 날짜 | 과제 | 주제 | TIL
 25 | 2021.11.02 | [Shopping List](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_ShoppingList)</br>[Trend Media](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_TrendMedia) | Realm 적용 | [Day25 TIL](https://velog.io/@hope1053/SeSACiOSDay-25-TIL)
 26 | 2021.11.03 | [Shopping List](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_ShoppingList)</br>[Trend Media](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_TrendMedia) | Realm 수정, 삭제, 데이터 정렬</br>Realm 활용하여 이미 있는 정보는 데이터 불러오기, 없는 정보는 서버 통신 | [Day26 TIL](https://velog.io/@hope1053/SeSACiOSDay-26-TIL)
 27 | 2021.11.04 | [Shopping List](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SSAC_ShoppingList) | 데이터 백업 및 복구 | 
-28 | 2021.11.05 |
 29 | 2021.11.08(월) | [평가 과제(메모 앱)](https://github.com/hope1053/SeSAC_SimpleMemo) | Realm Create, Save, Update, Delete, TableView, UISearchController, UIToolBar | [Day29 TIL](https://velog.io/@hope1053/SeSACiOSDay-29-TIL)
 30 | 2021.11.09(화) | [평가 과제(메모 앱)](https://github.com/hope1053/SeSAC_SimpleMemo) | 메모 고정 기능, 공유 기능(UIActivityViewController) | 
 31 | 2021.11.10(수) | [평가 과제(메모 앱)](https://github.com/hope1053/SeSAC_SimpleMemo) | Search 기능, NumberFormatter, DateFormatter | [Day31 TIL](https://velog.io/@hope1053/SeSACiOSDay-31-TIL)
@@ -44,14 +43,8 @@ No. | 날짜 | 과제 | 주제 | TIL
 58 | 2021.12.20(월) | [Beer Recommendation](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SeSAC_BeerRecommendation) | Push Notification, Codable | [Day 58 TIL](https://velog.io/@hope1053/SeSACiOSDay-58-TIL)  
 59 | 2021.12.21(화) | [Search TV Show](https://github.com/hope1053/SSAC_iOS_Assignment/tree/main/SeSAC_SearchTVShow) | URLSession | [Day 59 TIL](https://velog.io/@hope1053/SeSACiOSDay-59-TIL)  
 60 | 2021.12.22(수) | - | loadView(), URLSessionDataDelegate | [Day60 TIL](https://velog.io/@hope1053/SeSACiOSDay-60-TIL)
-61 | 2021.12.23(목) |
-62 | 2021.12.24(금) |  
-63 | 2021.12.27(월)
-64 | 2021.12.28(화)  
-65 | 2021.12.29(수) | - | - |
 73 | 2022.01.10(월) | - | - | [Day73 TIL](https://hyelinda.notion.site/22-01-10-d2478c2d2151462fbda69277b090e899)
 74 | 2022.01.11(화) | - | - | [Day74 TIL](https://hyelinda.notion.site/22-01-11-4df897c41ba64600b89c40a23b1c20b4)
-75 | 2022.01.12(수) |
 76 | 2022.01.13(목) | - | iOS15 업데이트(Configuration, Formatted 등), defer, NSObject | [Day76 TIL](https://hyelinda.notion.site/22-01-13-76bf24d2b90c48eba1a0b23889309b8c)
 77 | 2022.01.14(금) | - | Socket통신 | [Day77 TIL](https://hyelinda.notion.site/22-01-14-dea7c767aec04b7fa3d08f611b6ea00f)
 
